@@ -1,0 +1,39 @@
+第 39 讲。案例 A 多资产 ETF 的动态估值。
+
+情景与规则
+
+每份持有 0.4 股 X、0.2 股 Y、EUR20 欧洲证券以及 USD4 现金。初始 X=USD120、Y=USD80、1 EUR=USD1.10。忽略基金负债与分配。数量为每份持仓，不是百分比。 后续信息按轮次累积；明确替换的参数按新规则处理。目标时间 35 分钟。
+
+CASE-A.1 初始价值
+
+英文追问：Calculate the initial USD fair value per ETF share.
+
+（请暂停，先尝试回答。）分步解答：V0=0.4×120+0.2×80+20×1.10+4=90 USD。
+
+CASE-A.2 价格与汇率联动
+
+英文追问：X rises by 5%, Y falls by USD 2, and EUR/USD declines to 1.08. Recompute the fair value, attributing each move.
+
+（请暂停，先尝试回答。）分步解答：X 上涨 5% 到 126，Y 下跌 2 到 78，FX 到 1.08；V1=50.4+15.6+21.6+4=91.60。X 贡献 +2.40，Y -0.40，FX -0.40。
+
+CASE-A.3 用可执行侧判断
+
+英文追问：ETF market is 92.05 bid / 92.25 ask. Executable basket costs 91.75 to buy and yields 91.45 to sell. Creation costs 0.10/share. Is a trade economically attractive?
+
+（请暂停，先尝试回答。）分步解答：ETF bid/ask=92.05/92.25，篮子买/卖价=91.75/91.45，创建费 0.10。创建方向单位边际=92.05-91.75-0.10=0.20。还要检查可交割篮子、AP 和深度。
+
+CASE-A.4 规则改变后的单位利润
+
+英文追问：The creation rule changes: minimum 50,000 ETF shares, fixed fee USD 6,000 per unit and USD 0.02/share variable fee. Recalculate profit on exactly one unit using the earlier prices.
+
+（请暂停，先尝试回答。）分步解答：新规则替换上一轮 0.10 创建费：单位 50,000 份、固定 6,000、变量 0.02/份。按前一轮可成交价，利润=50,000×(92.05-91.75-0.02)-6,000=8,000，即 0.16/份。不能把被替换的旧费再扣一次。
+
+CASE-A.5 停牌与代理失效
+
+英文追问：X suddenly halts and relevant futures proxies become unreliable. How do you change your quote and hedge plan?
+
+（请暂停，先尝试回答。）分步解答：X 停牌且代理不可靠时，不能继续用旧 X 价格声称锁定创建。先确认信息和残余风险，扩大估值区间、减少规模，并按权限减仓或撤回相关报价；Y 与 FX 可分别套保。
+
+复盘评分
+
+每轮分别检查：输入是否沿用正确、价格侧是否正确、数量与货币是否一致、是否给出风险动作、是否说明一个决定性边界。每项 0 或 1 分，每轮满分 5 分；先练正确，再练速度。该评分是本书的练习方法。

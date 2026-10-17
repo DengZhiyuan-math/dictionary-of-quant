@@ -1,0 +1,109 @@
+第 34 讲。多资产估值与执行进阶。
+
+T01 多币种篮子的联动更新
+
+英文题面：A USD ETF owns 0.4 shares of A at 120, 0.3 of B at 80, EUR 10, and USD 3 cash. EUR/USD=1.15. Price it; then A rises 2% while EUR/USD drops 1%.
+
+训练计时：100 秒。
+
+（请暂停，先尝试回答。）参考解答：V0=0.4×120+0.3×80+10×1.15+3=86.50。A 变为 122.4，FX=1.1385；V1=48.96+24+11.385+3=87.345。
+
+易错与边界：股票贡献 +0.96、FX -0.115；不要把百分比与绝对价格变化混加。
+
+原题定位：S3 第 4 页；T01。
+
+T02 使用可成交买卖侧检验套利
+
+英文题面：ETF bid/ask is 101.05/101.25; executable basket sell/buy is 100.50/100.72. Creation costs 0.18/share, redemption 0.15/share. Is there an arbitrage?
+
+训练计时：100 秒。
+
+（请暂停，先尝试回答。）参考解答：创建边际=ETF bid 101.05-篮子 ask 100.72-0.18=0.15。赎回边际=篮子 bid 100.50-ETF ask 101.25-0.15=-0.90。
+
+易错与边界：只有前者在可执行、可申购和可交收前提下有正边际。
+
+原题定位：S3 第 4 页；T02。
+
+T04 除息与总资产价值
+
+英文题面：A constituent with a 25% ETF weight goes ex-dividend and its stock price falls 3%, entirely because of a cash dividend. Must ETF fair value fall 0.75%?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：股票因现金分红跌价时，基金可能同时取得应收股息。在忽略税费和基金自身分配的模型中，股票减少与应收增加可抵消。
+
+易错与边界：不能仅套 25%×(-3%) 得出基金总价值必跌 0.75%。
+
+原题定位：S3 第 4 页；T04。
+
+T11 固定费与单位规模
+
+英文题面：An ETF premium is 0.12 per share. Creation unit is 50,000 shares, fixed AP charge 2,000 and variable fee 0.03/share. Net expected profit and threshold premium?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：毛差=50,000×0.12=6,000；成本=2,000+50,000×0.03=3,500；净 2,500。盈亏平衡溢价=0.03+2,000/50,000=0.07。
+
+易错与边界：固定费要摊到实际可完成的单位规模。
+
+原题定位：S3 第 4 页；T11。
+
+T12 三角汇率路径
+
+英文题面：USD/EUR is 1.20 dollars per euro, EUR/GBP is 1.15 euros per pound, while the direct USD/GBP quote is 1.40. Describe a triangular arbitrage before costs.
+
+训练计时：110 秒。
+
+（请暂停，先尝试回答。）参考解答：按题目明确单位，1 GBP=1.15 EUR、1 EUR=1.20 USD；合成每英镑 1.38 USD，直接市场 1.40。无摩擦假设下买合成 GBP、卖直接 GBP，差 0.02 USD/GBP。
+
+易错与边界：原题货币对写法可能引起方向歧义；实际交易必须核对各段 bid/ask 与单位。
+
+原题定位：S3 第 5 页；T12。
+
+T13 ADR 比例与转换成本
+
+英文题面：One ADR represents two European shares worth EUR 40 each; EUR/USD=1.10. ADR bid/ask is 88.50/88.80. Conversion and commissions cost 0.25/ADR. Is the ADR rich?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：1 ADR 对应 2 股，每股 EUR40；基础价值=2×40×1.10=88 USD。若可按该价买股并完成转换，以 ADR bid 88.50 卖出，再扣 0.25，剩 0.25/ADR。
+
+易错与边界：还要检查借券、转换时延、额度与跨市场价格可执行性。
+
+原题定位：S3 第 5 页；T13。
+
+T14 股价与 FX 的复合收益
+
+英文题面：A USD ETF is 60% European stocks (priced at yesterday close), 40% USD assets. European futures decline 1%; EUR/USD declines 0.5%; USD assets flat. Estimate fresh fair value from 100.
+
+训练计时：100 秒。
+
+（请暂停，先尝试回答。）参考解答：欧洲部分美元回报=0.99×0.995-1=-1.495%；ETF 回报=60%×(-1.495%)=-0.897%；新估值 99.103。
+
+易错与边界：简单相加只是近似；该数字仍是代理估值。
+
+原题定位：S3 第 5 页；T14。
+
+T15 RFQ 的单位边际
+
+英文题面：A client buys USD 12m of ETF at NAV+10 bps in an RFQ. Assumed hedge cost is 4 bps and operations 1 bp. Estimate fee-adjusted margin before other risks.
+
+训练计时：65 秒。
+
+（请暂停，先尝试回答。）参考解答：毛加点=12m×10 bps=12,000；对冲和运营共 5 bps=6,000；示意剩余 6,000。
+
+易错与边界：先确认 NAV 定价时点、结算口径及未列成本。
+
+原题定位：S3 第 5 页；T15。
+
+T19 篮子价差的粗略预算
+
+英文题面：An ETF has 70% exposure to liquid stocks (full executable spread 4 bps) and 30% to illiquid bonds (40 bps). Estimate a weighted basket full spread and the symmetric half-spread floor .
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：加权完整价差=70%×4+30%×40=14.8 bps；对称每侧纯对冲成本基线为 7.4 bps，尚未加其他风险与费用。
+
+易错与边界：线性加权只是教学近似，未建模不同规模的深度和非线性冲击。
+
+原题定位：S3 第 5 页；T19。

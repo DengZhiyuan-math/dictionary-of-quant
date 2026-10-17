@@ -1,0 +1,1822 @@
+[
+  {
+    "en": "Adverse Selection",
+    "zh": "逆向选择",
+    "chapter": 23,
+    "definition": "成交选择使条件价值对做市商不利。",
+    "confusion": "不能与所有库存亏损或内幕交易等同。"
+  },
+  {
+    "en": "AP Authorized Participant",
+    "zh": "授权参与人",
+    "chapter": 15,
+    "definition": "按与基金的协议直接参与一级申赎的合格机构。",
+    "confusion": "MM 是报价功能，AP 是一级申赎角色。"
+  },
+  {
+    "en": "Arbitrage Band",
+    "zh": "套利区间",
+    "chapter": 16,
+    "definition": "由双向成本及约束形成的可接受价格范围。",
+    "confusion": "不等于无摩擦下的单一理论价格。"
+  },
+  {
+    "en": "Ask Offer",
+    "zh": "卖价",
+    "chapter": 3,
+    "definition": "做市商愿意卖出的价格，客户在此买入。",
+    "confusion": "买入资产须付 ask；卖出收入看 bid。"
+  },
+  {
+    "en": "Backtest",
+    "zh": "回测",
+    "chapter": 26,
+    "definition": "用历史可用数据模拟既定规则的决策和执行。",
+    "confusion": "回测收益不是已经实现的真实成交收益。"
+  },
+  {
+    "en": "Basis Risk",
+    "zh": "基差风险",
+    "chapter": 20,
+    "definition": "目标资产与对冲工具变化不同而产生的残余风险。",
+    "confusion": "有指数套保仍可能亏损。"
+  },
+  {
+    "en": "Bayes Theorem",
+    "zh": "贝叶斯公式",
+    "chapter": 6,
+    "definition": "用似然和先验更新条件概率。",
+    "confusion": "P(A给定B) 不等于 P(B给定A)。"
+  },
+  {
+    "en": "Beta",
+    "zh": "贝塔敏感度",
+    "chapter": 18,
+    "definition": "资产回报对指定基准回报的线性敏感度。",
+    "confusion": "不同于相关系数，也不概括全部尾部风险。"
+  },
+  {
+    "en": "Beta Distribution",
+    "zh": "Beta 分布",
+    "chapter": 9,
+    "definition": "定义在 0 至 1 上，可用作伯努利成功概率的先验。",
+    "confusion": "不要与风险模型中的 beta 混淆。"
+  },
+  {
+    "en": "Bid",
+    "zh": "买价",
+    "chapter": 3,
+    "definition": "做市商愿意买入的价格，客户在此卖出。",
+    "confusion": "做市商在 bid 成交后通常增加资产多头。"
+  },
+  {
+    "en": "Block Trade",
+    "zh": "大宗交易",
+    "chapter": 28,
+    "definition": "对较大规模进行协商或安排的交易。",
+    "confusion": "历史 ADV 不是单笔可交易量的硬上限。"
+  },
+  {
+    "en": "Data Leakage",
+    "zh": "未来信息泄漏",
+    "chapter": 26,
+    "definition": "决策使用了该时点尚未可见的信息。",
+    "confusion": "数据泄漏包括未来信息、划分污染和全样本选择；不是统计自助法 bootstrap。"
+  },
+  {
+    "en": "Bps Basis Point",
+    "zh": "基点",
+    "chapter": 5,
+    "definition": "1 bp=0.01%=0.0001。",
+    "confusion": "25 bps 是 0.25%，不是 25%。"
+  },
+  {
+    "en": "Cash Balancing",
+    "zh": "现金调整",
+    "chapter": 15,
+    "definition": "申赎中为篮子与规定价值差额配套的现金部分。",
+    "confusion": "申赎不一定是完全纯实物交换。"
+  },
+  {
+    "en": "Conditional Expectation",
+    "zh": "条件期望",
+    "chapter": 6,
+    "definition": "给定某信息或事件后的平均值。",
+    "confusion": "无条件 FV 不能直接替代成交后的条件价值。"
+  },
+  {
+    "en": "Correlation",
+    "zh": "相关系数",
+    "chapter": 7,
+    "definition": "标准化协方差，描述线性共同变化。",
+    "confusion": "不代表因果、相同波动或稳定套保。"
+  },
+  {
+    "en": "Covariance",
+    "zh": "协方差",
+    "chapter": 19,
+    "definition": "两个回报相对其均值共同变化的量。",
+    "confusion": "输入时间窗与单位要一致。"
+  },
+  {
+    "en": "Creation",
+    "zh": "申购创建",
+    "chapter": 16,
+    "definition": "按基金规则交付篮子或现金换取新 ETF 份额。",
+    "confusion": "在交易所买已有份额不是基金创建。"
+  },
+  {
+    "en": "Creation Unit",
+    "zh": "申赎单位",
+    "chapter": 15,
+    "definition": "基金指定的一大块一级申赎份额。",
+    "confusion": "50,000 只是例子，且不是二级最小成交量。"
+  },
+  {
+    "en": "Duration",
+    "zh": "久期",
+    "chapter": 27,
+    "definition": "此处指对收益率变化的一阶价格敏感度。",
+    "confusion": "不是单纯的剩余到期期限。"
+  },
+  {
+    "en": "Edge",
+    "zh": "预期边际",
+    "chapter": 21,
+    "definition": "按明确定义估计的收入相对成本的增量。",
+    "confusion": "单次正期望不保证单次盈利。"
+  },
+  {
+    "en": "ETF Exchange Traded Fund",
+    "zh": "交易所交易基金",
+    "chapter": 11,
+    "definition": "份额可在市场买卖、价值联系于基金资产的产品。",
+    "confusion": "交易货币不等于唯一经济风险货币。"
+  },
+  {
+    "en": "Execution",
+    "zh": "交易执行",
+    "chapter": 17,
+    "definition": "把目标仓位转化为实际成交及交付的过程。",
+    "confusion": "模型价、下单价和最终 fill 可能不同。"
+  },
+  {
+    "en": "Fair Value",
+    "zh": "公允价值估计",
+    "chapter": 12,
+    "definition": "根据当前信息估计的经济价值。",
+    "confusion": "不是对任何数量都能成交的承诺。"
+  },
+  {
+    "en": "Fill Probability",
+    "zh": "成交概率",
+    "chapter": 21,
+    "definition": "特定报价在给定条件下被成交的概率。",
+    "confusion": "提高成交率可能同时改变条件利润。"
+  },
+  {
+    "en": "Fixed Fee",
+    "zh": "固定费用",
+    "chapter": 17,
+    "definition": "不随本次单位内份额数同比变化的费用。",
+    "confusion": "单位费要按实际规模摊销。"
+  },
+  {
+    "en": "Full Spread",
+    "zh": "完整价差",
+    "chapter": 21,
+    "definition": "ask 减 bid，或除 mid 后换为 bps。",
+    "confusion": "不是 half-spread。"
+  },
+  {
+    "en": "Futures Multiplier",
+    "zh": "期货乘数",
+    "chapter": 18,
+    "definition": "每个指数点对应的合约货币金额。",
+    "confusion": "单张名义为 F×乘数，不是保证金。"
+  },
+  {
+    "en": "FX Exposure",
+    "zh": "汇率敞口",
+    "chapter": 14,
+    "definition": "资产价值或现金流对汇率变化的风险。",
+    "confusion": "按全部腿净敞口对冲，避免重复。"
+  },
+  {
+    "en": "Geometric Distribution",
+    "zh": "几何分布",
+    "chapter": 9,
+    "definition": "独立离散试验中首次成功的等待分布。",
+    "confusion": "是否包含成功那次影响均值与支持集。"
+  },
+  {
+    "en": "Hedge",
+    "zh": "对冲套保",
+    "chapter": 18,
+    "definition": "建立反向风险以减少指定敞口。",
+    "confusion": "风险降低不代表所有风险消失。"
+  },
+  {
+    "en": "Hedge Ratio",
+    "zh": "套保比率",
+    "chapter": 19,
+    "definition": "模型中对冲名义与目标名义的比例。",
+    "confusion": "比率不是张数；还需单张合约名义。"
+  },
+  {
+    "en": "Hit the Bid",
+    "zh": "客户卖出打买价",
+    "chapter": 3,
+    "definition": "客户按做市商 bid 卖出。",
+    "confusion": "做市商因此买入。"
+  },
+  {
+    "en": "Impact",
+    "zh": "市场冲击",
+    "chapter": 17,
+    "definition": "订单改变可成交价格的成本或影响。",
+    "confusion": "已在均价中体现的冲击不能重复扣款。"
+  },
+  {
+    "en": "In Kind",
+    "zh": "实物申赎",
+    "chapter": 15,
+    "definition": "以规定证券篮子完成全部或部分申赎。",
+    "confusion": "不同于一律按现金结算。"
+  },
+  {
+    "en": "Inventory",
+    "zh": "库存头寸",
+    "chapter": 22,
+    "definition": "做市商已承接并持有的资产或净风险。",
+    "confusion": "多头库存过多不意味着资产 FV 下跌。"
+  },
+  {
+    "en": "Kelly Criterion",
+    "zh": "Kelly 准则",
+    "chapter": 10,
+    "definition": "理想重复下注模型中最大化期望对数增长。",
+    "confusion": "不同于最大单次期望收益或现实仓位指令。"
+  },
+  {
+    "en": "Latency",
+    "zh": "延迟",
+    "chapter": 23,
+    "definition": "信息或指令从产生到被接收执行的时间差。",
+    "confusion": "报价已发送不代表撤销已在市场生效。"
+  },
+  {
+    "en": "Lift the Ask",
+    "zh": "客户买入打卖价",
+    "chapter": 3,
+    "definition": "客户按做市商 ask 买入。",
+    "confusion": "做市商因此卖出。"
+  },
+  {
+    "en": "Liquidity",
+    "zh": "流动性",
+    "chapter": 15,
+    "definition": "在指定时间和规模下以可接受成本完成交易的能力。",
+    "confusion": "历史成交量、显示深度和底层容量不同。"
+  },
+  {
+    "en": "Look Ahead Bias",
+    "zh": "前视偏差",
+    "chapter": 26,
+    "definition": "历史决策用了未来才知道的信息。",
+    "confusion": "事后修订与发布时点都需核对。"
+  },
+  {
+    "en": "Market Maker",
+    "zh": "做市商",
+    "chapter": 15,
+    "definition": "在二级市场提供买卖报价并承担成交风险。",
+    "confusion": "不自动具备 AP 资格。"
+  },
+  {
+    "en": "Mark to Market",
+    "zh": "盯市",
+    "chapter": 4,
+    "definition": "按当前估值更新仓位价值及损益。",
+    "confusion": "现金流与利润不是同一个量。"
+  },
+  {
+    "en": "Markout",
+    "zh": "成交后价格表现",
+    "chapter": 23,
+    "definition": "相对成交价观察一定时点后的市场或公允价值变动。",
+    "confusion": "单笔不利 markout 不足以证明知情交易。"
+  },
+  {
+    "en": "Midpoint",
+    "zh": "中价",
+    "chapter": 3,
+    "definition": "同一时点 bid 与 ask 的平均值。",
+    "confusion": "中价通常不保证可买卖成交。"
+  },
+  {
+    "en": "Minimum Variance Hedge",
+    "zh": "最小方差套保",
+    "chapter": 19,
+    "definition": "选择对冲比例以最小化模型残余方差。",
+    "confusion": "不自动最小化成本或尾部损失。"
+  },
+  {
+    "en": "NAV Net Asset Value",
+    "zh": "每份净资产值",
+    "chapter": 12,
+    "definition": "某估值时点基金净资产除以流通份额。",
+    "confusion": "不同于实时 bid/ask 或固定的套利兑现价。"
+  },
+  {
+    "en": "Notional",
+    "zh": "风险名义金额",
+    "chapter": 18,
+    "definition": "用于度量价格变化风险的金额规模。",
+    "confusion": "不等同于保证金或现金支付金额。"
+  },
+  {
+    "en": "Order Flow",
+    "zh": "订单流",
+    "chapter": 23,
+    "definition": "交易方向、规模和到达过程等订单信息。",
+    "confusion": "成交事件可能对价值形成条件筛选。"
+  },
+  {
+    "en": "P and L PnL",
+    "zh": "损益",
+    "chapter": 4,
+    "definition": "特定期间、计价及费用口径下的盈利或亏损。",
+    "confusion": "毛收益、净收益和现金变化要分别说明。"
+  },
+  {
+    "en": "Poisson Process",
+    "zh": "泊松过程",
+    "chapter": 9,
+    "definition": "恒定强度基线下对随机事件到达的计数模型。",
+    "confusion": "真实市场可能聚集或状态切换。"
+  },
+  {
+    "en": "Premium Discount",
+    "zh": "溢价折价",
+    "chapter": 12,
+    "definition": "相对明确基准的市价偏离。",
+    "confusion": "先说明对 NAV、FV 还是可执行篮子比较。"
+  },
+  {
+    "en": "Proxy",
+    "zh": "代理工具",
+    "chapter": 24,
+    "definition": "用相关但不完全相同的资产估值或套保。",
+    "confusion": "代理回报不是闭市现货真实可成交回报。"
+  },
+  {
+    "en": "Quote Size",
+    "zh": "报价数量",
+    "chapter": 21,
+    "definition": "愿意按某一报价承接的份额规模。",
+    "confusion": "只给价格不等于无限可成交量。"
+  },
+  {
+    "en": "Redemption",
+    "zh": "赎回",
+    "chapter": 16,
+    "definition": "按规则交回大块 ETF 份额换取篮子或现金。",
+    "confusion": "二级市场卖出不是直接向基金赎回。"
+  },
+  {
+    "en": "Reprice",
+    "zh": "重新定价",
+    "chapter": 21,
+    "definition": "根据新的经济价值更新报价。",
+    "confusion": "与库存偏好造成的 skew 分开。"
+  },
+  {
+    "en": "Reservation Price",
+    "zh": "保留价格中枢",
+    "chapter": 22,
+    "definition": "加入库存等偏好后愿意交易的报价中心。",
+    "confusion": "不是必须等于基础 FV。"
+  },
+  {
+    "en": "RFQ Request for Quote",
+    "zh": "询价",
+    "chapter": 28,
+    "definition": "客户向流动性提供者请求某方向规模的报价。",
+    "confusion": "NAV 加点的基准时点和交收须明确。"
+  },
+  {
+    "en": "Risk Limit",
+    "zh": "风险限额",
+    "chapter": 22,
+    "definition": "约束仓位、亏损或压力风险等的边界。",
+    "confusion": "触及硬限额时不能只等待 skew 自然去库存。"
+  },
+  {
+    "en": "Skew",
+    "zh": "库存偏斜",
+    "chapter": 22,
+    "definition": "因风险偏好而移动报价中心。",
+    "confusion": "不是公允价值本身变化，也不必改变价差宽度。"
+  },
+  {
+    "en": "Slippage",
+    "zh": "滑点",
+    "chapter": 26,
+    "definition": "实际执行价相对定义好的基准价的差。",
+    "confusion": "先说明基准、方向与费用口径。"
+  },
+  {
+    "en": "Stale Quote",
+    "zh": "过时报价",
+    "chapter": 23,
+    "definition": "尚未反映最新价值信息的报价。",
+    "confusion": "相对旧中价的正边际可能是实际亏损。"
+  },
+  {
+    "en": "Total Return",
+    "zh": "总回报",
+    "chapter": 13,
+    "definition": "把价格变化与分配收益一并考虑的回报。",
+    "confusion": "除息价跌不能直接视为同额经济损失。"
+  },
+  {
+    "en": "Variance",
+    "zh": "方差",
+    "chapter": 7,
+    "definition": "相对均值的平方偏差期望。",
+    "confusion": "与标准差差一个平方根。"
+  },
+  {
+    "en": "Volatility",
+    "zh": "波动率",
+    "chapter": 7,
+    "definition": "指定时间尺度与回报定义下的标准差。",
+    "confusion": "不能不说明日度、年化或估计窗口。"
+  },
+  {
+    "en": "VWAP Volume Weighted Average Price",
+    "zh": "成交量加权均价",
+    "chapter": 17,
+    "definition": "以各价位成交数量为权重计算的平均价格。",
+    "confusion": "此处用于执行均价；不要与全天 VWAP 基准策略混为一谈。"
+  },
+  {
+    "en": "Widen",
+    "zh": "扩大价差",
+    "chapter": 21,
+    "definition": "增加 bid 与 ask 之间的宽度以增加保护。",
+    "confusion": "价值方向变化仍须先更新 FV。"
+  },
+  {
+    "en": "Adapted Process",
+    "zh": "适应过程",
+    "chapter": 45,
+    "definition": "在每个时点的值由该时点信息集可判断的过程。",
+    "confusion": "连续时间交易积分通常还有可预测性等条件。"
+  },
+  {
+    "en": "Filtration",
+    "zh": "滤过信息集",
+    "chapter": 45,
+    "definition": "随时间增长、记录截至当时可用信息的结构。",
+    "confusion": "不等于事后完整历史数据库。"
+  },
+  {
+    "en": "Markov Chain",
+    "zh": "马尔可夫链",
+    "chapter": 46,
+    "definition": "给定当前状态后下一状态分布不再依赖更早历史。",
+    "confusion": "依赖状态定义，不是说收益必然独立。"
+  },
+  {
+    "en": "Transition Matrix",
+    "zh": "转移矩阵",
+    "chapter": 46,
+    "definition": "记录各当前状态到下一状态的条件概率。",
+    "confusion": "行向量与列向量更新约定不能混用。"
+  },
+  {
+    "en": "Stationary Distribution",
+    "zh": "平稳分布",
+    "chapter": 46,
+    "definition": "经过转移更新后保持不变的状态分布。",
+    "confusion": "有平稳分布不保证从任意初始状态无周期地收敛。"
+  },
+  {
+    "en": "Martingale",
+    "zh": "鞅",
+    "chapter": 47,
+    "definition": "满足可积及当前条件期望等于当前值的过程。",
+    "confusion": "不要求路径不动或独立增量。"
+  },
+  {
+    "en": "Stopping Time",
+    "zh": "停时",
+    "chapter": 47,
+    "definition": "截至某时点是否停止可由当时信息决定的随机时刻。",
+    "confusion": "事后最高点通常不是可执行停时。"
+  },
+  {
+    "en": "Optional Stopping",
+    "zh": "可选停止",
+    "chapter": 47,
+    "definition": "在合适条件下将鞅期望关系延伸到停止时刻。",
+    "confusion": "无界停止规则需要额外条件。"
+  },
+  {
+    "en": "Brownian Motion",
+    "zh": "布朗运动",
+    "chapter": 48,
+    "definition": "连续路径、独立平稳高斯增量的标准噪声过程。",
+    "confusion": "增量标准差按根号时间缩放。"
+  },
+  {
+    "en": "Quadratic Variation",
+    "zh": "二次变差",
+    "chapter": 48,
+    "definition": "细网格平方增量和的极限。",
+    "confusion": "不是每个单步平方都恰等于时间。"
+  },
+  {
+    "en": "Ito Lemma",
+    "zh": "Itô 引理",
+    "chapter": 49,
+    "definition": "计算扩散过程光滑函数变化的链式规则。",
+    "confusion": "二阶修正来自二次变差。"
+  },
+  {
+    "en": "GBM Geometric Brownian Motion",
+    "zh": "几何布朗运动",
+    "chapter": 49,
+    "definition": "乘法漂移与扩散驱动的正价格基准模型。",
+    "confusion": "对数漂移不同于价格期望增长率。"
+  },
+  {
+    "en": "OU Ornstein Uhlenbeck",
+    "zh": "OU 均值回复过程",
+    "chapter": 50,
+    "definition": "条件均值按指数速度回复长期水平的线性扩散。",
+    "confusion": "不保证下一步朝均值运动。"
+  },
+  {
+    "en": "Half Life",
+    "zh": "均值回复半衰期",
+    "chapter": 50,
+    "definition": "条件偏离衰减一半所需时间。",
+    "confusion": "需注明模型、时间单位及估计稳定性。"
+  },
+  {
+    "en": "Strong Weak Convergence",
+    "zh": "强收敛与弱收敛",
+    "chapter": 51,
+    "definition": "分别比较路径误差和函数期望误差。",
+    "confusion": "增加路径数不解决网格偏差。"
+  },
+  {
+    "en": "Antithetic Variates",
+    "zh": "对偶抽样",
+    "chapter": 51,
+    "definition": "用正负配对噪声构造相关估计以降低方差。",
+    "confusion": "标准误应按独立配对均值计算。"
+  },
+  {
+    "en": "Jump Diffusion",
+    "zh": "跳跃扩散",
+    "chapter": 52,
+    "definition": "结合连续噪声与不连续跳跃的过程。",
+    "confusion": "历史与定价测度下的跳跃参数可能不同。"
+  },
+  {
+    "en": "GARCH",
+    "zh": "条件异方差模型",
+    "chapter": 52,
+    "definition": "用历史冲击和方差递推条件波动。",
+    "confusion": "不直接预测价格上涨方向。"
+  },
+  {
+    "en": "Call Option",
+    "zh": "看涨期权",
+    "chapter": 53,
+    "definition": "按执行价买入标的的权利。",
+    "confusion": "到期支付不等于扣权利金后的利润。"
+  },
+  {
+    "en": "Put Option",
+    "zh": "看跌期权",
+    "chapter": 53,
+    "definition": "按执行价卖出标的的权利。",
+    "confusion": "卖出 put 不是直接做空标的的同义词。"
+  },
+  {
+    "en": "European American Exercise",
+    "zh": "欧式与美式行权",
+    "chapter": 53,
+    "definition": "分别限制到期行权或允许期限内提前行权。",
+    "confusion": "不是交易所地理位置分类。"
+  },
+  {
+    "en": "Put Call Parity",
+    "zh": "看涨看跌平价",
+    "chapter": 53,
+    "definition": "相同终值组合形成的相对价格关系。",
+    "confusion": "合约、股息与融资口径必须匹配。"
+  },
+  {
+    "en": "Replication",
+    "zh": "复制组合",
+    "chapter": 54,
+    "definition": "用交易资产产生与目标合约相同状态支付。",
+    "confusion": "纸面方程可解不等于所有腿实际可成交。"
+  },
+  {
+    "en": "Risk Neutral Probability",
+    "zh": "风险中性概率",
+    "chapter": 54,
+    "definition": "使交易资产贴现收益满足定价关系的权重。",
+    "confusion": "不是历史实际上涨频率。"
+  },
+  {
+    "en": "Self Financing",
+    "zh": "自融资",
+    "chapter": 55,
+    "definition": "组合变化由已有资产交易及收益支付，不额外注资。",
+    "confusion": "再平衡资金流不能被漏记。"
+  },
+  {
+    "en": "Physical Measure P",
+    "zh": "真实概率测度",
+    "chapter": 55,
+    "definition": "描述实际结果分布的概率模型。",
+    "confusion": "不同于用于无套利估值的 Q。"
+  },
+  {
+    "en": "Risk Neutral Measure Q",
+    "zh": "风险中性测度",
+    "chapter": 55,
+    "definition": "适用模型下用于交易资产一致估值的测度。",
+    "confusion": "含分红时需正确处理收益过程。"
+  },
+  {
+    "en": "Black Scholes PDE",
+    "zh": "Black Scholes 偏微分方程",
+    "chapter": 55,
+    "definition": "由动态复制导出的价值时间与状态关系。",
+    "confusion": "需要终值、边界和模型假设。"
+  },
+  {
+    "en": "Black Scholes Formula",
+    "zh": "欧式 Black Scholes 公式",
+    "chapter": 56,
+    "definition": "恒定参数扩散基准下的欧式闭式价格。",
+    "confusion": "不是任意美式或路径依赖产品的通式。"
+  },
+  {
+    "en": "Delta",
+    "zh": "一阶价格敏感度",
+    "chapter": 57,
+    "definition": "期权价值对标的价格的一阶导数。",
+    "confusion": "delta 中性不消除 gamma 或 vega。"
+  },
+  {
+    "en": "Gamma",
+    "zh": "二阶价格敏感度",
+    "chapter": 57,
+    "definition": "标的价格改变时 delta 的局部变化率。",
+    "confusion": "损益展开中的平方项含一半系数。"
+  },
+  {
+    "en": "Vega",
+    "zh": "波动率敏感度",
+    "chapter": 57,
+    "definition": "期权价值对波动率参数的局部导数。",
+    "confusion": "必须区分按1.00还是按1个百分点报告。"
+  },
+  {
+    "en": "Theta",
+    "zh": "时间敏感度",
+    "chapter": 57,
+    "definition": "此书采用日历时间导数描述价值衰减或变化。",
+    "confusion": "对剩余期限求导的符号相反。"
+  },
+  {
+    "en": "Implied Volatility IV",
+    "zh": "隐含波动率",
+    "chapter": 58,
+    "definition": "在指定模型下反解市场价格的波动参数。",
+    "confusion": "不保证等于未来真实实现波动。"
+  },
+  {
+    "en": "Volatility Smile Surface",
+    "zh": "波动微笑与曲面",
+    "chapter": 58,
+    "definition": "不同执行价和期限的隐含波动结构。",
+    "confusion": "插值要检查坐标、噪声与静态套利。"
+  },
+  {
+    "en": "CRR Binomial Tree",
+    "zh": "CRR 二叉树",
+    "chapter": 59,
+    "definition": "以重组网格和反向递推计算期权价值。",
+    "confusion": "奇偶步振荡不等于不收敛。"
+  },
+  {
+    "en": "Continuation Value",
+    "zh": "继续持有价值",
+    "chapter": 59,
+    "definition": "当前状态下不立即行权的条件折现价值。",
+    "confusion": "不能使用事后最优路径支付替代。"
+  },
+  {
+    "en": "Asian Barrier Options",
+    "zh": "亚式与障碍期权",
+    "chapter": 60,
+    "definition": "分别依赖路径平均或障碍触碰规则的合约。",
+    "confusion": "监控日历属于合约定义。"
+  },
+  {
+    "en": "Finite Difference",
+    "zh": "有限差分",
+    "chapter": 60,
+    "definition": "在时间和状态网格上近似 PDE 导数与解。",
+    "confusion": "边界、稳定性和离散误差都要验证。"
+  },
+  {
+    "en": "Alpha",
+    "zh": "相对模型未解释收益",
+    "chapter": 61,
+    "definition": "指定基准与统计框架下的截距或未解释部分。",
+    "confusion": "单期残差不等于已证实的长期技能。"
+  },
+  {
+    "en": "Factor Exposure",
+    "zh": "因子暴露",
+    "chapter": 61,
+    "definition": "资产或组合对共同风险来源的敏感度。",
+    "confusion": "不同于某日预测特征分数。"
+  },
+  {
+    "en": "Point in Time PIT",
+    "zh": "时点可见数据",
+    "chapter": 62,
+    "definition": "按决策时刻可取得的版本与资产池重建的数据。",
+    "confusion": "今天的完整历史文件不保证 PIT。"
+  },
+  {
+    "en": "Survivorship Bias",
+    "zh": "幸存者偏差",
+    "chapter": 62,
+    "definition": "只保留存活样本造成的系统性评价偏差。",
+    "confusion": "退市、失败与历史成员应按时点处理。"
+  },
+  {
+    "en": "Winsorization",
+    "zh": "去极值缩尾",
+    "chapter": 63,
+    "definition": "把超出规定阈值的数值限制到边界。",
+    "confusion": "规则与拟合范围不可用未来数据选择。"
+  },
+  {
+    "en": "Neutralization",
+    "zh": "中性化",
+    "chapter": 63,
+    "definition": "移除规定控制变量的线性关联或持仓暴露。",
+    "confusion": "特征中性不保证最终组合中性。"
+  },
+  {
+    "en": "IC Information Coefficient",
+    "zh": "信息系数",
+    "chapter": 64,
+    "definition": "信号与后续回报在指定轴上的相关。",
+    "confusion": "不是收益率或胜率。"
+  },
+  {
+    "en": "Rank IC",
+    "zh": "秩信息系数",
+    "chapter": 64,
+    "definition": "通常用 Spearman 衡量信号与回报的排序关联。",
+    "confusion": "并列排名需相应处理。"
+  },
+  {
+    "en": "ICIR",
+    "zh": "信息系数稳定比率",
+    "chapter": 64,
+    "definition": "IC 时间均值除以相应时间标准差的口径。",
+    "confusion": "不自动等于显著性或无条件年化指标。"
+  },
+  {
+    "en": "Gross Net Exposure",
+    "zh": "总敞口与净敞口",
+    "chapter": 65,
+    "definition": "分别按风险资产绝对权重和有符号权重汇总。",
+    "confusion": "净额为零仍可能有市场 beta。"
+  },
+  {
+    "en": "Turnover",
+    "zh": "换手成交比例",
+    "chapter": 65,
+    "definition": "此书为目标减调仓前漂移权重的 L1 和。",
+    "confusion": "部分平台报告其一半，先对齐口径。"
+  },
+  {
+    "en": "Fama MacBeth",
+    "zh": "Fama MacBeth 回归",
+    "chapter": 66,
+    "definition": "逐期截面估计后对斜率时间均值推断的框架。",
+    "confusion": "需说明特征还是估计 beta 的具体版本。"
+  },
+  {
+    "en": "HAC Newey West",
+    "zh": "异方差自相关稳健推断",
+    "chapter": 66,
+    "definition": "在适用时间依赖结构下估计稳健协方差。",
+    "confusion": "不能补救泄漏或错误经济模型。"
+  },
+  {
+    "en": "Ridge Lasso",
+    "zh": "L2 与 L1 正则回归",
+    "chapter": 67,
+    "definition": "用不同惩罚限制预测系数复杂度。",
+    "confusion": "损失归一化与截距处理改变参数尺度。"
+  },
+  {
+    "en": "Walk Forward",
+    "zh": "向前滚动验证",
+    "chapter": 71,
+    "definition": "在过去训练、随后区间测试并逐段更新。",
+    "confusion": "各折处理与选择均须遵守时间边界。"
+  },
+  {
+    "en": "Purging",
+    "zh": "重叠事件清洗",
+    "chapter": 71,
+    "definition": "移除标签信息区间与测试事件重叠的训练样本。",
+    "confusion": "只看信号日期不够。"
+  },
+  {
+    "en": "Embargo",
+    "zh": "隔离间隔",
+    "chapter": 71,
+    "definition": "按特定切分方案排除测试附近的候选训练区间。",
+    "confusion": "固定 gap 不自动等于事件级清洗。"
+  },
+  {
+    "en": "CAGR",
+    "zh": "复合年增长率",
+    "chapter": 72,
+    "definition": "给定净值比和年数推算的复利年化增长。",
+    "confusion": "外部资金流与算术均值不能直接代入。"
+  },
+  {
+    "en": "Sharpe Ratio",
+    "zh": "夏普比率",
+    "chapter": 72,
+    "definition": "指定频率超额收益均值除以标准差。",
+    "confusion": "相关和选择偏差影响年化与推断。"
+  },
+  {
+    "en": "Maximum Drawdown",
+    "zh": "最大回撤",
+    "chapter": 72,
+    "definition": "净值相对此前高水位的最大跌幅。",
+    "confusion": "依赖路径、频率和观察窗口。"
+  },
+  {
+    "en": "PBO",
+    "zh": "回测过拟合概率框架",
+    "chapter": 73,
+    "definition": "研究给定搜索与切分过程的过拟合倾向。",
+    "confusion": "不是未来盈亏事件概率。"
+  },
+  {
+    "en": "Multiple Testing",
+    "zh": "多重检验",
+    "chapter": 73,
+    "definition": "多个候选或假设共同带来的选择与误发现问题。",
+    "confusion": "单次5%门槛不等于整体5%。"
+  },
+  {
+    "en": "GMV Global Minimum Variance",
+    "zh": "全局最小方差组合",
+    "chapter": 75,
+    "definition": "在指定预算与可行域下最小化模型方差。",
+    "confusion": "不同于风险平价或收益最大化。"
+  },
+  {
+    "en": "Efficient Frontier",
+    "zh": "有效前沿",
+    "chapter": 75,
+    "definition": "模型可行集合中的风险收益权衡边界。",
+    "confusion": "输入估计误差可移动整条边界。"
+  },
+  {
+    "en": "KKT Feasibility",
+    "zh": "最优性与可行性条件",
+    "chapter": 76,
+    "definition": "检查目标驻点和约束满足等的数学条件。",
+    "confusion": "求解状态或四舍五入不能替代风险复核。"
+  },
+  {
+    "en": "Covariance Shrinkage",
+    "zh": "协方差收缩",
+    "chapter": 77,
+    "definition": "在样本矩阵与结构目标之间做估计权衡。",
+    "confusion": "固定混合例子不等于估计最优强度。"
+  },
+  {
+    "en": "Factor Risk Model",
+    "zh": "因子风险模型",
+    "chapter": 77,
+    "definition": "用暴露、因子协方差与特质风险构造组合风险。",
+    "confusion": "未必覆盖全部残余共同风险。"
+  },
+  {
+    "en": "Risk Contribution",
+    "zh": "风险贡献",
+    "chapter": 78,
+    "definition": "某仓位对总风险的可分解贡献。",
+    "confusion": "等资金不等于等风险。"
+  },
+  {
+    "en": "Risk Parity",
+    "zh": "风险平价",
+    "chapter": 78,
+    "definition": "按规定风险度量使各部分贡献满足预算。",
+    "confusion": "一般相关结构下不等于简单逆波动。"
+  },
+  {
+    "en": "VaR Value at Risk",
+    "zh": "风险价值分位阈值",
+    "chapter": 78,
+    "definition": "指定损失分布与水平下的损失分位。",
+    "confusion": "阈值不描述超过后损失有多大。"
+  },
+  {
+    "en": "ES CVaR",
+    "zh": "预期尾部损失",
+    "chapter": 78,
+    "definition": "按规定水平平均上尾损失的风险度量。",
+    "confusion": "离散概率原子处需正确分配尾部质量。"
+  },
+  {
+    "en": "Robust Optimization",
+    "zh": "鲁棒优化",
+    "chapter": 78,
+    "definition": "相对明确不确定集合设计保护的优化。",
+    "confusion": "保护并不覆盖集合之外的所有世界。"
+  },
+  {
+    "en": "No Trade Region",
+    "zh": "无交易区间",
+    "chapter": 79,
+    "definition": "增量收益不足以覆盖成本时维持仓位的状态区域。",
+    "confusion": "不交易也可以是模型最优动作。"
+  },
+  {
+    "en": "Multi Period Optimization",
+    "zh": "多期优化",
+    "chapter": 79,
+    "definition": "结合预测和未来约束联合规划交易并滚动更新。",
+    "confusion": "预测输入不等于已知未来真实回报。"
+  },
+  {
+    "en": "ARIMA",
+    "zh": "自回归积分滑动平均",
+    "chapter": 82,
+    "definition": "对差分后的序列建立自回归与创新误差结构，用历史可见状态预测未来。",
+    "confusion": "MA 指误差项组合，不是简单移动均线。"
+  },
+  {
+    "en": "Autocorrelation Function",
+    "zh": "自相关函数",
+    "chapter": 81,
+    "definition": "比较序列与自身不同滞后的线性相关。",
+    "confusion": "样本相关拖尾不能单独证明单位根。"
+  },
+  {
+    "en": "Partial Autocorrelation",
+    "zh": "偏自相关",
+    "chapter": 82,
+    "definition": "控制较短滞后线性作用后衡量某一滞后的关系。",
+    "confusion": "有限样本图形不是自动选阶规则。"
+  },
+  {
+    "en": "Unit Root",
+    "zh": "单位根",
+    "chapter": 81,
+    "definition": "自回归多项式含单位圆上的根，典型随机游走冲击不会按稳定几何速度消退。",
+    "confusion": "高持久性平稳过程与单位根过程并不相同。"
+  },
+  {
+    "en": "ADF Test",
+    "zh": "增广单位根检验",
+    "chapter": 81,
+    "definition": "用带滞后差分的回归检验单位根零假设，趋势和滞后设定影响结果。",
+    "confusion": "未拒绝零假设不等于证明有单位根。"
+  },
+  {
+    "en": "KPSS Test",
+    "zh": "平稳性检验",
+    "chapter": 81,
+    "definition": "在指定常数或趋势设定下以平稳为零假设的检验。",
+    "confusion": "零假设与 ADF 不同，不能互换判读。"
+  },
+  {
+    "en": "Differencing",
+    "zh": "差分",
+    "chapter": 81,
+    "definition": "将相邻水平相减，或按季节周期相减，以研究变化与消除某些非平稳结构。",
+    "confusion": "过度差分可能增加噪声并引入不必要误差结构。"
+  },
+  {
+    "en": "Kalman Filter",
+    "zh": "卡尔曼滤波",
+    "chapter": 83,
+    "definition": "在线性状态与观测模型下递推预测状态并按创新修正估计。",
+    "confusion": "滤波只使用截至当前的观测；平滑会用后续观测。"
+  },
+  {
+    "en": "State Smoothing",
+    "zh": "状态平滑",
+    "chapter": 83,
+    "definition": "利用整段观测改进历史隐藏状态估计。",
+    "confusion": "不能把全样本平滑状态当成历史实时信号。"
+  },
+  {
+    "en": "Innovation Residual",
+    "zh": "创新残差",
+    "chapter": 83,
+    "definition": "当前观测减去根据过去信息形成的观测预测。",
+    "confusion": "与对全样本拟合残差的可见时间不同。"
+  },
+  {
+    "en": "EWMA Volatility",
+    "zh": "指数加权波动",
+    "chapter": 84,
+    "definition": "用衰减权重递推条件方差；正文区分方差与标准差。",
+    "confusion": "平方回报进入方差，不能直接与波动率相加。"
+  },
+  {
+    "en": "Conditional Heteroskedasticity",
+    "zh": "条件异方差",
+    "chapter": 84,
+    "definition": "给定过去信息的方差随时间变化。",
+    "confusion": "不要求每期条件均值也发生相同变化。"
+  },
+  {
+    "en": "Cointegration",
+    "zh": "协整",
+    "chapter": 85,
+    "definition": "某些非平稳序列存在平稳的线性组合，前提与确定性趋势需说明。",
+    "confusion": "高相关不保证协整，协整也不保证可交易净收益。"
+  },
+  {
+    "en": "Error Correction Model",
+    "zh": "误差修正模型",
+    "chapter": 85,
+    "definition": "用变化量和滞后均衡偏离共同刻画短期动态。",
+    "confusion": "负修正系数的经济含义依赖偏离量的定义和方向。"
+  },
+  {
+    "en": "Seasonality",
+    "zh": "季节性",
+    "chapter": 86,
+    "definition": "按已定义日历或事件周期重复的结构。",
+    "confusion": "夏令时与节假日会改变实际交易窗口，不能机械填补。"
+  },
+  {
+    "en": "Aliasing",
+    "zh": "混叠",
+    "chapter": 86,
+    "definition": "采样不足使不同频率表现为相同离散变化。",
+    "confusion": "重采样不能恢复已经丢失的高频信息。"
+  },
+  {
+    "en": "Forecast Horizon",
+    "zh": "预测期限",
+    "chapter": 87,
+    "definition": "预测起点到被预测对象结束时点的间隔。",
+    "confusion": "同一期限的相邻预测可能共享标签与误差。"
+  },
+  {
+    "en": "Rolling Origin Evaluation",
+    "zh": "滚动起点评价",
+    "chapter": 88,
+    "definition": "让预测起点依时间推进，每次仅用当时可见数据拟合或更新。",
+    "confusion": "不能先全样本估计预处理再假装滚动预测。"
+  },
+  {
+    "en": "Label Availability",
+    "zh": "标签可用时间",
+    "chapter": 89,
+    "definition": "目标结果已实现且可进入训练集的最早时间。",
+    "confusion": "标签起点早于决策时间仍可能尚未结束。"
+  },
+  {
+    "en": "Learning Pipeline",
+    "zh": "学习管线",
+    "chapter": 89,
+    "definition": "将缺失处理、缩放、特征变换和估计器作为同一可复现拟合流程。",
+    "confusion": "验证集参与拟合缩放参数也会泄漏。"
+  },
+  {
+    "en": "Nested Time Validation",
+    "zh": "嵌套时间验证",
+    "chapter": 90,
+    "definition": "内层按历史时间选配置，外层随后区间评价完整选择流程。",
+    "confusion": "外层结果用于反复改配置后不再是未触碰评价。"
+  },
+  {
+    "en": "Training Standardization",
+    "zh": "训练集标准化",
+    "chapter": 90,
+    "definition": "只用训练样本均值和尺度确定变换，并冻结应用于后续数据。",
+    "confusion": "测试样本不能参与均值或标准差估计。"
+  },
+  {
+    "en": "Random Forest",
+    "zh": "随机森林",
+    "chapter": 91,
+    "definition": "结合抽样与随机候选特征生成多棵树并聚合预测。",
+    "confusion": "树之间的相关误差和时间泄漏不会被树数消除。"
+  },
+  {
+    "en": "Gradient Boosted Trees",
+    "zh": "梯度提升树",
+    "chapter": 91,
+    "definition": "逐轮拟合损失的负梯度或相关局部目标，累加弱学习器。",
+    "confusion": "与随机森林的并行平均机制不同。"
+  },
+  {
+    "en": "Learning Rate",
+    "zh": "学习率",
+    "chapter": 91,
+    "definition": "控制每轮更新幅度，需结合迭代次数和正则强度理解。",
+    "confusion": "小学习率本身不保证样本外有效。"
+  },
+  {
+    "en": "Early Stopping",
+    "zh": "提前停止",
+    "chapter": 91,
+    "definition": "依据预先指定验证表现停止迭代。",
+    "confusion": "反复查看最终测试集决定何时停止属于选择。"
+  },
+  {
+    "en": "Brier Score",
+    "zh": "布里尔分数",
+    "chapter": 92,
+    "definition": "二分类概率预测的平均平方误差，值越低越好。",
+    "confusion": "同时受区分度与校准等影响，不是纯校准指标。"
+  },
+  {
+    "en": "Probability Calibration",
+    "zh": "概率校准",
+    "chapter": 92,
+    "definition": "让预测概率与相应样本群体的实际频率相匹配。",
+    "confusion": "高 AUC 不保证概率可直接用于期望收益阈值。"
+  },
+  {
+    "en": "ROC AUC",
+    "zh": "排序区分度",
+    "chapter": 92,
+    "definition": "衡量正负样本得分排序关系的曲线面积。",
+    "confusion": "不直接衡量成本后利润或概率准确度。"
+  },
+  {
+    "en": "LSTM",
+    "zh": "长短期记忆网络",
+    "chapter": 93,
+    "definition": "用门控状态调节序列信息的保留与更新。",
+    "confusion": "不会自动解决标签泄漏、漂移或样本量不足。"
+  },
+  {
+    "en": "Temporal Convolution",
+    "zh": "时序卷积",
+    "chapter": 93,
+    "definition": "按明确时间窗口进行卷积；因果结构限制输出可访问的未来位置。",
+    "confusion": "普通双侧卷积可能读到输出时点之后。"
+  },
+  {
+    "en": "Causal Attention Mask",
+    "zh": "因果注意力掩码",
+    "chapter": 93,
+    "definition": "限制某位置访问后续位置的注意力结构。",
+    "confusion": "最后时点基于完整历史窗口预测，与每个位置输出实时预测的约束不同。"
+  },
+  {
+    "en": "Permutation Importance",
+    "zh": "置换重要性",
+    "chapter": 94,
+    "definition": "在评价集扰动特征后观察模型性能变化。",
+    "confusion": "相关特征会替代或分摊作用，不能据此断言因果。"
+  },
+  {
+    "en": "Concept Drift",
+    "zh": "概念漂移",
+    "chapter": 95,
+    "definition": "输入与目标的关系发生变化。",
+    "confusion": "输入分布变化不必然意味着条件关系变化。"
+  },
+  {
+    "en": "Shadow Mode",
+    "zh": "影子运行",
+    "chapter": 95,
+    "definition": "接收线上输入并记录模型决策以核对行为的受控运行方式。",
+    "confusion": "没有真实执行就不能直接验证成交质量。"
+  },
+  {
+    "en": "Order Management System",
+    "zh": "订单管理系统",
+    "chapter": 97,
+    "definition": "维护意图、请求、确认、成交与订单生命周期的系统边界。",
+    "confusion": "目标仓位不等于已发订单，也不等于已成交仓位。"
+  },
+  {
+    "en": "Execution Report",
+    "zh": "执行报告",
+    "chapter": 99,
+    "definition": "承载状态或成交等执行侧事件的报告，须按协议字段解释。",
+    "confusion": "收到执行报告不一定意味着发生了新成交。"
+  },
+  {
+    "en": "CumQty",
+    "zh": "累计成交量",
+    "chapter": 99,
+    "definition": "某订单累计已成交的数量。",
+    "confusion": "累计量不能当成每次新增量反复累加。"
+  },
+  {
+    "en": "LeavesQty",
+    "zh": "剩余工作量",
+    "chapter": 99,
+    "definition": "协议定义下仍待执行的剩余数量。",
+    "confusion": "终态撤单后的剩余工作量与原数量减累计量可能不同。"
+  },
+  {
+    "en": "Cancel Pending",
+    "zh": "撤单待确认",
+    "chapter": 99,
+    "definition": "撤单请求已发出但结果尚未确认的状态。",
+    "confusion": "仍可能成交，不应立即释放全部在途风险。"
+  },
+  {
+    "en": "Idempotent Processing",
+    "zh": "幂等处理",
+    "chapter": 99,
+    "definition": "重复处理同一业务事件不会重复产生资金或仓位副作用。",
+    "confusion": "同 ID 不同内容属于冲突，不能静默丢弃。"
+  },
+  {
+    "en": "Client Order ID",
+    "zh": "客户订单标识",
+    "chapter": 99,
+    "definition": "在约定账户、会话等命名空间识别请求的标识。",
+    "confusion": "重试的相同请求与内容不同的新请求须区分。"
+  },
+  {
+    "en": "Execution ID",
+    "zh": "执行标识",
+    "chapter": 99,
+    "definition": "在协议规定命名空间内标识执行记录以支持去重和核对。",
+    "confusion": "标识作用域和更正规则必须明确。"
+  },
+  {
+    "en": "Market Data Gap",
+    "zh": "行情序号缺口",
+    "chapter": 98,
+    "definition": "在定义的序号流中发现缺失增量。",
+    "confusion": "后来收到更大序号不表示缺失数据已恢复。"
+  },
+  {
+    "en": "Snapshot Recovery",
+    "zh": "快照恢复",
+    "chapter": 98,
+    "definition": "按协议用一致快照及匹配增量恢复行情基准。",
+    "confusion": "不能借恢复行情而清空真实订单与持仓。"
+  },
+  {
+    "en": "Monotonic Clock",
+    "zh": "单调时钟",
+    "chapter": 98,
+    "definition": "用于本机经过时间和超时计算的不倒退时钟。",
+    "confusion": "不能直接跨机器比较其绝对读数。"
+  },
+  {
+    "en": "Pending Risk Reservation",
+    "zh": "在途风险预留",
+    "chapter": 100,
+    "definition": "把尚可能成交的订单纳入风险区间与容量。",
+    "confusion": "买卖未必同时成交，不能只按净订单量抵消。"
+  },
+  {
+    "en": "Kill Switch",
+    "zh": "紧急停止",
+    "chapter": 100,
+    "definition": "按定义阻止新增风险并触发必要控制动作的机制。",
+    "confusion": "不能忽略已经真实发生的成交。"
+  },
+  {
+    "en": "TWAP Schedule",
+    "zh": "时间加权执行计划",
+    "chapter": 101,
+    "definition": "按时间片分配待执行数量的计划。",
+    "confusion": "计划数量不等于每段实际成交数量。"
+  },
+  {
+    "en": "VWAP Schedule",
+    "zh": "成交量加权执行计划",
+    "chapter": 101,
+    "definition": "用事前估计的市场量曲线分配执行数量。",
+    "confusion": "事后真实全日量可评估基准，不能回填当日决策。"
+  },
+  {
+    "en": "Implementation Shortfall",
+    "zh": "实施短缺",
+    "chapter": 101,
+    "definition": "相对决策基准计量执行价格、费用及约定机会成本的损耗。",
+    "confusion": "须明确方向、未完成量和终点价格口径。"
+  },
+  {
+    "en": "Transactional Outbox",
+    "zh": "事务发件箱",
+    "chapter": 102,
+    "definition": "在同一持久事务记录业务状态和待发送意图，再可靠重试发送。",
+    "confusion": "不把外部交易对手自动纳入本地事务。"
+  },
+  {
+    "en": "Write Ahead Log",
+    "zh": "预写日志",
+    "chapter": 102,
+    "definition": "在可恢复更新之前记录必要日志的持久化机制。",
+    "confusion": "只有写日志并不自动保证快照、进度与去重一致。"
+  },
+  {
+    "en": "Event Replay",
+    "zh": "事件回放",
+    "chapter": 104,
+    "definition": "从已知初始状态按明确定义的事件序列重建状态。",
+    "confusion": "确定性回放不代表模拟了真实成交概率。"
+  },
+  {
+    "en": "At Least Once Delivery",
+    "zh": "至少一次交付",
+    "chapter": 102,
+    "definition": "在声明的故障与恢复假设下允许重复地交付消息。",
+    "confusion": "接收重复消息时业务副作用仍需去重。"
+  },
+  {
+    "en": "Backpressure",
+    "zh": "背压",
+    "chapter": 102,
+    "definition": "使生产速度受下游处理容量约束的流量控制。",
+    "confusion": "无界排队可能把吞吐问题变成过期数据风险。"
+  },
+  {
+    "en": "Tail Latency",
+    "zh": "尾部延迟",
+    "chapter": 102,
+    "definition": "延迟分布较高分位的表现。",
+    "confusion": "各段 p99 之和通常不是端到端 p99。"
+  },
+  {
+    "en": "Observability",
+    "zh": "可观测性",
+    "chapter": 103,
+    "definition": "通过指标、日志和追踪等证据理解系统内部行为与业务状态。",
+    "confusion": "进程存活不等于交易状态正确。"
+  },
+  {
+    "en": "Metric Cardinality",
+    "zh": "指标基数",
+    "chapter": 103,
+    "definition": "指标标签组合产生的不同时间序列数量。",
+    "confusion": "无界订单 ID 标签可能造成巨大资源负担。"
+  },
+  {
+    "en": "Reconciliation",
+    "zh": "对账",
+    "chapter": 103,
+    "definition": "核对本地账本与独立执行或资金记录并解释差异。",
+    "confusion": "一次回放一致不能替代独立事实核对。"
+  },
+  {
+    "en": "Limit Order Book",
+    "zh": "限价订单簿",
+    "chapter": 105,
+    "definition": "按交易规则组织可工作的买卖委托，包含价格、数量和可能的优先信息。",
+    "confusion": "显示簿不一定包含全部隐藏流动性。"
+  },
+  {
+    "en": "Market Order",
+    "zh": "市价委托",
+    "chapter": 105,
+    "definition": "优先追求立即执行但不以固定限价约束最差成交价格的订单类型。",
+    "confusion": "显示最优档量不足时不能假定全量同价成交。"
+  },
+  {
+    "en": "Limit Order",
+    "zh": "限价委托",
+    "chapter": 105,
+    "definition": "规定买入最高价或卖出最低价的委托。",
+    "confusion": "可能主动成交，也可能被动排队。"
+  },
+  {
+    "en": "Marketable Limit Order",
+    "zh": "可立即成交限价单",
+    "chapter": 105,
+    "definition": "到达时价格允许与对手现有委托成交的限价单。",
+    "confusion": "限价不自动等于maker。"
+  },
+  {
+    "en": "Time In Force",
+    "zh": "订单有效期指令",
+    "chapter": 105,
+    "definition": "约束订单在何时以及未满足条件时如何继续或取消。",
+    "confusion": "具体语义和支持范围依场所规则。"
+  },
+  {
+    "en": "Immediate Or Cancel",
+    "zh": "立即成交否则取消",
+    "chapter": 105,
+    "definition": "尝试立即成交并取消未成交剩余的指令。",
+    "confusion": "不等于必须全量成交。"
+  },
+  {
+    "en": "Fill Or Kill",
+    "zh": "全量立即成交否则取消",
+    "chapter": 105,
+    "definition": "在适用规则下要求立即全量满足，否则不成交。",
+    "confusion": "与允许部分成交的IOC不同。"
+  },
+  {
+    "en": "FIFO Priority",
+    "zh": "先到先服务优先",
+    "chapter": 109,
+    "definition": "在指定同价队列按到达顺序分配成交。",
+    "confusion": "不能假定所有市场都只用严格FIFO。"
+  },
+  {
+    "en": "Market By Order",
+    "zh": "逐订单行情",
+    "chapter": 105,
+    "definition": "提供可识别订单事件的一类数据粒度。",
+    "confusion": "命名和字段范围需核对供应商与协议。"
+  },
+  {
+    "en": "Quoted Spread",
+    "zh": "报价价差",
+    "chapter": 106,
+    "definition": "最优卖价减最优买价。",
+    "confusion": "不同于实际成交相对基准的有效价差。"
+  },
+  {
+    "en": "Effective Spread",
+    "zh": "有效价差",
+    "chapter": 106,
+    "definition": "本书按主动方向d定义2d乘成交价相对初始中价偏离。",
+    "confusion": "完整价差尺度不是单股现金费用。"
+  },
+  {
+    "en": "Realized Spread",
+    "zh": "实现价差",
+    "chapter": 106,
+    "definition": "以给定未来期限中价衡量的方向化成交偏离，等于2d(p-m_h)。",
+    "confusion": "不等于包含全部对冲与费用的实际平仓利润。"
+  },
+  {
+    "en": "Spread Decomposition",
+    "zh": "价差分解",
+    "chapter": 106,
+    "definition": "在同一基准和方向下，有效价差等于实现价差加价格变化项。",
+    "confusion": "不能使用不同分母或不同期限后仍机械相加。"
+  },
+  {
+    "en": "Queue Imbalance",
+    "zh": "盘口数量不平衡",
+    "chapter": 107,
+    "definition": "最优买卖显示量之差除以总量，描述状态。",
+    "confusion": "不同于一段区间的订单流变化。"
+  },
+  {
+    "en": "Weighted Midprice",
+    "zh": "对侧量加权中价",
+    "chapter": 107,
+    "definition": "以对侧深度加权买卖价的盘口内代理。",
+    "confusion": "不等于完整条件微价格或保证可成交价格。"
+  },
+  {
+    "en": "Order Flow Imbalance",
+    "zh": "订单流不平衡",
+    "chapter": 107,
+    "definition": "依据最优档价格与数量变化累计的事件贡献。",
+    "confusion": "不只包含成交，也可能包含新增与取消。"
+  },
+  {
+    "en": "Queue Ahead",
+    "zh": "前方排队量",
+    "chapter": 109,
+    "definition": "在声明优先规则下必须先于本单被消耗的数量。",
+    "confusion": "总显示量不能自动视为全部前方量。"
+  },
+  {
+    "en": "Censored Fill Time",
+    "zh": "删失成交等待",
+    "chapter": 109,
+    "definition": "观察结束或其他终止时尚未完整观察的成交等待过程。",
+    "confusion": "只留已成交样本会选择性缩短等待。"
+  },
+  {
+    "en": "Hawkes Process",
+    "zh": "自激点过程",
+    "chapter": 110,
+    "definition": "条件强度受历史事件核影响的计数模型。",
+    "confusion": "相关激发不自动是结构因果。"
+  },
+  {
+    "en": "Point Process Intensity",
+    "zh": "点过程条件强度",
+    "chapter": 110,
+    "definition": "给定过去信息的单位时间条件事件到达速率。",
+    "confusion": "不是任意长区间的概率，参数须带时间单位。"
+  },
+  {
+    "en": "Event Time",
+    "zh": "事件发生时间",
+    "chapter": 113,
+    "definition": "按数据源定义记录市场事件发生的时刻。",
+    "confusion": "不等于本地已经收到信息的时刻。"
+  },
+  {
+    "en": "Receive Time",
+    "zh": "本地接收时间",
+    "chapter": 113,
+    "definition": "消息进入本地可观察边界的时间。",
+    "confusion": "跨机器比较仍要考虑时钟同步与误差。"
+  },
+  {
+    "en": "Venue Arrival Time",
+    "zh": "场所到达时间",
+    "chapter": 113,
+    "definition": "订单到达场所并按声明语义参与处理的时刻。",
+    "confusion": "不能回填到信号发生时获得队列优先。"
+  },
+  {
+    "en": "Cancel Latency",
+    "zh": "撤单到达延迟",
+    "chapter": 113,
+    "definition": "从发出取消请求到其在目标边界生效所需时间。",
+    "confusion": "等待期间仍可能真实成交。"
+  },
+  {
+    "en": "Report Latency",
+    "zh": "执行回报延迟",
+    "chapter": 113,
+    "definition": "场所事件发生到本地收到其报告的时间。",
+    "confusion": "本地获知较晚不改变真实成交事实。"
+  },
+  {
+    "en": "End To End Latency",
+    "zh": "端到端延迟",
+    "chapter": 119,
+    "definition": "跨明确输入输出边界的全链路耗时。",
+    "confusion": "各段p99相加一般不是整体p99。"
+  },
+  {
+    "en": "Alpha Decay",
+    "zh": "信号衰减",
+    "chapter": 114,
+    "definition": "预测优势随时间、状态或信息更新而变化的过程。",
+    "confusion": "指数形式是模型假设，不是通用定律。"
+  },
+  {
+    "en": "Signal Half Life",
+    "zh": "信号半衰期",
+    "chapter": 114,
+    "definition": "在规定衰减模型下条件优势降至一半的时间。",
+    "confusion": "不同于残差首次回归或真实成交等待时间。"
+  },
+  {
+    "en": "Liquidity Provision",
+    "zh": "流动性提供",
+    "chapter": 116,
+    "definition": "通过可被对手主动成交的报价承担成交机会与库存风险。",
+    "confusion": "赚取报价价差不保证成本后净收益。"
+  },
+  {
+    "en": "Taker Markout",
+    "zh": "主动方后验价格标记",
+    "chapter": 106,
+    "definition": "主动方向乘未来基准中价减成交价。",
+    "confusion": "与被动方方向相反，并非已扣全部费用。"
+  },
+  {
+    "en": "Conditional Fill Value",
+    "zh": "成交条件价值",
+    "chapter": 116,
+    "definition": "条件于订单实际成交时的未来收益或效用。",
+    "confusion": "不能用所有未筛选信号的平均alpha替代。"
+  },
+  {
+    "en": "Arrival Intensity",
+    "zh": "到达强度模型",
+    "chapter": 115,
+    "definition": "描述某类对手事件或成交机会的条件速率。",
+    "confusion": "市场总消息速率不等于自己订单成交速率。"
+  },
+  {
+    "en": "Inventory Penalty",
+    "zh": "库存惩罚",
+    "chapter": 115,
+    "definition": "对持有风险的效用或目标函数成本。",
+    "confusion": "需区分经济风险项与真实现金费用。"
+  },
+  {
+    "en": "Tick Size",
+    "zh": "最小报价单位",
+    "chapter": 115,
+    "definition": "适用规则允许的价格离散间隔。",
+    "confusion": "连续模型解需要映射到合法价格。"
+  },
+  {
+    "en": "Legging Risk",
+    "zh": "单腿执行风险",
+    "chapter": 117,
+    "definition": "多腿未同时完成而产生的暂时敞口与补救成本。",
+    "confusion": "发送对冲请求不等于对冲已经成交。"
+  },
+  {
+    "en": "Non Atomic Execution",
+    "zh": "非原子执行",
+    "chapter": 117,
+    "definition": "多条请求可能分别成功或失败，缺乏全有或全无的整体保证。",
+    "confusion": "同时发送不意味着原子。"
+  },
+  {
+    "en": "Touch Fill Model",
+    "zh": "触价成交模型",
+    "chapter": 118,
+    "definition": "在价格达到限价时按预设量成交的简化模型。",
+    "confusion": "忽略排队可能显著高估成交。"
+  },
+  {
+    "en": "Counterfactual Replay",
+    "zh": "反事实回放",
+    "chapter": 118,
+    "definition": "在历史事件上加入自身动作以研究未实际发生的执行路径。",
+    "confusion": "无反馈回放不能保证捕捉自身对市场的影响。"
+  },
+  {
+    "en": "Hot Path",
+    "zh": "交易热路径",
+    "chapter": 119,
+    "definition": "直接影响及时决策与执行的关键处理链。",
+    "confusion": "优化单段不替代全链路正确性和延迟测量。"
+  },
+  {
+    "en": "Latency Budget",
+    "zh": "延迟预算",
+    "chapter": 119,
+    "definition": "依据业务有效期给各处理边界分配的时效目标。",
+    "confusion": "平均值满足不代表尾部与忙时满足。"
+  },
+  {
+    "en": "Statistical Arbitrage",
+    "zh": "统计套利",
+    "chapter": 121,
+    "definition": "依赖统计关系进行相对价值交易的有风险研究框架。",
+    "confusion": "名称不提供逐路径无风险保证。"
+  },
+  {
+    "en": "Pairs Trading",
+    "zh": "配对交易",
+    "chapter": 122,
+    "definition": "根据两资产相对关系形成多空交易的一类策略。",
+    "confusion": "距离、相关与协整筛选回答不同问题。"
+  },
+  {
+    "en": "Formation Period",
+    "zh": "形成期",
+    "chapter": 122,
+    "definition": "用于候选、关系、尺度和规则估计的历史区间。",
+    "confusion": "不能使用后续赢家信息反选当时股票池。"
+  },
+  {
+    "en": "Trading Period",
+    "zh": "交易评价期",
+    "chapter": 122,
+    "definition": "在已规定流程下执行与评价的随后区间。",
+    "confusion": "反复用它改参数后不再是未触碰的最终评价。"
+  },
+  {
+    "en": "Price Residual",
+    "zh": "价格回归残差",
+    "chapter": 121,
+    "definition": "价格水平减去估计长期关系的偏离。",
+    "confusion": "与收益回归残差和累计残差不同。"
+  },
+  {
+    "en": "Return Residual",
+    "zh": "收益残差",
+    "chapter": 124,
+    "definition": "资产收益中指定因子未解释的部分。",
+    "confusion": "累计后是否稳定需要另行建模。"
+  },
+  {
+    "en": "Dollar Neutrality",
+    "zh": "名义金额中性",
+    "chapter": 121,
+    "definition": "按约定币种计量的多空名义净额接近零。",
+    "confusion": "不自动是beta、行业或风险中性。"
+  },
+  {
+    "en": "Beta Neutrality",
+    "zh": "市场beta中性",
+    "chapter": 121,
+    "definition": "对指定市场因子的净估计暴露接近零。",
+    "confusion": "beta会变化，中性也不消除其他风险。"
+  },
+  {
+    "en": "Z Score",
+    "zh": "标准化偏离",
+    "chapter": 123,
+    "definition": "用已规定均值与尺度标准化当前残差。",
+    "confusion": "数值2不自动具有高斯尾概率解释。"
+  },
+  {
+    "en": "Hysteresis Rule",
+    "zh": "迟滞开平规则",
+    "chapter": 125,
+    "definition": "使用不同开仓与退出边界以避免同一阈值附近反复切换。",
+    "confusion": "仍需计交易成本并评价阈值选择。"
+  },
+  {
+    "en": "Entry Frozen Hedge",
+    "zh": "入场冻结对冲",
+    "chapter": 125,
+    "definition": "持仓期间保留入场模型与数量，退出后再用新形成关系。",
+    "confusion": "与在线重平衡是不同协议，不能混合记账。"
+  },
+  {
+    "en": "Time Stop",
+    "zh": "持有时间退出",
+    "chapter": 125,
+    "definition": "在预设经过时间后提出退出的规则。",
+    "confusion": "指令时刻与真正成交时刻可能不同。"
+  },
+  {
+    "en": "PCA Residual",
+    "zh": "主成分残差",
+    "chapter": 124,
+    "definition": "将收益对指定训练主成分子空间投影后剩余的部分。",
+    "confusion": "高方差解释不保证剩余部分可交易均值回归。"
+  },
+  {
+    "en": "Factor Subspace",
+    "zh": "因子子空间",
+    "chapter": 124,
+    "definition": "由选定载荷方向张成的共同变动空间。",
+    "confusion": "载荷符号或基底变化不一定改变整个子空间。"
+  },
+  {
+    "en": "Hedge Rounding",
+    "zh": "对冲数量取整",
+    "chapter": 125,
+    "definition": "把模型数量映射到可交易离散单位的过程。",
+    "confusion": "取整后仍需复核残余暴露和限额。"
+  },
+  {
+    "en": "Short Borrow Cost",
+    "zh": "卖空借券成本",
+    "chapter": 127,
+    "definition": "维持短头寸按适用合约与期间承担的费用。",
+    "confusion": "不能用统一教学期间费率冒充真实市场报价。"
+  },
+  {
+    "en": "Borrow Recall",
+    "zh": "借券召回",
+    "chapter": 127,
+    "definition": "出借条件变化而需要返还证券等处置的情形。",
+    "confusion": "统计关系尚未回归也可能被迫退出。"
+  },
+  {
+    "en": "Funding Risk",
+    "zh": "融资风险",
+    "chapter": 127,
+    "definition": "资金、保证金或融资条件变化使持仓难以维持的风险。",
+    "confusion": "市场中性不等于不需要资本。"
+  },
+  {
+    "en": "Crowding Risk",
+    "zh": "拥挤交易风险",
+    "chapter": 121,
+    "definition": "相似持仓在共同冲击或去杠杆中出现相关损失与流动性压力。",
+    "confusion": "多个配对共享风险并非独立分散。"
+  },
+  {
+    "en": "Next Observation Execution",
+    "zh": "下一观测成交协议",
+    "chapter": 128,
+    "definition": "仅在决策之后的下一数据观测按显式价格模型执行。",
+    "confusion": "是可审计教学约定，不等于真实场所保证成交。"
+  }
+]

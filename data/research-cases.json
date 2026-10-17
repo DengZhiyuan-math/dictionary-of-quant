@@ -1,0 +1,79 @@
+[
+  {
+    "id": "R1",
+    "chapter": 88,
+    "title": "滚动 AR 预测与状态估计",
+    "script": "examples/research_cases.py",
+    "result_key": "timeseries",
+    "csv_files": [
+      "examples/output/timeseries_forecasts.csv",
+      "examples/output/kalman_states.csv"
+    ]
+  },
+  {
+    "id": "R2",
+    "chapter": 96,
+    "title": "嵌套时间验证与成本后决策",
+    "script": "examples/research_cases.py",
+    "result_key": "machine_learning",
+    "csv_files": [
+      "examples/output/ml_forecasts.csv",
+      "examples/output/ml_prediction_portfolio.csv",
+      "examples/output/ml_baseline_portfolio.csv"
+    ]
+  },
+  {
+    "id": "R3",
+    "chapter": 104,
+    "title": "订单回放与故障注入",
+    "script": "examples/research_cases.py",
+    "result_key": "trading_system",
+    "csv_files": [
+      "examples/output/order_replay.csv"
+    ]
+  },
+  {
+    "id": "R4",
+    "chapter": 112,
+    "title": "盘口信号与成交质量测量",
+    "script": "examples/market_cases.py",
+    "result_key": "microstructure",
+    "result_file": "data/market-results.json",
+    "guide": "docs/MARKET_RESEARCH_CASES.md",
+    "guide_anchor": "case-4",
+    "csv_files": [
+      "examples/market_output/micro_quotes.csv",
+      "examples/market_output/micro_forecasts.csv"
+    ]
+  },
+  {
+    "id": "R5",
+    "chapter": 120,
+    "title": "延迟 FIFO 与撤单回报",
+    "script": "examples/market_cases.py",
+    "result_key": "high_frequency",
+    "result_file": "data/market-results.json",
+    "guide": "docs/MARKET_RESEARCH_CASES.md",
+    "guide_anchor": "case-5",
+    "csv_files": [
+      "examples/market_output/queue_events.csv",
+      "examples/market_output/queue_reports.csv"
+    ]
+  },
+  {
+    "id": "R6",
+    "chapter": 128,
+    "title": "配对顺序验证与整数现金账",
+    "script": "examples/market_cases.py",
+    "result_key": "statistical_arbitrage",
+    "result_file": "data/market-results.json",
+    "guide": "docs/MARKET_RESEARCH_CASES.md",
+    "guide_anchor": "case-6",
+    "csv_files": [
+      "examples/market_output/pairs_models.csv",
+      "examples/market_output/pairs_signals.csv",
+      "examples/market_output/pairs_trades.csv",
+      "examples/market_output/pairs_ledger.csv"
+    ]
+  }
+]

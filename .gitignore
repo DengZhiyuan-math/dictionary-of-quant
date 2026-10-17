@@ -1,0 +1,10 @@
+tmp/
+node_modules/
+*.log
+publication/
+dist/
+sources/*.pdf
+.env
+.env.*
+__pycache__/
+*.pyc

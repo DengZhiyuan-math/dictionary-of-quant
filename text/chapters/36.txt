@@ -1,0 +1,157 @@
+第 36 讲。等待过程 状态与后验。
+
+B02 56 与 66 谁先出现
+
+英文题面：A fair die is rolled repeatedly. Which appears first: the consecutive pattern 56 or 66? Find P(56 first).
+
+训练计时：140 秒。
+
+（请暂停，先尝试回答。）参考解答：单骰连续序列下，令 p0、p5、p6 为无有效后缀、后缀 5、后缀 6 时 56 先出现的概率。方程为 p0=(4p0+p5+p6)/6；p5=(4p0+p5+1)/6；p6=(4p0+p5)/6。解得 p0=7/12。若每轮独立两骰且按有序结果比较，答案为 1/2。
+
+易错与边界：先澄清连续序列、独立轮次或无序结果；机制不同答案不同。
+
+原题定位：S3 第 7 页；B02。
+
+B04 等到 HH 的期望
+
+英文题面：A fair coin is tossed until HH first appears. What is the expected number of tosses?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：E0=1+0.5EH+0.5E0；EH=1+0.5E0；解得 E0=6。状态保留末尾 H，因为它影响下一次成功。
+
+易错与边界：不能用 1/P(HH)=4；连续窗口存在重叠。
+
+原题定位：S2 第 7 页；B04。
+
+B13 集齐六个骰面
+
+英文题面：How many fair-die rolls are needed on average to see all six faces?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：已有 k 种时获得新面的成功概率=(6-k)/6；累加几何等待期望：6×(1+1/2+…+1/6)=14.7。
+
+易错与边界：越接近集齐越难，不能简单用六次。
+
+原题定位：S3 第 8 页；B13。
+
+B14 公平随机游走先到上界
+
+英文题面：A fair random walk starts at 3 between absorbing states 0 and 10. Probability to hit 10 first?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：令 pi 为从 i 先到 10 的概率，满足 pi=(p(i-1)+p(i+1))/2，边界 p0=0、p10=1；解 pi=i/10，因此为 0.3。
+
+易错与边界：结论依赖公平步长和吸收边界；有漂移时不同。
+
+原题定位：S3 第 8 页；B14。
+
+B18 偏置硬币生成公平比特
+
+英文题面：A biased coin has unknown P(H)=p, where 0<p<1. Produce one exactly fair random bit.
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：成对抛掷，HT 输出 0、TH 输出 1，HH/TT 重来；HT 与 TH 概率均为 p(1-p)。每对接受率=2p(1-p)，平均抛掷次数=1/[p(1-p)]。
+
+易错与边界：要求独立同分布且 0<p<1；随时间变偏或相关时不保证公平。
+
+原题定位：S3 第 8 页；B18。
+
+B20 两蛋百层的最坏次数
+
+英文题面：With two identical eggs and 100 floors, minimize worst-case drops to determine the critical floor .
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：用递减区间 k,k-1,…,1 平衡第一蛋不碎与碎后的线性搜索；要求 k(k+1)/2≥100，最小 k=14。
+
+易错与边界：优化的是最坏次数，不能假定每次都可继续二分。
+
+原题定位：S3 第 8 页；B20。
+
+B22 半分钟没有交易
+
+英文题面：Trades arrive as a Poisson process with rate 2 per minute. What is P(no trade in 30 seconds)?
+
+训练计时：50 秒。
+
+（请暂停，先尝试回答。）参考解答：λt=2×0.5=1；Poisson 零事件概率=exp(-1)≈0.3679。
+
+易错与边界：到达率单位与时间单位必须相同。
+
+原题定位：S3 第 8 页；B22。
+
+B23 Beta 后验均值
+
+英文题面：With a uniform Beta(1,1) prior , observe 7 heads in 10 i.i.d. coin tosses. What is the posterior mean for p?
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：先验 Beta(1,1)，10 次中 7 正 3 反，后验 Beta(8,4)；均值=8/12=2/3。
+
+易错与边界：后验均值与频率估计 7/10 不同。
+
+原题定位：S3 第 8 页；B23。
+
+B26 等到 HTH 的期望
+
+英文题面：A fair coin is tossed repeatedly until HTH first appears. Find the expected tosses.
+
+训练计时：100 秒。
+
+（请暂停，先尝试回答。）参考解答：保留无后缀、H、HT 三种状态：E0=1+0.5EH+0.5E0；EH=1+0.5EH+0.5EHT；EHT=1+0.5E0；解得 E0=10。
+
+易错与边界：H 后再出现 H 时仍保留后缀 H，不应回到空状态。
+
+原题定位：S3 第 9 页；B26。
+
+B28 十次硬币中的 HH 窗口
+
+英文题面：You flip a fair coin 10 times. What is the expected number of adjacent HH pairs?
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：有 9 个相邻窗口，每个是 HH 的概率 1/4；指示变量期望相加得 9/4=2.25。
+
+易错与边界：窗口不独立并不影响期望线性性；计的是可重叠窗口。
+
+原题定位：S3 第 9 页；B28。
+
+B29 首次六点的几何等待
+
+英文题面：A fair six-sided die is rolled until a six appears. Expected number of rolls? Variance?
+
+训练计时：45 秒。
+
+（请暂停，先尝试回答。）参考解答：取 T 为包含成功那次在内的投掷次数，p=1/6；E[T]=1/p=6，Var(T)=(1-p)/p²=30。
+
+易错与边界：若计失败次数，均值变为 5；要说明支持集。
+
+原题定位：S2 第 7 页；B29。
+
+T23 十秒内的到达概率
+
+英文题面：Customer trades arrive as a Poisson process at 5 per minute. Compute probability of at least one and at least two fills over the next 10 seconds.
+
+训练计时：110 秒。
+
+（请暂停，先尝试回答。）参考解答：λt=5×10/60=5/6；P(N≥1)=1-exp(-5/6)≈0.5654；P(N≥2)=1-exp(-5/6)×(1+5/6)≈0.2032。
+
+易错与边界：秒和分钟先统一；真实订单到达可能有聚集性。
+
+原题定位：S3 第 7 页；T23。
+
+T24 订单信息更新市场状态
+
+英文题面：Stress regime has prior probability 20%. A trade is informed with probability 80% in stress and 10% in calm. Given an informed trade, what is P(stress)?
+
+训练计时：85 秒。
+
+（请暂停，先尝试回答。）参考解答：P(压力|知情)=0.2×0.8/(0.2×0.8+0.8×0.1)=2/3。
+
+易错与边界：80% 是压力状态下知情概率，不能直接反转为后验。
+
+原题定位：S3 第 7 页；T24。

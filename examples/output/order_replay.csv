@@ -1,0 +1,22 @@
+index,event,outcome,position,cash_cents,lower,upper,fresh,killed
+0,"{""kind"": ""snapshot"", ""sequence"": 10}",SNAPSHOT,0,100000,0,0,True,False
+1,"{""cid"": ""O1"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 8, ""side"": ""BUY""}",ACCEPT,0,100000,0,8,True,False
+2,"{""cid"": ""O1"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 8, ""side"": ""BUY""}",DUPLICATE_ORDER,0,100000,0,8,True,False
+3,"{""cid"": ""O1"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 7, ""side"": ""BUY""}",ORDER_ID_CONFLICT,0,100000,0,8,True,False
+4,"{""cid"": ""LIMIT"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 4, ""side"": ""BUY""}",LIMIT_REJECT,0,100000,0,8,True,False
+5,"{""cid"": ""O1"", ""eid"": ""E1"", ""fee"": 2, ""kind"": ""fill"", ""price"": 1000, ""quantity"": 3}",FILL,3,96998,3,8,True,False
+6,"{""cid"": ""O1"", ""eid"": ""E1"", ""fee"": 2, ""kind"": ""fill"", ""price"": 1000, ""quantity"": 3}",DUPLICATE_FILL,3,96998,3,8,True,False
+7,"{""cid"": ""O1"", ""kind"": ""cancel_request""}",CANCEL_PENDING,3,96998,3,8,True,False
+8,"{""cid"": ""PENDING"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 8, ""side"": ""BUY""}",LIMIT_REJECT,3,96998,3,8,True,False
+9,"{""cid"": ""O1"", ""kind"": ""cancel_ack""}",CANCELLED,3,96998,3,3,True,False
+10,"{""cid"": ""O1"", ""eid"": ""E2"", ""fee"": 2, ""kind"": ""fill"", ""price"": 1000, ""quantity"": 2}",LATE_FILL,5,94996,5,5,True,False
+11,"{""kind"": ""delta"", ""sequence"": 12}",DATA_GAP,5,94996,5,5,False,False
+12,"{""kind"": ""delta"", ""sequence"": 13}",DATA_GAP,5,94996,5,5,False,False
+13,"{""cid"": ""STALE"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 1, ""side"": ""BUY""}",STALE_REJECT,5,94996,5,5,False,False
+14,"{""kind"": ""snapshot"", ""sequence"": 20}",SNAPSHOT,5,94996,5,5,True,False
+15,"{""cid"": ""TOO_LARGE"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 6, ""side"": ""BUY""}",LIMIT_REJECT,5,94996,5,5,True,False
+16,"{""cid"": ""O2"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 5, ""side"": ""SELL""}",ACCEPT,5,94996,0,5,True,False
+17,"{""kind"": ""kill""}",KILL_SET,5,94996,0,5,True,True
+18,"{""cid"": ""KILLED"", ""kind"": ""new"", ""price"": 1000, ""quantity"": 1, ""side"": ""BUY""}",KILL_REJECT,5,94996,0,5,True,True
+19,"{""cid"": ""O2"", ""kind"": ""cancel_request""}",CANCEL_PENDING,5,94996,0,5,True,True
+20,"{""cid"": ""O2"", ""kind"": ""cancel_ack""}",CANCELLED,5,94996,5,5,True,True

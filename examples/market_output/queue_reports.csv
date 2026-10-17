@@ -1,0 +1,16 @@
+scenario,time,venue_time,kind,eid,quantity,price,fee,duplicate,after_cancel,position,cash_cents
+order2_cancel2,10,7,fill,E1,2,10000,1,False,False,2,79999
+order2_cancel2,10,10,cancel_no_working_order,,0,0,0,False,True,2,79999
+order2_cancel2,11,7,fill,E1,2,10000,1,True,True,2,79999
+order2_cancel2,12,9,fill,E2,2,10000,1,False,True,4,59998
+order2_cancel5,10,7,fill,E1,2,10000,1,False,False,2,79999
+order2_cancel5,11,7,fill,E1,2,10000,1,True,False,2,79999
+order2_cancel5,12,9,fill,E2,2,10000,1,False,False,4,59998
+order2_cancel5,13,13,cancel_no_working_order,,0,0,0,False,True,4,59998
+order6_cancel2,10,10,cancelled,,0,0,0,False,True,0,100000
+order6_cancel2,12,9,fill,E1,2,10000,1,False,True,2,79999
+order6_cancel2,13,9,fill,E1,2,10000,1,True,True,2,79999
+order6_cancel5,12,9,fill,E1,2,10000,1,False,False,2,79999
+order6_cancel5,13,13,cancel_no_working_order,,0,0,0,False,True,2,79999
+order6_cancel5,13,9,fill,E1,2,10000,1,True,True,2,79999
+order6_cancel5,14,11,fill,E2,2,10000,1,False,True,4,59998

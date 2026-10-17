@@ -1,0 +1,163 @@
+第 32 讲。报价 申赎与条件交易。
+
+E10 已知 FV 如何报价
+
+英文题面：Fair value is 100. Propose an initial two-sided ETF quote and explain your assumptions.
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：只给 FV=100，不能确定唯一最优价差和数量。若库存中性、可低成本对冲，可示意报 99.95/100.05、各 1,000 份；随后按风险、竞争及库存调整。
+
+易错与边界：示意参数不是最优模型；必须同时考虑价格与数量。
+
+英文口述模板：Assuming balanced inventory and inexpensive hedging, I might start at 99.95 / 100.05 for a small size, then adjust for risk and order flow.
+
+原题定位：S2 第 5 页；E10。
+
+E13 库存偏多如何报价
+
+英文题面：If you are long too much ETF inventory, how should your bid/ask change?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：FV 不变时向下偏斜报价中心，使客户更愿意买走库存、较少向你卖出；还可减少 bid size。接近硬限额时需主动卖出或对冲。
+
+易错与边界：库存偏好多不代表经济价值下降；不要机械收窄价差。
+
+英文口述模板：I would skew down to encourage sales and discourage further purchases. Near a hard limit, I would also reduce size or hedge directly.
+
+原题定位：S2 第 6 页；E13。
+
+E16 欧洲闭市时的定价与对冲
+
+英文题面：How would you price and hedge an ETF holding both US and European equities when European markets are closed?
+
+训练计时：100 秒。
+
+（请暂停，先尝试回答。）参考解答：分开美国、欧洲及 FX。对开市资产用实时价格；闭市部分用可交易期货、ADR 或相关资产更新估值。买入 ETF 后按净风险做相反方向套保，并控制代理及重开盘风险。
+
+易错与边界：确认代理工具此刻是否交易；FX 对冲应看全部头寸净敞口，避免重复。
+
+英文口述模板：I would separate US equity, European equity and FX exposures, price the closed sleeve with available proxies, and size the trade around the residual basis risk.
+
+原题定位：S2 第 6 页；E16。
+
+E17 溢价申购路径
+
+英文题面：ETF market price 100.80, executable basket value 100.00, all-in creation cost 0.20/share. Theoretical premium arbitrage per share?
+
+训练计时：65 秒。
+
+（请暂停，先尝试回答。）参考解答：若 100.80 是可卖出的 ETF 价、100.00 是可买入篮子价：买篮子、申购、卖 ETF，单位边际=100.80-100.00-0.20=0.60。
+
+易错与边界：必须具备 AP 路径、规模、交付和可锁价条件。
+
+原题定位：S3 第 3 页；E17。
+
+E18 折价赎回路径
+
+英文题面：ETF price 99.20, executable underlying basket 100.00, all-in redemption cost 0.30/share. What is the trade and margin?
+
+训练计时：65 秒。
+
+（请暂停，先尝试回答。）参考解答：买入 ETF，赎回得到篮子并卖出；单位边际=100.00-99.20-0.30=0.50。
+
+易错与边界：买 ETF 用 ask，卖篮子用 bid。
+
+原题定位：S3 第 3 页；E18。
+
+E22 NAV 加点报价
+
+英文题面：An institutional client buys 8 million of an ETF via NAV + 12 bps. Calculate premium and net after 5 bps of hypothetical costs.
+
+训练计时：55 秒。
+
+（请暂停，先尝试回答。）参考解答：毛加点=8,000,000×12/10,000=9,600；5 bps 成本=4,000；题设成本后剩余 5,600。
+
+易错与边界：这是示意边际，不是已计全部风险后的公司利润。
+
+原题定位：S3 第 4 页；E22。
+
+T07 指定库存偏移模型
+
+英文题面：Fair value is 100; desk inventory is long 5,000 shares. Suppose reservation-price adjustment is -0.03 per 1,000 shares, and desired full spread is 0.20. What quote follows?
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：库存 5,000 份带来 -5×0.03=-0.15 偏移；中枢 99.85；半价差 0.10，得到 99.75/99.95。
+
+易错与边界：这是题设规则，不是公司真实算法；报价偏移与 FV 估计分开。
+
+原题定位：S3 第 6 页；T07。
+
+T08 过时报价被买走
+
+英文题面：ETF basket fair value jumps from 100 to 101 after news, but your ask remains 100.10. An informed trader buys 1,000 shares from you. Compute immediate mark-to-market loss.
+
+训练计时：70 秒。
+
+（请暂停，先尝试回答。）参考解答：卖 1,000 份于 100.10，按最新 FV=101 盯市：1,000×(100.10-101)=-900。
+
+易错与边界：不能相对旧 FV=100 声称赚了 100。
+
+原题定位：S3 第 6 页；T08。
+
+T09 篮子对冲的基差边际
+
+英文题面：You buy 10,000 ETF shares at bid 99.90, and immediately sell an equivalent executable hedge basket at 99.96. Trading costs total 200. What is locked gross and net basis?
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：毛边际=(99.96-99.90)×10,000=600；减 200 成本，净 400。
+
+易错与边界：是否真正锁定还取决于复制、交收与剩余风险。
+
+原题定位：S3 第 6 页；T09。
+
+T10 每侧报价成本预算
+
+英文题面：Per filled ETF share, expected hedge costs are 0.04, expected adverse selection 0.03, and required expected edge 0.02. With symmetric prices around 100, give a break-even target two-sided quote.
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：每次成交要求的半价差=0.04+0.03+0.02=0.09；中性示意报价 99.91/100.09，完整价差 0.18。
+
+易错与边界：题中 0.02 是目标期望边际，所以是含目标收益的报价，而非纯零利润价格。
+
+原题定位：S3 第 6 页；T10。
+
+T17 成交概率与条件利润
+
+英文题面：At bid 99.92 your order fills with 10% chance and earns 0.08 per fill. Improving bid to 99.94 raises fill chance to 50%, margin to 0.06. Which quote has higher naive expected gain?
+
+训练计时：85 秒。
+
+（请暂停，先尝试回答。）参考解答：朴素期望分别是 10%×0.08=0.008 和 50%×0.06=0.03，第二种更高；前提是每次成交后的净边际确如题设。
+
+易错与边界：提高 fill probability 可能同时改变订单质量、库存和冲击。
+
+原题定位：S3 第 6 页；T17。
+
+T18 成交后的条件价值
+
+英文题面：Unconditional ETF fair value is 100, but E[value | a client sells to your bid]=99.60. If you quote bid 99.80, what is conditional expected P&L per filled share?
+
+训练计时：80 秒。
+
+（请暂停，先尝试回答。）参考解答：客户卖给 bid 时，条件价值为 99.60；你在 99.80 买入，每份条件期望损益=99.60-99.80=-0.20。
+
+易错与边界：不能使用无条件 FV=100 得出正收益。
+
+原题定位：S3 第 6 页；T18。
+
+T21 对手看见卡片时的期望
+
+英文题面：A card is uniformly drawn from 1–10. You quote 4.5/6.5, but your counterparty sees the card and trades only when profitable to them. What is your expected P&L per opportunity?
+
+训练计时：120 秒。
+
+（请暂停，先尝试回答。）参考解答：V=1 至 4 时客户卖给你的 4.5 bid，每次平均亏 2；V=7 至 10 时客户买你的 6.5 ask，每次平均亏 2；两侧概率各 0.4；每次机会期望=-1.6。
+
+易错与边界：按“每次机会”与“每次成交”计的期望不同；后者为 -2。
+
+原题定位：S3 第 6 页；T21。

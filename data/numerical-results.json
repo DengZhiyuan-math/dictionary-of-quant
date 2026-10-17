@@ -1,0 +1,100 @@
+{
+  "method": "hypothetical textbook examples; Python standard library; deterministic seed",
+  "source_sha256": "d9be4166fb3f0cf49112b4b330455ece4a151734696b6a792b0d62c37d4c5092",
+  "black_scholes": {
+    "call": 10.450583572185565,
+    "put": 5.573526022256971,
+    "d1": 0.35000000000000003,
+    "d2": 0.15000000000000002,
+    "delta": 0.6368306511756191,
+    "gamma": 0.018762017345846895,
+    "vega": 37.52403469169379
+  },
+  "greeks_finite_difference": {
+    "delta": 0.636830642576669,
+    "gamma": 0.018762017006679343,
+    "vega": 37.52403468872956
+  },
+  "implied_volatility": {
+    "call_price_at_22pct": 11.202811191960393,
+    "recovered_sigma": 0.21999999999999986
+  },
+  "crr_call_convergence": {
+    "50": 10.410691540732644,
+    "100": 10.430611662249113,
+    "200": 10.44059125985994,
+    "400": 10.445585841283892,
+    "800": 10.448084314882404
+  },
+  "american_exercise": {
+    "call": 10.445585841283892,
+    "deep_put_european": 25.562794319983762,
+    "deep_put_american": 30.0
+  },
+  "monte_carlo": {
+    "seed": 20261016,
+    "independent_pairs": 20000,
+    "terminal_payoffs": 40000,
+    "price": 10.44629347415454,
+    "standard_error": 0.05168624812986734,
+    "ci95": [
+      10.34498842782,
+      10.54759852048908
+    ],
+    "analytic": 10.450583572185565
+  },
+  "processes": {
+    "ou_half_year_mean": 107.07106781186548,
+    "ou_half_year_sd": 2.4022448175728996,
+    "daily_vol": 0.01259881576697424,
+    "daily_jump_probability": 0.007905097010013629
+  },
+  "factor_and_backtest": {
+    "rank_ic": 0.8,
+    "industry_residuals": [
+      -0.5,
+      0.5,
+      -0.5,
+      0.5
+    ],
+    "equity_before_sale": 10048,
+    "final_cash": 10046,
+    "correct_future_return": -0.09999999999999998,
+    "incorrect_same_interval_return": 0.10000000000000009,
+    "purged_retained": [
+      "safe"
+    ],
+    "family_false_positive": 0.6415140775914581
+  },
+  "portfolio": {
+    "gmv_weights": [
+      0.19999999999999998,
+      0.8
+    ],
+    "gmv_vol": 0.08944271909999159,
+    "meanvar_weights": [
+      0.4,
+      0.6
+    ],
+    "constrained_weights": [
+      0.3,
+      0.7
+    ],
+    "constrained_forecast": 0.052,
+    "constrained_vol": 0.09219544457292887,
+    "stress_loss": 0.095,
+    "correlation_stress_vol": 0.1233693641063291,
+    "turnover": 0.20000000000000007,
+    "one_time_cost": 0.00020000000000000006,
+    "unshrunk_weight": -0.7499999999999997,
+    "half_shrunk_weight": 0.01612903225806453,
+    "risk_parity_weights": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "cvar80": 10.0,
+    "no_trade_small": 0.5,
+    "trade_large": 0.58
+  },
+  "checks": "PASS: parity, boundaries, IV roundtrip, Greeks, tree convergence, exercise inequalities, MC sanity, timestamps, cash ledger, purging, optimality grid, no-trade interval and CVaR"
+}

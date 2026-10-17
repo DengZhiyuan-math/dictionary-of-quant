@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "data": "fixed-seed synthetic data / scripted local events",
+  "source_sha256": "bd73f49667e98658e980bdba67813a126e9eb0acef622c684a728482b1b3bccc",
+  "timeseries": {
+    "seed": 81,
+    "transitions": 600,
+    "forecasts": 500,
+    "first_origin": 100,
+    "max_training_transitions": 120,
+    "mse": {
+      "ar": 9.730777456554591e-05,
+      "last": 0.00011149787592963502,
+      "mean": 0.0001948784309285118
+    },
+    "kalman": {
+      "q": 0.0001,
+      "r": 0.0004,
+      "initial_variance": 0.001,
+      "observation_mse": 0.00037283222412929685,
+      "filtered_mse": 0.0001324138949041009,
+      "oracle_state_scoring": "latent state is known only in this synthetic experiment"
+    },
+    "checks": {
+      "future_suffix_invariance": true,
+      "filter_prefix_invariance": true,
+      "label_cutoffs": true,
+      "hand_calculations": true
+    }
+  },
+  "machine_learning": {
+    "seed": 96,
+    "samples": 600,
+    "features": 2,
+    "predictions": 400,
+    "folds": [
+      {
+        "origin": 200,
+        "inner_train_last_label_time": 140,
+        "validation_first_feature_time": 140,
+        "validation_last_label_time": 200,
+        "outer_fit_last_label_time": 200,
+        "test_end_exclusive": 250,
+        "penalty": 0.0,
+        "validation_mse": {
+          "0.0": 0.00010914066987639834,
+          "0.1": 0.00010914675694806932,
+          "1.0": 0.00010920131837952042,
+          "10.0": 0.00010972541733097674
+        },
+        "means": [
+          -0.16031721091778525,
+          0.0648464241705506
+        ],
+        "scales": [
+          0.9211952711222416,
+          0.9239937915655274
+        ],
+        "coefficients": [
+          -0.0005136435453234946,
+          0.001465490488349235,
+          -0.002155524817899441
+        ]
+      },
+      {
+        "origin": 250,
+        "inner_train_last_label_time": 190,
+        "validation_first_feature_time": 190,
+        "validation_last_label_time": 250,
+        "outer_fit_last_label_time": 250,
+        "test_end_exclusive": 300,
+        "penalty": 0.0,
+        "validation_mse": {
+          "0.0": 0.00014137743028373463,
+          "0.1": 0.00014137981381502155,
+          "1.0": 0.00014140128634044702,
+          "10.0": 0.00014161738926992215
+        },
+        "means": [
+          -0.17612141564507452,
+          0.06727437718976143
+        ],
+        "scales": [
+          0.9264323326635301,
+          0.9219887407703444
+        ],
+        "coefficients": [
+          -0.0007501229845373972,
+          0.0023685178910266527,
+          -0.0017921251367128957
+        ]
+      },
+      {
+        "origin": 300,
+        "inner_train_last_label_time": 240,
+        "validation_first_feature_time": 240,
+        "validation_last_label_time": 300,
+        "outer_fit_last_label_time": 300,
+        "test_end_exclusive": 350,
+        "penalty": 0.0,
+        "validation_mse": {
+          "0.0": 0.0001162928784569631,
+          "0.1": 0.0001162975272630176,
+          "1.0": 0.00011633933239148658,
+          "10.0": 0.0001167536323473611
+        },
+        "means": [
+          -0.16409839753948166,
+          0.07104520238034487
+        ],
+        "scales": [
+          0.9416693647464357,
+          0.9322405324770847
+        ],
+        "coefficients": [
+          -0.0009658073156128137,
+          0.0029882291829612093,
+          -0.0018377233387477006
+        ]
+      },
+      {
+        "origin": 350,
+        "inner_train_last_label_time": 290,
+        "validation_first_feature_time": 290,
+        "validation_last_label_time": 350,
+        "outer_fit_last_label_time": 350,
+        "test_end_exclusive": 400,
+        "penalty": 0.0,
+        "validation_mse": {
+          "0.0": 0.00010212074921483783,
+          "0.1": 0.00010212644551230197,
+          "1.0": 0.00010217765037404206,
+          "10.0": 0.00010268341127231046
+        },
+        "means": [
+          -0.14308000419534428,
+          0.0758947915194177
+        ],
+        "scales": [
+          0.931772702551785,
+          0.9533341767172082
+        ],
+        "coefficients": [
+          -0.0007393536718043208,
+          0.0033605023248514934,
+          -0.001965033471036009
+        ]
+      },
+      {
+        "origin": 400,
+        "inner_train_last_label_time": 340,
+        "validation_first_feature_time": 340,
+        "validation_last_label_time": 400,
+        "outer_fit_last_label_time": 400,
+        "test_end_exclusive": 450,
+        "penalty": 0.0,
+        "validation_mse": {
+          "0.0": 8.989267686242495e-05,
+          "0.1": 8.989355490383065e-05,
+          "1.0": 8.990163204965338e-05,
+          "10.0": 8.999864026996103e-05
+        },
+        "means": [
+          -0.1644839191234639,
+          0.07648335967796525
+        ],
+        "scales": [
+          0.9707077263829349,
+          0.9690147133068104
+        ],
+        "coefficients": [
+          -0.0009234819381063613,
+          0.003685723103561586,
+          -0.001746442212013853
+        ]
+      },
+      {
+        "origin": 450,
+        "inner_train_last_label_time": 390,
+        "validation_first_feature_time": 390,
+        "validation_last_label_time": 450,
+        "outer_fit_last_label_time": 450,
+        "test_end_exclusive": 500,
+        "penalty": 0.0,
+        "validation_mse": {
+          "0.0": 9.865162297586707e-05,
+          "0.1": 9.865225021563986e-05,
+          "1.0": 9.865797290036982e-05,
+          "10.0": 9.872246022682394e-05
+        },
+        "means": [
+          -0.1382368782637562,
+          0.07839841309915868
+        ],
+        "scales": [
+          0.9772343380895044,
+          0.9763333074223243
+        ],
+        "coefficients": [
+          -0.0007579474962873469,
+          0.0036829150324480817,
+          -0.0016202820855135778
+        ]
+      },
+      {
+        "origin": 500,
+        "inner_train_last_label_time": 440,
+        "validation_first_feature_time": 440,
+        "validation_last_label_time": 500,
+        "outer_fit_last_label_time": 500,
+        "test_end_exclusive": 550,
+        "penalty": 0.0,
+        "validation_mse": {
+          "0.0": 0.00015536886700461618,
+          "0.1": 0.00015537030204628907,
+          "1.0": 0.0001553832570783479,
+          "10.0": 0.00015551649429020061
+        },
+        "means": [
+          -0.13377437447776067,
+          0.0974537439940498
+        ],
+        "scales": [
+          0.9766982049846399,
+          0.9891263141593469
+        ],
+        "coefficients": [
+          -0.0007581239520756496,
+          0.003726586581942064,
+          -0.001766165925735727
+        ]
+      },
+      {
+        "origin": 550,
+        "inner_train_last_label_time": 490,
+        "validation_first_feature_time": 490,
+        "validation_last_label_time": 550,
+        "outer_fit_last_label_time": 550,
+        "test_end_exclusive": 600,
+        "penalty": 10.0,
+        "validation_mse": {
+          "0.0": 9.731963874497708e-05,
+          "0.1": 9.731939370576763e-05,
+          "1.0": 9.731728021628524e-05,
+          "10.0": 9.73048794034622e-05
+        },
+        "means": [
+          -0.1309574175714741,
+          0.08888675077686888
+        ],
+        "scales": [
+          0.9950996487946216,
+          0.9990290255202653
+        ],
+        "coefficients": [
+          -0.0005815616818465566,
+          0.003572962240647609,
+          -0.0017076336843279145
+        ]
+      }
+    ],
+    "unit_cost": 0.0002,
+    "weight_scale": 0.02,
+    "loss_definition": "SSE + lambda * sum(slope**2); intercept unpenalized",
+    "fee_convention": "target-weight change approximation; final liquidation charged separately",
+    "mse": {
+      "ridge": 0.00010967186954830685,
+      "historical_mean": 0.00012677478475442227
+    },
+    "portfolios": {
+      "prediction": {
+        "gross_return_sum": 0.3317941307114173,
+        "net_return_sum": 0.313590022825482,
+        "compounded_net_return": 0.3667752104009625,
+        "target_weight_turnover": 91.02053942967498,
+        "cost_return_sum": 0.018204107885934996,
+        "final_liquidation_cost": 2.8783245696653115e-05
+      },
+      "baseline": {
+        "gross_return_sum": 0.005837703126002334,
+        "net_return_sum": 0.005814700885248272,
+        "compounded_net_return": 0.0057946216919519955,
+        "target_weight_turnover": 0.11501120377031566,
+        "cost_return_sum": 2.3002240754063134e-05,
+        "final_liquidation_cost": 5.815616818465566e-06
+      }
+    },
+    "checks": {
+      "future_suffix_invariance": true,
+      "train_only_scaling": true,
+      "nested_selection": true,
+      "label_cutoffs": true,
+      "intercept_unpenalized": true,
+      "fees_and_close": true,
+      "cost_monotonicity": true
+    }
+  },
+  "trading_system": {
+    "events": 21,
+    "initial_cash_cents": 100000,
+    "position_limit": 10,
+    "final": {
+      "cash_cents": 94996,
+      "position": 5,
+      "risk_bounds": [
+        5,
+        5
+      ],
+      "sequence": 20,
+      "fresh": true,
+      "killed": true,
+      "orders": {
+        "O1": {
+          "side": "BUY",
+          "quantity": 8,
+          "price": 1000,
+          "filled": 5,
+          "cancel_pending": false,
+          "cancelled": true
+        },
+        "O2": {
+          "side": "SELL",
+          "quantity": 5,
+          "price": 1000,
+          "filled": 0,
+          "cancel_pending": false,
+          "cancelled": true
+        }
+      },
+      "executions": {
+        "E1": [
+          "O1",
+          3,
+          1000,
+          2
+        ],
+        "E2": [
+          "O1",
+          2,
+          1000,
+          2
+        ]
+      }
+    },
+    "replay_sha256": "25f31aeada9847de8eaa5723f2ce8a69ecb58eae5539b9760dda91de49b27e07",
+    "outcomes": [
+      "SNAPSHOT",
+      "ACCEPT",
+      "DUPLICATE_ORDER",
+      "ORDER_ID_CONFLICT",
+      "LIMIT_REJECT",
+      "FILL",
+      "DUPLICATE_FILL",
+      "CANCEL_PENDING",
+      "LIMIT_REJECT",
+      "CANCELLED",
+      "LATE_FILL",
+      "DATA_GAP",
+      "DATA_GAP",
+      "STALE_REJECT",
+      "SNAPSHOT",
+      "LIMIT_REJECT",
+      "ACCEPT",
+      "KILL_SET",
+      "KILL_REJECT",
+      "CANCEL_PENDING",
+      "CANCELLED"
+    ],
+    "checks": {
+      "replay_deterministic": true,
+      "pending_risk": true,
+      "duplicate_fill": true,
+      "cancel_pending_reservation": true,
+      "late_fill_accounted": true,
+      "id_payload_conflicts": true,
+      "gap_until_snapshot": true,
+      "snapshot_preserves_position": true,
+      "kill_and_stale_keep_fills": true,
+      "opposing_orders_not_netted": true,
+      "integer_cash_ledger": true
+    }
+  },
+  "artifacts": [
+    {
+      "name": "kalman_states.csv",
+      "sha256": "12d641ac255dae465fc0a21c585b4f14dc1570030e38ead2e9401abbe55336bc"
+    },
+    {
+      "name": "ml_baseline_portfolio.csv",
+      "sha256": "46d50f1862e12990cc46e2ad21f6dc3cf2c1f53477fe39d37bea200fc066edd8"
+    },
+    {
+      "name": "ml_forecasts.csv",
+      "sha256": "41702b43d311276ccde305883752955abc00f3d85b9b2086ef8f909f3a397fc0"
+    },
+    {
+      "name": "ml_prediction_portfolio.csv",
+      "sha256": "11c26b3fa0c0df17cbbe4aa383c693abe30f2d518adb43d06bc206be294cf182"
+    },
+    {
+      "name": "order_replay.csv",
+      "sha256": "2cfe3d2d0314fa5de48a209b197cea4a81650c59a1fcd7101af921ebc13b772b"
+    },
+    {
+      "name": "timeseries_forecasts.csv",
+      "sha256": "60d4a67bc2b01033b7027ec90c3d4ec2e15781eb8f8b7d6b837f54712781c8bc"
+    }
+  ]
+}

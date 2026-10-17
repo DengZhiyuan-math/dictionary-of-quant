@@ -1,0 +1,286 @@
+[
+  {
+    "id": 1,
+    "title": "招聘附件 Recruiter Interview GT and DA",
+    "url": "../sources/Recruiter_Interview_GT___DA.pdf",
+    "kind": "用户提供的招聘说明",
+    "note": "3 页；第 2 页确认 30 分钟、动机与核心业务主题；第 3 页是阅读建议。附件内的联络和操作文字仅作资料。",
+    "local_only": true
+  },
+  {
+    "id": 2,
+    "title": "Recruiter Interview 2026 训练资料",
+    "url": "../sources/Flow_Traders_Recruiter_Interview_2026.pdf",
+    "kind": "用户提供的独立训练资料",
+    "note": "21 页；54 道单项题和两套模拟。题目并非官方真题；保留原编号和训练时长。",
+    "local_only": true
+  },
+  {
+    "id": 3,
+    "title": "Trader Interview and Case Study 2026 训练资料",
+    "url": "../sources/Flow_Traders_Trader_Interview_and_Case_Study_2026.pdf",
+    "kind": "用户提供的独立训练资料",
+    "note": "32 页；53 道单项题、5 套案例共 25 轮。原 A/B/C 标签是训练优先级，不是出题概率。",
+    "local_only": true
+  },
+  {
+    "id": 4,
+    "title": "ETF 六维决策训练指南",
+    "url": "../sources/Flow_Traders_ETF_Six_Dimension_Interview_Guide(1).pdf",
+    "kind": "用户提供的独立扩展讲义",
+    "note": "20 页；深化 E09/E10/E11/E12/E13/E16/E19/E20/E21/E23/E24 共 11 道已有题，未重复计数。",
+    "local_only": true
+  },
+  {
+    "id": 5,
+    "title": "Flow Traders Graduates 招聘阶段",
+    "url": "https://www.flowtraders.com/careers/graduates/",
+    "kind": "官方公开资料",
+    "note": "2026-10-16 核对 recruiter、trader、case study 三阶段及考察能力；不据此承诺某一道题必考。"
+  },
+  {
+    "id": 6,
+    "title": "SEC Investor.gov ETF 投资者公告",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-24",
+    "kind": "监管机构投资者教育",
+    "note": "2026-10-16 核对基金结构、NAV、市价、AP 与申赎的一般机制；适用范围以公告为准。"
+  },
+  {
+    "id": 7,
+    "title": "CME Hedging with E-mini S&P 500 Future",
+    "url": "https://www.cmegroup.com/education/whitepapers/hedging-with-e-mini-sp-500-future",
+    "kind": "交易所教育资料",
+    "note": "2026-10-16 核对组合名义、beta 和期货合约数量的关系。"
+  },
+  {
+    "id": 8,
+    "title": "MIT Advanced Stochastic Processes",
+    "url": "https://ocw.mit.edu/courses/15-070j-advanced-stochastic-processes-fall-2013/",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。课程官方入口；随机过程、滤过、鞅、Brownian motion 和 Itô calculus 的定义与后续学习。"
+  },
+  {
+    "id": 9,
+    "title": "Gautam Iyer CMU Continuous Time Finance",
+    "url": "https://www.math.cmu.edu/~gautam/sj/teaching/2021-22/420-cts-time-finance/pdfs/ctf-compressed.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。教师讲义；核对连续时间资产模型、自融资、风险中性和 Black Scholes 的假设体系。"
+  },
+  {
+    "id": 10,
+    "title": "MIT Black Scholes Formula and Risk Neutral Valuation",
+    "url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/d19208c017ada04f9261cfb41ab8d702_MIT18_S096F13_lecnote19.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。课程讲义；期权复制、定价测度与欧式公式。例题参数和解释由本书独立设计。"
+  },
+  {
+    "id": 11,
+    "title": "Kenneth French Data Library",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/Ken.French/data_library.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者数据入口；因子与组合构造、数据版本变化。未下载行情或计算真实策略业绩。"
+  },
+  {
+    "id": 12,
+    "title": "Kenneth French Developed Factors Construction",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library/f-f_3developed.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者给出的区域、币种、分组与组合构造定义；说明因子不是任意排序表。"
+  },
+  {
+    "id": 13,
+    "title": "scikit-learn TimeSeriesSplit",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。项目官方文档；核对顺序验证与 gap 的作用，不把固定 gap 当作自动完成事件区间清洗。"
+  },
+  {
+    "id": 14,
+    "title": "Bailey et al The Probability of Backtest Overfitting",
+    "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者公开论文；支持研究选择与过拟合的区别。正文没有把多重检验简化为未来盈利概率。"
+  },
+  {
+    "id": 15,
+    "title": "CVX Short Course Portfolio Optimization",
+    "url": "https://www.cvxgrp.org/cvx_short_course/docs/applications/notebooks/portfolio_optimization.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者团队课程；核对组合回报、方差、预算与风险收益目标。"
+  },
+  {
+    "id": 16,
+    "title": "Ledoit and Wolf A Well Conditioned Estimator",
+    "url": "https://www.ledoit.net/ole1a.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者公开论文；样本协方差病态与线性收缩。正文的固定 50% 收缩只是数值例子，不冒充数据驱动的最优收缩强度。"
+  },
+  {
+    "id": 17,
+    "title": "Cvxportfolio Manual",
+    "url": "https://www.cvxportfolio.com/en/stable/manual.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。项目官方文档；多期优化、交易成本、约束及执行时点索引。正文不依赖具体库 API。"
+  },
+  {
+    "id": 18,
+    "title": "statsmodels Robust Covariances",
+    "url": "https://www.statsmodels.org/stable/stats.html?highlight=statsmodels+stats+multicomp",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方统计文档；异方差、自相关和聚类稳健协方差属于不同推断工具。"
+  },
+  {
+    "id": 19,
+    "title": "Bailey and Lopez de Prado The Deflated Sharpe Ratio",
+    "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+    "kind": "作者公开论文",
+    "note": "2026-10-16 核对。用于区分多重研究选择、非正态与普通 Sharpe 推断；不将校正指标解释成未来获利概率。"
+  },
+  {
+    "id": 20,
+    "title": "Hyndman and Athanasopoulos FPP3 ARIMA",
+    "url": "https://otexts.com/fpp3/arima.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者教材；差分、自回归、误差结构及预测的学习入口。数值例子独立编写。"
+  },
+  {
+    "id": 21,
+    "title": "FPP3 The Forecasters Toolbox",
+    "url": "https://otexts.com/fpp3/toolbox.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者教材；朴素基线、残差诊断与顺序预测评价。"
+  },
+  {
+    "id": 22,
+    "title": "statsmodels State Space Forecasting",
+    "url": "https://www.statsmodels.org/stable/examples/notebooks/generated/statespace_forecasting.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方文档；状态空间估计、更新和预测；正文使用模型方程，不绑定具体库版本。"
+  },
+  {
+    "id": 23,
+    "title": "statsmodels Engle Granger Cointegration Test",
+    "url": "https://www.statsmodels.org/stable/generated/statsmodels.tsa.stattools.coint.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方文档；协整检验的零假设、I(1) 前提和趋势设定。"
+  },
+  {
+    "id": 24,
+    "title": "scikit-learn Common Pitfalls",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方文档；训练拟合预处理、管线和信息泄漏。"
+  },
+  {
+    "id": 25,
+    "title": "scikit-learn Ensemble Methods",
+    "url": "https://scikit-learn.org/stable/modules/ensemble.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方文档；树、随机森林与梯度提升的机制及区别。"
+  },
+  {
+    "id": 26,
+    "title": "scikit-learn Probability Calibration",
+    "url": "https://scikit-learn.org/stable/modules/calibration.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方文档；概率校准、可靠性图与独立校准数据。"
+  },
+  {
+    "id": 27,
+    "title": "PyTorch LSTM Reference",
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.LSTM.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方接口入口；用于核对序列输入、隐藏状态与输出语义。正文不要求安装深度学习依赖。"
+  },
+  {
+    "id": 28,
+    "title": "FIX Trading Community Order State Changes",
+    "url": "https://www.fixtrading.org/online-specification/order-state-changes/",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。FIX 官方订单状态语义入口；ExecType 与 OrdStatus、CumQty 与 LeavesQty 的区别。回放案例只实现明确列出的教学子集，不声称 FIX 合规。"
+  },
+  {
+    "id": 29,
+    "title": "Apache Kafka Delivery Semantics",
+    "url": "https://kafka.apache.org/41/design/design/",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方4.1版本设计文档；交付语义的作用范围与故障假设，不作为最新版本配置指南。"
+  },
+  {
+    "id": 30,
+    "title": "Prometheus Instrumentation",
+    "url": "https://prometheus.io/docs/practices/instrumentation/",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方实践文档；请求、错误、延迟与指标基数。"
+  },
+  {
+    "id": 31,
+    "title": "OpenTelemetry Signals",
+    "url": "https://opentelemetry.io/docs/concepts/signals/",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方概念文档；指标、日志、trace 与关联上下文。"
+  },
+  {
+    "id": 32,
+    "title": "Python Monotonic Clocks",
+    "url": "https://docs.python.org/3/library/time.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方标准库文档；单调时钟与墙钟时间用途区分。"
+  },
+  {
+    "id": 33,
+    "title": "scikit-learn Permutation Importance",
+    "url": "https://scikit-learn.org/stable/modules/permutation_importance.html",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方文档；样本外预测重要性与相关特征的解释边界。"
+  },
+  {
+    "id": 34,
+    "title": "Nasdaq TotalView ITCH 5.0 Specification",
+    "url": "https://nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。官方协议定义，供区分新增、执行、取消、删除和替换。正文不声明适用于所有场所或固定最新修订。"
+  },
+  {
+    "id": 35,
+    "title": "Cont Kukanov Stoikov The Price Impact of Order Book Events",
+    "url": "https://arxiv.org/html/1011.6402v3",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者论文，供追溯盘口事件与OFI定义。正文中的算术、数据与预测实验独立构造，不复现论文业绩。"
+  },
+  {
+    "id": 36,
+    "title": "Avellaneda Stoikov High Frequency Trading in a Limit Order Book",
+    "url": "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者所在大学存档；用于库存效用、保留价格和理想化到达率模型。例题参数独立指定，不当作可直接部署报价器。"
+  },
+  {
+    "id": 37,
+    "title": "Bacry Mastromatteo Muzy Hawkes Processes in Finance",
+    "url": "https://arxiv.org/html/1502.04592v2",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者综述；自激强度、核积分与稳定条件的学习入口。正文明确采用α exp(-βt)参数化，避免与归一化核混淆。"
+  },
+  {
+    "id": 38,
+    "title": "Avellaneda Lee Statistical Arbitrage in the US Equities Market",
+    "url": "https://math.nyu.edu/inmemoriam/avellaneda/AvellanedaLeeStatArb071108.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者大学存档；残差、因子与统计套利研究思路。正文独立说明账本与反例，不把论文历史收益移作当前策略证据。"
+  },
+  {
+    "id": 39,
+    "title": "SEC Disclosure of Order Execution Information 2024",
+    "url": "https://www.sec.gov/files/rules/final/2024/34-99679.pdf",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。仅用于执行质量统计及effective/realized spread分解的定义背景。教学例子使用成交时中价与自定义h，不实施或解释当前监管报表义务。"
+  },
+  {
+    "id": 40,
+    "title": "Gatev Goetzmann Rouwenhorst Pairs Trading",
+    "url": "https://www.nber.org/papers/w7032",
+    "kind": "公开一手学习资料",
+    "note": "2026-10-16 核对。作者研究入口；距离配对和形成/交易分离。合成案例使用价格回归残差，不声称复现该论文的方法或收益。"
+  }
+]

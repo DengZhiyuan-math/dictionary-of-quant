@@ -1,0 +1,15 @@
+{
+  "name": "dictionary-of-quant",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Chinese-first quant dictionary: modeling, market microstructure, high-frequency trading, statistical arbitrage and systems",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs"
+  }
+}

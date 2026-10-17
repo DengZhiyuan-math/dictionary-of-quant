@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "data": "fixed-seed synthetic L1/prices and scripted FIFO events",
+  "source_sha256": "288cb83817ffc8afb346c17998989ac3fbbcaf0f7b057cfdb14d78c451a9c6f7",
+  "microstructure": {
+    "seed": 112,
+    "quotes": 601,
+    "predictions": 500,
+    "markout_horizon_events": 5,
+    "scored_trades": 596,
+    "units": "prices/spreads in cents; quantities in shares",
+    "mse_next_mid_cents_squared": {
+      "prediction": 0.48631762527309996,
+      "zero": 0.5,
+      "proxy": 0.5295296207801442
+    },
+    "average_effective_spread_cents": 2.0,
+    "average_realized_spread_cents": 2.0033557046979866,
+    "average_impact_cents": -0.003355704697986577,
+    "checks": {
+      "spread_identity": true,
+      "weighted_mid_bounds": true,
+      "ofi_six_branches": true,
+      "future_prefix_invariance": true,
+      "known_trade_signs": true
+    }
+  },
+  "high_frequency": {
+    "scenarios": [
+      {
+        "scenario": "order2_cancel2",
+        "order_latency": 2,
+        "cancel_latency": 2,
+        "filled": 4,
+        "fees_cents": 2,
+        "final_position": 4,
+        "final_cash_cents": 59998,
+        "terminal_mid_cents": 9997,
+        "terminal_marked_pnl_cents": -14,
+        "duplicate_reports": 1,
+        "fill_received_after_cancel": true
+      },
+      {
+        "scenario": "order2_cancel5",
+        "order_latency": 2,
+        "cancel_latency": 5,
+        "filled": 4,
+        "fees_cents": 2,
+        "final_position": 4,
+        "final_cash_cents": 59998,
+        "terminal_mid_cents": 9997,
+        "terminal_marked_pnl_cents": -14,
+        "duplicate_reports": 1,
+        "fill_received_after_cancel": false
+      },
+      {
+        "scenario": "order6_cancel2",
+        "order_latency": 6,
+        "cancel_latency": 2,
+        "filled": 2,
+        "fees_cents": 1,
+        "final_position": 2,
+        "final_cash_cents": 79999,
+        "terminal_mid_cents": 9997,
+        "terminal_marked_pnl_cents": -7,
+        "duplicate_reports": 1,
+        "fill_received_after_cancel": true
+      },
+      {
+        "scenario": "order6_cancel5",
+        "order_latency": 6,
+        "cancel_latency": 5,
+        "filled": 4,
+        "fees_cents": 2,
+        "final_position": 4,
+        "final_cash_cents": 59998,
+        "terminal_mid_cents": 9997,
+        "terminal_marked_pnl_cents": -14,
+        "duplicate_reports": 1,
+        "fill_received_after_cancel": true
+      }
+    ],
+    "price_cents": 10000,
+    "order_quantity": 4,
+    "final_mid_cents": 9997,
+    "report_delay": 3,
+    "local_cancel_time": 8,
+    "touch_fill_assumption": 4,
+    "checks": {
+      "fifo_conservation": true,
+      "no_fill_before_arrival": true,
+      "cancel_only_at_venue": true,
+      "late_reports_accounted": true,
+      "duplicate_reports": true,
+      "prefix_invariance": true,
+      "deterministic_replay": true,
+      "touch_is_not_fill": true
+    }
+  },
+  "statistical_arbitrage": {
+    "seed": 128,
+    "observations": 901,
+    "formation_window": 200,
+    "refit_every": 100,
+    "signal_rows": 700,
+    "ledger_rows": 701,
+    "models": 7,
+    "entry_z": 2,
+    "exit_z": 0.5,
+    "max_elapsed_before_exit_decision": 20,
+    "formal_cointegration_test": false,
+    "base": {
+      "initial_cash_cents": 1000000,
+      "final_cash_cents": 1009484,
+      "pnl_cents": 9484,
+      "return_on_initial_cash": 0.009484,
+      "price_pnl_cents": 12501,
+      "fees_cents": 56,
+      "slippage_cents": 686,
+      "borrow_cents": 2275,
+      "entries": 14,
+      "fills": 56,
+      "slippage_per_share_cents": 1,
+      "fee_per_leg_fill_cents": 1,
+      "borrow_bps_per_period": 1
+    },
+    "no_cost": {
+      "initial_cash_cents": 1000000,
+      "final_cash_cents": 1012501,
+      "pnl_cents": 12501,
+      "return_on_initial_cash": 0.012501,
+      "price_pnl_cents": 12501,
+      "fees_cents": 0,
+      "slippage_cents": 0,
+      "borrow_cents": 0,
+      "entries": 14,
+      "fills": 56,
+      "slippage_per_share_cents": 0,
+      "fee_per_leg_fill_cents": 0,
+      "borrow_bps_per_period": 0
+    },
+    "stress": {
+      "initial_cash_cents": 1000000,
+      "final_cash_cents": 1006553,
+      "pnl_cents": 6553,
+      "return_on_initial_cash": 0.006553,
+      "price_pnl_cents": 12501,
+      "fees_cents": 112,
+      "slippage_cents": 1372,
+      "borrow_cents": 4464,
+      "entries": 14,
+      "fills": 56,
+      "slippage_per_share_cents": 2,
+      "fee_per_leg_fill_cents": 2,
+      "borrow_bps_per_period": 2
+    },
+    "checks": {
+      "future_prefix_invariance": true,
+      "fit_strictly_past": true,
+      "next_observation_execution": true,
+      "integer_cash_identity": true,
+      "frozen_entry_hedge": true,
+      "final_liquidation": true,
+      "cost_monotonicity": true,
+      "round_trip_hand_calculation": true
+    }
+  },
+  "artifacts": [
+    {
+      "name": "micro_quotes.csv",
+      "sha256": "76a1618b8be7d060fb0f8e020025542d2b9a1c2eb0b294f5c4f3e1670d8ab2e2"
+    },
+    {
+      "name": "micro_forecasts.csv",
+      "sha256": "05ee4be558fff4c493aa2a39430b44611b30603ed686b3482ebc3875a07c8abd"
+    },
+    {
+      "name": "queue_events.csv",
+      "sha256": "f212ea175c404a8e1686d9e51200db4362d6cf2b15ccca8f29875c39dd007d18"
+    },
+    {
+      "name": "queue_reports.csv",
+      "sha256": "299636cc2275ae497dcc10ab71ac089df8dcfe75e9f1e7aa52451de2527f61b3"
+    },
+    {
+      "name": "pairs_signals.csv",
+      "sha256": "78b0844ee90a47b57b3adb8b0fba97d095a0259437d3479ab5bd1bc4817d6893"
+    },
+    {
+      "name": "pairs_ledger.csv",
+      "sha256": "7dfad3403802bbafd5e6845f09e7b3c74706c488bbcc19bf33b5a7f34c615e5a"
+    },
+    {
+      "name": "pairs_trades.csv",
+      "sha256": "321aa9f565bf2041f4cf25c591749d6a8d5e45a0e55eb7fc74561975ba1927ac"
+    },
+    {
+      "name": "pairs_models.csv",
+      "sha256": "0c8914342a7d86fb7ca4e70bd86bd24dab07d13298f45560b13113f61f522382"
+    }
+  ]
+}

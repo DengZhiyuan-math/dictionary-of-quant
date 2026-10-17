@@ -1,0 +1,109 @@
+第 33 讲。套保 组合与损益计算。
+
+E14 空 ETF 的名义对冲
+
+英文题面：You sell short 5,000 shares of a 50 ETF . An index future is at 1,000 with multiplier 50. Hedge the notional exposure.
+
+训练计时：55 秒。
+
+（请暂停，先尝试回答。）参考解答：ETF 空头名义=-5,000×50=-250,000；单张期货=1,000×50=50,000；买入 5 张期货。假设每美元 beta=1。
+
+易错与边界：空 ETF 对应买期货，不是再卖期货。
+
+原题定位：S3 第 3 页；E14。
+
+E15 beta 调整的期货数量
+
+英文题面：You own 2,000 shares of a 100 ETF with beta 1.2 to an index. Index future: 1,200, multiplier 50. How many to hedge beta?
+
+训练计时：70 秒。
+
+（请暂停，先尝试回答。）参考解答：ETF 市值=2,000×100=200,000；指数敞口=240,000；单张名义=1,200×50=60,000；卖出 4 张。
+
+易错与边界：beta 必须针对所用基准；中性化一种风险不等于没有风险。
+
+原题定位：S3 第 3 页；E15。
+
+E25 最小方差单代理
+
+英文题面：How would you estimate a minimum-variance hedge of a 500,000 ETF position if ETF daily volatility is 1.5%, index volatility 2%, correlation 0.8?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：h=ρσETF/σindex=0.8×1.5%/2%=0.6；500,000 多头对应做空 300,000 指数名义。
+
+易错与边界：相关系数 0.8 不是 beta 0.8；名义比率与合约张数还差单张名义。
+
+原题定位：S3 第 4 页；E25。
+
+T03 整数期货与剩余风险
+
+英文题面：You are long USD 2.4m of an ETF with beta 1.15. The index future is 4800 with multiplier 50. Compute the ideal and integer hedge.
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：beta 名义=2.4m×1.15=2.76m；单张=4,800×50=240,000；理想仓位=-11.5 张。卖 11 张剩 +120,000，卖 12 张剩 -120,000 指数名义。
+
+易错与边界：四舍五入不是风险管理的完整答案；还要考虑限额与可替代工具。
+
+原题定位：S3 第 4 页；T03。
+
+T05 两个代理的最小方差套保
+
+英文题面：ETF return has covariance vector c=(2.3,1.7) with two index returns. Their covariance matrix is [[4,1],[1,4]], all in the same units. Find minimum-variance hedge notionals for a USD 1m long.
+
+训练计时：120 秒。
+
+（请暂停，先尝试回答。）参考解答：最小化 Var(rE-h1r1-h2r2)，满足 Σh=c。Σ 的逆为 [[4,-1],[-1,4]]/15；得到 h=(0.5,0.3)。1m 多头对应做空两个指数 500k 和 300k。
+
+易错与边界：所有协方差须用相同回报单位与时间窗；奇异或不稳定矩阵要另行处理。
+
+原题定位：S3 第 4 页；T05。
+
+T06 ETF 与期货盈亏归因
+
+英文题面：You buy 8,000 shares of a 50 ETF and short 4 index futures at 2,000 (multiplier 100). ETF rises to 51; futures rise to 2,020. Attribute P&L.
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：ETF 盈利=8,000×(51-50)=8,000；期货空头=-4×(2,020-2,000)×100=-8,000；合计 0，尚未扣成本。
+
+易错与边界：给定路径恰好抵消不证明对冲量对所有行情都正确。
+
+原题定位：S3 第 4 页；T06。
+
+T16 beta 对冲后的特质损失
+
+英文题面：You are long USD 1.8m ETF with beta 1.1. Index falls 4%; ETF underperforms the beta-implied move by another 1 percentage point. You short index notional 1.98m. Compute residual P&L.
+
+训练计时：100 秒。
+
+（请暂停，先尝试回答。）参考解答：ETF 回报=1.1×(-4%)-1%=-5.4%，损失 97,200；指数空头盈利 1.98m×4%=79,200；净 -18,000。
+
+易错与边界：指数风险抵消后，额外 1 个百分点残差仍作用于 ETF 的 1.8m 名义。
+
+原题定位：S3 第 5 页；T16。
+
+T20 指数套保留下的基差亏损
+
+英文题面：You are long USD 500k ETF , beta 1.2, short USD 600k in index futures. Index moves -1.5%, ETF falls 2%. Calculate basis-related P&L.
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：ETF 损失=500k×2%=10,000；指数空头盈利=600k×1.5%=9,000；合计 -1,000。
+
+易错与边界：ETF 实际跌幅比 beta 预测的 1.8% 多 0.2 个百分点。
+
+原题定位：S3 第 5 页；T20。
+
+T22 两资产组合波动
+
+英文题面：Portfolio weights are 60%/40%, volatilities 2%/3%, and correlation 0.5. Compute one-period portfolio volatility.
+
+训练计时：100 秒。
+
+（请暂停，先尝试回答。）参考解答：方差=0.6²×0.02²+0.4²×0.03²+2×0.6×0.4×0.5×0.02×0.03=0.000432；波动≈2.078%。
+
+易错与边界：方差可按协方差公式合并，波动不能直接加权当作答案。
+
+原题定位：S3 第 7 页；T22。

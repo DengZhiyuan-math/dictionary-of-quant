@@ -1,0 +1,85 @@
+第 37 讲。信息优势与下注风险。
+
+B03 扑克牌的公平值与报价
+
+英文题面：Draw one random card from a standard 52-card deck. A=1, 2–9=face value, 10/J/Q/K=10. Make a two-sided market on its value.
+
+训练计时：140 秒。
+
+（请暂停，先尝试回答。）参考解答：13 个点数等可能，A=1、10/J/Q/K=10；均值=(1+…+9+4×10)/13=85/13≈6.5385。无信息优势时可围绕均值示意报价，但先问对手是否看牌和交易数量。
+
+易错与边界：均值不是在信息不对称条件下可盈利的 bid 或 ask。
+
+原题定位：S3 第 7 页；B03。
+
+B15 高胜率不保证正期望
+
+英文题面：A game wins 2 with probability 0.6 and loses 3 otherwise. Is the expected value positive?
+
+训练计时：35 秒。
+
+（请暂停，先尝试回答。）参考解答：E[X]=0.6×2+0.4×(-3)=0；尚未扣成本，净期望可能为负。
+
+易错与边界：胜率与盈亏比必须一起看。
+
+原题定位：S2 第 7 页；B15。
+
+B16 对称赔率 Kelly
+
+英文题面：A bet pays +1 for every unit staked if you win; win probability 0.6. What is the full-Kelly fraction?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：b=1，p=0.6，q=0.4；f=(bp-q)/b=0.2。它最大化题设重复下注的期望对数财富。
+
+易错与边界：概率估计误差、相关性与尾部损失可能改变合理规模。
+
+原题定位：S3 第 8 页；B16。
+
+B24 独立损益的标准差
+
+英文题面：A portfolio has two independent zero-mean P&L components with standard deviations 5 and 12. Standard deviation of their sum?
+
+训练计时：45 秒。
+
+（请暂停，先尝试回答。）参考解答：独立时方差相加：5²+12²=169，合计标准差=13。若相关则加入 2ρ×5×12。
+
+易错与边界：标准差不直接相加；零均值也不自动意味着独立。
+
+原题定位：S3 第 8 页；B24。
+
+B27 看牌对手与公平价
+
+英文题面：You quote a fair price of 6.5 for an unknown card. What changes if the counterparty sees the card before choosing whether to trade?
+
+训练计时：80 秒。
+
+（请暂停，先尝试回答。）参考解答：对手只在 V>ask 时买、V<bid 时卖；成交后的条件价值会偏离无条件均值。应重新算两侧条件损益、规模和最坏情形。
+
+易错与边界：“fair price=6.5”不说明面对知情客户应怎样报双边价。
+
+原题定位：S3 第 9 页；B27。
+
+B30 正期望下注的组合约束
+
+英文题面：You have 10 bets each with a small positive expected edge. Is it always optimal to maximize stake on every bet?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：正期望只描述平均收益方向；规模还取决于相关性、尾部、流动性、资金和估计误差。十笔共同暴露于一个冲击，风险可能集中。
+
+易错与边界：不能因每笔 EV 为正就逐笔用满仓位。
+
+原题定位：S3 第 9 页；B30。
+
+T25 非对称赔率的 Kelly
+
+英文题面：A repeated bet wins twice the staked amount with probability 55% and loses the stake otherwise. Under ideal Kelly assumptions, what fraction of wealth is optimal?
+
+训练计时：110 秒。
+
+（请暂停，先尝试回答。）参考解答：盈利为本金 2 倍意味着净赔率 b=2；p=0.55，q=0.45；f=(bp-q)/b=0.325。
+
+易错与边界：只在题设已知概率、可重复机会、零摩擦的对数增长模型下成立；不是实盘仓位建议。
+
+原题定位：S3 第 9 页；T25。

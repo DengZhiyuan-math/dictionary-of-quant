@@ -1,0 +1,197 @@
+第 29 讲。动机 简历与行为题。
+
+M01 60 秒背景介绍
+
+英文题面：Walk me through your background in 60 seconds.
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：按“当前训练 → 一项真实项目 → 希望承担的交易决策”组织。只保留与你真实履历一致的学校、身份、职责和成果；用一个具体动作证明分析能力。
+
+易错与边界：不按年份逐条念简历；原资料的学校和项目描述是示例，不能直接视为个人事实。
+
+英文口述模板：My background is in [field]. In [real project], I worked on [specific task]. That experience led me to the pricing, execution and risk decisions on a trading desk.
+
+原题定位：S2 第 3 页；M01。
+
+M02 为什么从研究转向交易
+
+英文题面：Why trading rather than academia?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：给出正向动机：希望把严格分析用于有时间约束、需要承担结果并持续更新判断的工作。连接一项真实经历，说明自己理解反馈快也意味着噪声多。
+
+易错与边界：不把研究贬低为无聊，也不把短期盈利等同于能力。
+
+原题定位：S2 第 3 页；M02。
+
+M03 为什么选择 Flow Traders
+
+英文题面：Why Flow Traders instead of another trading firm?
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：结合 ETF 与相关资产的定价、流动性供给，以及官网介绍的培训方式，解释具体兴趣；再连接自己能提供的能力。面试前重新核对公司信息。
+
+易错与边界：避免空泛说公司很强；不能把公开业务简介讲成自己了解内部算法。
+
+原题定位：S2 第 3 页；M03。
+
+M04 Trader 与 Quant Research 的选择
+
+英文题面：Why do you want a trader role rather than a quant research role?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：研究更侧重模型和证据积累；交易更贴近报价、执行及实时风险，两者协作。说明你希望承担哪一类决策，以及已有经验如何支持这种选择。
+
+易错与边界：不要贬低研究，也不要声称交易员只靠直觉。
+
+原题定位：S2 第 3 页；M04。
+
+M05 为什么适合交易
+
+英文题面：Why would you make a good trader?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：选择两个可举证的优点，如不确定性推理、及时纠错和清楚沟通；每点用一项事实支持，再讲一个正在改善的弱项。
+
+易错与边界：“数学好”不自动等于能管理交易风险。
+
+原题定位：S2 第 3 页；M05。
+
+M06 如何解释交易相关项目
+
+英文题面：What exactly did you do on the options-flow project?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：按目标、数据与信号、自己完成的任务、执行约束、评价及局限说明；区分分析、模拟和真实执行。
+
+易错与边界：不把团队成果写成个人成果，不虚构负责资金、盈利或全自动系统。
+
+原题定位：S2 第 3 页；M06。
+
+M07 回测与实盘不一致
+
+英文题面：Your backtest and live results disagree. What would you investigate?
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：先逐笔对齐信号时戳、当时可见数据及可成交 bid/ask，再核对费用、滑点、延迟、样本选择、人工干预和市场状态变化；固定基线后分层比较。
+
+易错与边界：先查定义与执行，不能直接归因于交易员水平或市场失效。
+
+英文口述模板：I would reconcile timestamps, signals, executable quotes and costs trade by trade, then test the remaining gap against a fixed baseline.
+
+原题定位：S2 第 4 页；M07。
+
+M08 高压情境的行为题
+
+英文题面：Tell me about a time you worked under pressure.
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：用 STAR：背景与约束各一句，重点讲你如何排序、决策和沟通，最后给可核实结果及改进。控制在 60 至 90 秒。
+
+易错与边界：必须用真实事件；复杂背景不能替代自己的动作。
+
+原题定位：S2 第 4 页；M08。
+
+M09 判断错误与更新信念
+
+英文题面：Describe a mistake or a situation where your assumptions were wrong.
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：说明初始假设、反证、核查过程、修改动作以及怎样防止复发。若结果没有统计把握，应直接说明。
+
+易错与边界：不把错误包装成优点，也不只讲别人失误。
+
+原题定位：S2 第 4 页；M09。
+
+M10 与资深交易员意见不一致
+
+英文题面：How would you handle disagreement with a senior trader?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：简洁说清假设、数据及风险，询问缺失信息；在团队约定的权限与限额内执行紧急决定，并在事后复盘。
+
+易错与边界：持续争辩和无条件服从都不能替代风险判断。
+
+原题定位：S2 第 4 页；M10。
+
+M11 如何关注市场
+
+英文题面：How do you follow financial markets?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：选择面试前核实的一条事件，解释它如何传到指数、成分股、汇率与 ETF 报价，再说明对冲或流动性影响。
+
+易错与边界：本书不提供实时行情；不要背过期价格或虚构新闻。
+
+原题定位：S2 第 4 页；M11。
+
+M12 向招聘人员提问
+
+英文题面：What questions would you ask the recruiter?
+
+训练计时：40 秒。
+
+（请暂停，先尝试回答。）参考解答：询问培训如何结合定价、风险和技术，或新人形成有效判断的关键能力；根据对话选择一两个问题。
+
+易错与边界：不要让已经公开的信息占满有限提问时间。
+
+原题定位：S2 第 4 页；M12。
+
+R13 金融交易与数字资产交易
+
+英文题面：Why are you attracted to financial trading rather than crypto trading (or vice versa)?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：比较自己真正感兴趣的产品、市场结构、交易时段和风险；说明当前准备最扎实的方向及愿意继续学习的部分。
+
+易错与边界：不需要假装对两个领域同样精通。
+
+原题定位：S2 第 4 页；R13。
+
+R14 为什么喜欢做市
+
+英文题面：Why market making rather than taking a directional bet on the market?
+
+训练计时：60 秒。
+
+（请暂停，先尝试回答。）参考解答：说明你喜欢对相关资产持续定价、服务成交需求、理解订单流并管理库存的组合问题；连接真实学习或项目经历。
+
+易错与边界：做市也会留下方向性敞口，不能声称收益与市场方向完全无关。
+
+原题定位：S2 第 4 页；R14。
+
+R15 指数 成分股与 ETF
+
+英文题面：Name a major equity index, one constituent, and an ETF linked to that index. How would you monitor its fair value today?
+
+训练计时：75 秒。
+
+（请暂停，先尝试回答。）参考解答：选一个熟悉的指数，核对其当前成分和跟踪基金；说明会用篮子、指数期货、交易时段及必要的汇率监控现时价值。
+
+易错与边界：Nasdaq-100 与 Nasdaq Composite 不同；本书不把任何成分股或权重当成永久事实。
+
+原题定位：S2 第 4 页；R15。
+
+R16 主动性与团队决策
+
+英文题面：Tell me about a time when you took initiative or helped a team make a difficult decision.
+
+训练计时：90 秒。
+
+（请暂停，先尝试回答。）参考解答：用真实 STAR 案例说明识别问题、比较方案、推动沟通与承担结果；准备回答谁不同意、你改变了什么和如何改进。
+
+易错与边界：没有量化成果时可给可验证的流程或质量改进，不补造数字。
+
+原题定位：S2 第 4 页；R16。
