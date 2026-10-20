@@ -1,0 +1,971 @@
+{
+  "scope": 60,
+  "concepts": [
+    {
+      "id": "concept:quant-limit-order-book",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对逐档30×101+20×102=5070及余量50，定义限定可见连续簿。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "状态与变化",
+        "数量的含义",
+        "成交与挂单"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-market-order",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对买均价3020/30、卖均价98.5，未把市价当保证全成。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "卖出的方向",
+        "报价与承诺",
+        "选择约束"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+      ]
+    },
+    {
+      "id": "concept:quant-limit-order",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对买限价只成6股594元、余4待单，实际持仓与潜在风险区分。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "卖出限价",
+        "数量与持仓",
+        "有效期改变结果"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+      ]
+    },
+    {
+      "id": "concept:quant-marketable-limit-order",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对marketable到达依赖、13股1308元和余2，主动不等于限价外成交。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "是否全成",
+        "到达时重新判断",
+        "费用属性"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+      ]
+    },
+    {
+      "id": "concept:quant-time-in-force",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对IOC/FOK/日单在同6股深度下结果，名称不当24小时或永久。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "两类约束",
+        "部分结果",
+        "日单的时钟"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+      ]
+    },
+    {
+      "id": "concept:quant-immediate-or-cancel",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对IOC6股596元、余4取消及多笔成交允许，三题覆盖无量与全量需求。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "没有合格对手",
+        "一次还是一笔",
+        "数量语义"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+      ]
+    },
+    {
+      "id": "concept:quant-fill-or-kill",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对FOK4+6=10股996元、只有9时不先成9；不扩展到跨腿原子。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "价格不能放宽",
+        "多条成交",
+        "多腿边界"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+      ]
+    },
+    {
+      "id": "concept:quant-fifo-priority",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对价格先于同价时间优先，A30+B10后续B5，规则假设明确。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "优先层次",
+        "后续成交",
+        "规则迁移"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/articles-and-reports/overview-what-makes-ags-markets-work"
+      ]
+    },
+    {
+      "id": "concept:quant-market-by-order",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对MBO撤10执行15后的余量25与订单身份范围，不臆断前方撤量。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "汇总丢失的信息",
+        "消息完整性",
+        "标识范围"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-quoted-spread",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对报价全差0.4、40基点与半差0.2，价格尺度与量容量题清楚。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "单位与尺度",
+        "报价与实际成本",
+        "半价差"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+      ]
+    },
+    {
+      "id": "concept:quant-effective-spread",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对买卖有效差方向及因子2，0.2全差对应100股现金偏离10。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "负值的含义",
+        "现金尺度",
+        "基准不能偷换"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+      ]
+    },
+    {
+      "id": "concept:quant-realized-spread",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对实现差两期限+0.1/−0.2和卖方例−0.2，明确非现金退出。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "卖出方向",
+        "期限改变问题",
+        "标记与现金"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+      ]
+    },
+    {
+      "id": "concept:quant-spread-decomposition",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对0.2=0.08+0.12及统一基点分母，恒等不冒充因果。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "变化超过初始价差",
+        "因果边界",
+        "统一尺度"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+      ]
+    },
+    {
+      "id": "concept:quant-queue-imbalance",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对数量比0.8/−0.8、同倍缩放与0分母，未把比率当概率。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "方向对称",
+        "概率不能直接读取",
+        "缺失与中性"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://arxiv.org/abs/1011.6402"
+      ]
+    },
+    {
+      "id": "concept:quant-weighted-midprice",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对对侧量权重100.8/99.2及等量回中价，摘要非报价。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "等量情形",
+        "价格与执行",
+        "规模变化"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://arxiv.org/abs/1011.6402"
+      ]
+    },
+    {
+      "id": "concept:quant-order-flow-imbalance",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对OFI新增/撤单/成交+60及反向−50，价格移档不能直接相减。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "无需发生交易",
+        "方向核对",
+        "不同价格档"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://arxiv.org/abs/1011.6402"
+      ]
+    },
+    {
+      "id": "concept:quant-queue-ahead",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对前50撤20再成交40自成10，若后撤则自成0，假设FIFO。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "扣除自身与后方",
+        "只有成交还不够",
+        "未知不是已让路"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-censored-fill-time",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对全成终点右删失下界>5、平均下界>3.667及信息性撤单。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "截止不是成交",
+        "终点必须固定",
+        "终止机制"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.itl.nist.gov/div898/handbook/apr/section1/apr131.htm"
+      ]
+    },
+    {
+      "id": "concept:quant-hawkes-process",
+      "file": "quant-market",
+      "status": "corrected-and-independently-reviewed",
+      "editorialFindings": "核对指数核速率5到3.104；修英文使额外影响趋0、总强度趋2。",
+      "corrections": [
+        "英文第1题额外影响趋基准2修为额外影响趋0、总强度趋2，中文同时明确。"
+      ],
+      "exerciseCoverage": [
+        "无事件期间",
+        "速率与次数",
+        "共同驱动"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://arxiv.org/abs/1502.04592"
+      ]
+    },
+    {
+      "id": "concept:quant-point-process-intensity",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对2次/秒泊松0.1秒期望0.2但概率0.1813，2秒概率0.9817。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "单位换算",
+        "期望不必小于1",
+        "当前与整段未来"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://arxiv.org/abs/1502.04592"
+      ]
+    },
+    {
+      "id": "concept:quant-event-time",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对发生100/接收104/解析105的可用性，时间戳相同需序号。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "防止提前获知",
+        "相同时间戳",
+        "字段语义"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-receive-time",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对接收100/解析130/决策150的30/20/50，时钟分辨率非准确度。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "读取边界",
+        "负时间差",
+        "优化落点"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-venue-arrival-time",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对A130与B120到达反序、优化A105及前方70不能沿旧40算成交。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "顺序反转",
+        "延迟优化",
+        "不能冻结旧簿"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-cancel-latency",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对撤单100到140为40微秒，成交8撤12且确认170另算。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "剩余量",
+        "风险预算",
+        "回报到达顺序"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-report-latency",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对成交100已增仓、报告150才获知、重发可变24及更正−2。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "经济时间",
+        "超时的含义",
+        "成交更正"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-end-to-end-latency",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对串行总30变33与两事件分段最大值18≠总10，不加p99。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "边界影响数字",
+        "局部改善",
+        "分位数不能机械相加"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-alpha-decay",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对8基点每10毫秒减半，20毫秒余2扣3为−1，30毫秒余1。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "剩余优势",
+        "期望与保证",
+        "模型边界"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-signal-half-life",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对12到3经4秒对应半衰2秒，6秒余1.5净−0.5，假设指数明确。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "一半不是归零",
+        "等待与信号",
+        "缺少模型不能外推"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-liquidity-provision",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对被动买99.9后标99.8百股亏10、返1净−9与成交选择。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "返佣不等于净收益",
+        "选择效应",
+        "比较执行政策"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-taker-markout",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对主动卖标记10、真退出毛7.5净5.5；买卖方向和起点区别。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "上涨对卖方",
+        "买方方向",
+        "起点不同"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+      ]
+    },
+    {
+      "id": "concept:quant-conditional-fill-value",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对20成总−4得到每成−0.2每尝试−0.04；过滤10成总3及全机会费。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "条件均值",
+        "固定尝试成本",
+        "信号均值不能代替"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-arrival-intensity",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对相关机会速率2半秒期望1概率63.2%，不是自己全成率。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "事件集合",
+        "期望与概率",
+        "机会与本单成交"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-inventory-penalty",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对二次罚10到11增加0.42、卖至9省0.38和非现金性质。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "对称性",
+        "有限增量",
+        "模型与现金"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-tick-size",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对tick0.01边界100.03/100.07及0.05网格100/100.10，不误当数量步长。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "更粗网格",
+        "合法不等于被动",
+        "价格与数量"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+      ]
+    },
+    {
+      "id": "concept:quant-legging-risk",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对beta暴露12000−6000=6000下跌0.5%亏30，过补反向−2000。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "发出不是成交",
+        "过度补救",
+        "数量不匹配"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-non-atomic-execution",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对独立各90%时81/18/1，与完全相关90/0/10对比，补偿不是回滚。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "同时不是保证",
+        "独立假设",
+        "反向成交"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-touch-fill-model",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对触价但前50只成交20时自成0，前5则自单10可全成，时序禁止倒填。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "先后顺序",
+        "同价量不足",
+        "模型敏感性"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-counterfactual-replay",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对前15历史卖20只分5，不重复使用流动性，固定历史为假设。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "容量约束",
+        "小规模的含义",
+        "信息协议"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://arxiv.org/abs/1011.6402"
+      ]
+    },
+    {
+      "id": "concept:quant-hot-path",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对热路径20降16为20%改善、日志30移队列1得到21，保持风控。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "整体收益",
+        "异步不是消失",
+        "必要风控"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-latency-budget",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对预算100分配80留20、网络65总105超5，分位与均值边界明确。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "剩余空间",
+        "有效期缩短",
+        "平均数不能遮住超时"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+      ]
+    },
+    {
+      "id": "concept:quant-statistical-arbitrage",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对卖A买2B毛3扣1及0.4净1.6，反向扩大可亏5，名称非无风险。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "名称与风险",
+        "成本门槛",
+        "价格比较"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-pairs-trading",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对截距5不是股数，实际入场残差4.7、毛利3.7相对信号4。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "相关与回归",
+        "真实数量",
+        "执行损失"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-formation-period",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对形成期参数冻结和日期/发布版本、幸存者及预定滚动更新。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "未来资产池",
+        "数据修订",
+        "滚动形成"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-trading-period",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对净损益2−1+3=4、资本100收益4%，删亏交易变研究筛选。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "完整收益",
+        "反复调参",
+        "更新版本"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-price-residual",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对残差5到1对应固定组合毛4，截距重估下降不产生利润。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "单位",
+        "重新拟合",
+        "反向组合"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-return-residual",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对收益残差0.7百分点、对冲毛80包含截距10加残差70。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "百分点",
+        "截距贡献",
+        "模型依赖"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-dollar-neutrality",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对多空各万净0毛2万、beta7000，B涨88净−1000。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "净额与毛额",
+        "价格漂移",
+        "风险中性"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-beta-neutrality",
+      "file": "quant-market",
+      "status": "corrected-and-independently-reviewed",
+      "editorialFindings": "核对B空15000抵beta12000，市场跌2%±240；修中文反问答案明确仍可亏。",
+      "corrections": [
+        "第3题中文反问答“不会”改为不能推断无亏损，与英文语义一致。"
+      ],
+      "exerciseCoverage": [
+        "beta漂移",
+        "对冲比例",
+        "约束的对象"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-z-score",
+      "file": "quant-market",
+      "status": "corrected-and-independently-reviewed",
+      "editorialFindings": "核对参照3尺度2观测7得2、换分不变、尺度4得1；将“上涨尾”改“上尾”。",
+      "corrections": [
+        "中文“上涨尾概率”改为“上尾概率”，英文明确upper-tail。"
+      ],
+      "exerciseCoverage": [
+        "单位不变性",
+        "概率边界",
+        "零尺度"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-hysteresis-rule",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对状态机1.9/2.1/1.8/0.4的留空/开/持/平，跳过退出线不擅自反手。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "状态记忆",
+        "跳过退出线",
+        "减少切换的代价"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-entry-frozen-hedge",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对入场冻结2股不会因新系数2.2变股数，毛4及新轮22股。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "账本不能自动加股",
+        "风险例外",
+        "下轮使用新模型"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-time-stop",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对起算100截止130成交132实际32秒、净−2.5，未提供立即全平保证。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "起算点",
+        "停牌时到期",
+        "损失边界"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-pca-residual",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对(2,0)投影(1,1)余(1,−1)，保留全空间余0，正交不推出回归。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "投影结果",
+        "保留全部方向",
+        "几何与预测"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-factor-subspace",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对符号翻转同空间，方向(1,−1)变投影，坐标依赖策略不自动等价。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "符号翻转",
+        "实质变化",
+        "策略等价边界"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+      ]
+    },
+    {
+      "id": "concept:quant-hedge-rounding",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对空23.6取24残余−20或23残余+30，已有空10新增14，约束改变选择。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "更粗数量单位",
+        "已有持仓",
+        "符号风险"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    },
+    {
+      "id": "concept:quant-short-borrow-cost",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对10000×6%×30/360=50、净10，90天费150净−90，合同口径明确。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "一天与一年",
+        "毛利与净利",
+        "费用版本"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.sec.gov/investor/pubs/regsho.htm"
+      ]
+    },
+    {
+      "id": "concept:quant-borrow-recall",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对召回40以53买回损120、余空60，补借成本80超过毛空间60。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "统计对冲",
+        "部分数量",
+        "补借成本"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.sec.gov/divisions/marketreg/loanedsecuritiesfaq.htm"
+      ]
+    },
+    {
+      "id": "concept:quant-funding-risk",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对现金100需求130缺30、额度仅可提20仍缺10，净额不免保证金。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "金额中性",
+        "缺口计算",
+        "风险反馈"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.bis.org/publ/bcbs238.htm"
+      ]
+    },
+    {
+      "id": "concept:quant-crowding-risk",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对三策略共享A合计300万及100万显示容量，不把不同名字当分散。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "名称分散",
+        "低相关的限制",
+        "容量与需求"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w14465"
+      ]
+    },
+    {
+      "id": "concept:quant-next-observation-execution",
+      "file": "quant-market",
+      "status": "independently-reviewed",
+      "editorialFindings": "核对下一观测买101.1的10股支1011、卖98.9收989亏22，禁止同价倒填。",
+      "corrections": [],
+      "exerciseCoverage": [
+        "不能回填旧价",
+        "缺失记录",
+        "价格存在与可买数量"
+      ],
+      "englishReview": "已对照中文逐项阅读背景、定义、术语、边界、例子及全部题答，条件、方向和数量一致；发现的问题已修正。",
+      "sourceUrls": [
+        "https://www.nber.org/papers/w7032"
+      ]
+    }
+  ]
+}

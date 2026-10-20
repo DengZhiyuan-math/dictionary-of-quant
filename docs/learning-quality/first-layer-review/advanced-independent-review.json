@@ -1,0 +1,1523 @@
+{
+  "scope": 138,
+  "concepts": [
+    {
+      "id": "concept:quant-implementation-shortfall",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "39539c1f1adb91648d60497dd09494d8dcfd50547881214da168f04dc9097ce9",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-transactional-outbox",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "ae4785452454fca58a36f7c79109b21417caa3d2259067efbae71b4637888122",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-write-ahead-log",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "6b6d7bf3177b4e3136095b038d690c0142c8b73980c90f7f7d92977a7f8ff702",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-event-replay",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "3c61a3bdf467e90a0d74344628fda58057a9f0a1e33a8cad16538b4d9e7b595c",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-at-least-once-delivery",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "497922d99e0cfabe9b12820c93399f1696f3a7346a6abd108baa63e0c4c8724e",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-backpressure",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "62d32a60c289779b5efba14e1c6df72daf0ecc96da5b9b961c69c7163ee36dae",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-tail-latency",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "9e89ea2a4411e7bf404dd0bf78ed1b830e123337bc4d262c69933065fff6c280",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-observability",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "90bbd1d5ff1927a6e44a6f8c05defe485978900aa2e4dd4676d6e756b6cf7095",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-metric-cardinality",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "2ae8a99f8c496a55ed7cb4deed731e1e07700b42170a07d6f52807e2d8a6e3e9",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-reconciliation",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "21e6effde4dab435cf68d7f32fb30ae94813afa5ec8b11a88f8bb694632f820d",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-idempotent-processing",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "13abd63762b3de1e70e5d056068304ee067acaba0294076d0b59b417672383d7",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-client-order-id",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "314b76e96640deb496c15ef97ac4bd998a4ae52cc8c13629642f8c0559b04c7b",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-execution-id",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "954400b21beaff0c8be2f10c757038d669c76fe68b8151c4fe3088b748368b88",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-market-data-gap",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "14841f3ece024198c963e7732cdffaa35640ba96c712b6ab07f4f90d39e81cf7",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-snapshot-recovery",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "04602d351806b5f12b6f6e2d3c7d4a9e454ff29ea0de1eaf9c494d203c690df7",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-monotonic-clock",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "6ba05df49ced1b2bc08422051ff06a8a5fe5e52971a120583af81f6e2e6693e1",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-pending-risk-reservation",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "b7d7537e2ea4c4ad0a888364fb13a8fc1f26150749107c92851ba25052f440b1",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-kill-switch",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "b1d75c3b7585ae186f5be4bd23ff50a5069cc63710dbdab26c211beb18d42241",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-twap-schedule",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "d1fee369535fc4038ddd40833e3f9ceb094c9db47304f86068f47178220c7327",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-vwap-schedule",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "8bb2b3d24ffff082583f0adb2f07a491448fe11311e451a8676770916d7ed7ef",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-temporal-convolution",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "4f3c2bdefd89918c1ea3070dbe1a6635ee82b9c42799e5f65db7fe1b68a2bb6a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-causal-attention-mask",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "9824195ae85c6aa97fca15e11823f7ed6940903785c5d338506934584fbc6b72",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-permutation-importance",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "c3b04f6c4f2d291391ec5506bcd9a64f0d315b317c28cbe651879c8ec3d34a2f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-concept-drift",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "ee189280606cdff5447d55d305164037c2fe61465494129949d4d39ea8c1e000",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-shadow-mode",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "1781f79b37e27b13ea2fbbdd6c069fd92469bf5774896a707c49712dd9d79ee9",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-order-management-system",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "eb0788331588e76215688541a7eb5f8c34a9236b552bd17fa7d360e73e811a0a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-execution-report",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "2d3f5caff9ab67e3ee88475c641a29d29ee4792bdb42b4ebaebc9fcbaf394ab6",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-cumqty",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "2a74b47a93687524bbac76b8f1b4b70bb049b73d5946e73f49f6657d51196595",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-leavesqty",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "baa666d3494bece0865fc23d53368339c82a5e7ee3c2681ea572d6bd6c434e6a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-cancel-pending",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "90df19af3fdd634bbf2fbba7ecb906e9a1abfe2765f075a887ca1a7c0e4ce363",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-nested-time-validation",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "2af13bf01f03cf3d940133b008a0973fc5c8f0ea566290b43dd2a9c58262893f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-training-standardization",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "4f04e7d130f060bf7c753bdd2d1b5a3295f452be4f7e4a8ea707dfba1f959619",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-random-forest",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "01a75083fe980d301dd44649899b8647535d15f34657e9278ecb7d54e879aefb",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-gradient-boosted-trees",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "fb6057d9357b9fc5f2850f66c1a7dc06825728e5706164bbc3d4da376e5d5889",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-learning-rate",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "7d7f4088eb8799ad2caac264515fe98b3bbf4ab964459195679c07a531c4d0f8",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-early-stopping",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "f51b2ff49fbdf3cc9fe1320a154e49206624f606d8c90eaebd5bb9f9b4c84759",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-brier-score",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "7a6039aa7526140e9d859c5bf7e9a113d0e35e1a9b1282370d3d12922959f088",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-probability-calibration",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "97f05f11361630c89ab3d4bbe41671150f807ce5f77e633441d3b3c524ba4722",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-roc-auc",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "492c0923b7218d89dd0955ce5341f2ec6dc09777c8f009c6b5590086e1c0a3bf",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-lstm",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "67acd033a45dd1488689c7b3ed7b379b9dfb00e702f5b299e77a01937c198564",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-ewma-volatility",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "c4bcd9af3e9e183da5e2b5c24c17b8ff8e3e64080fa9dd6306980261b4584617",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-conditional-heteroskedasticity",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "c10361a354ee757596635dbcf73662d9fed7c508e165738f69e829decc743a2b",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-cointegration",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "1ef54948d92d03ec837c6965a1714ab27c08a9a6305f9378fea8e89ee4335b17",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-error-correction-model",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "5554c85efcfc196aea17ed37596125266fa1d084bcb6cda15de3d6f1707ce0a0",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-seasonality",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "01ac79204ece1ded9f2625684a504c7026629c3e9ad67c52ac75abbcd3e16438",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-aliasing",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "905491d67172df8bbe42a0592d43220aa0ba010d31eb3780a49b9563df289f9f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-forecast-horizon",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "ae4ece0a4caab6b591d3c2acd14721d7bd8ce137a7aaa14cf5528ae36d6398cc",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-rolling-origin-evaluation",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "7710f9fd4806b1271cfb71251ae128c7a33f62359b8532f490f624d203d6fabe",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-label-availability",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "653fb3a5dbfb0c79250f5c01c03f75e9e2ca7d52bd4f99d3176fa5415ac83c37",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-learning-pipeline",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "865335dd5442f7c8347aee14a1186b0ce12bcf421017489f7fc91cdc4c509f4a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-arima",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "a2e4a6dc0245a06dc2dc005986a99556baf691011184dc009f14f168492b6c91",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-autocorrelation-function",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "3c605c8e57bd4a908154740993cbb286f480c3418f6cfb80694a55ea65e6f76b",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-partial-autocorrelation",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "429a7229c367e2c5042638268900869b1c41cdda26ef8f73c93078f54b330f34",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-unit-root",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "5164da48e7465a46573de08807df11aa2e9fb544be51e78eb64d950554c52114",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-adf-test",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "ce897a1940549a5bccef1486792a84878f6446a5766d5ef7ed0c50748976bd02",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-kpss-test",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "7f510b9bf5560f2637132c176e737cc8cb58114855f2a96580e5f568993fe0e5",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-differencing",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "0806134328962be98b7f10bad5cb6a23ceaf31a260ca2cf2d86c3f8a50a434be",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-kalman-filter",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "41a48d8433c1ce7897c66db5c58e29b802ffa43f58e528cd1cc7147f29acb678",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-state-smoothing",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "cefc3046933ec1cfc6e3dd2089faf833c948d521b2e3239e1df0ac03f0c1a6ed",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-innovation-residual",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "16f43b59ccdc5d5bab128399ad32dd7c2ad4998bbfb9a38c5a70d8a95f8abbc5",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-kkt-feasibility",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "e10ead87bac95e35328886021101ba3015e0cb070172ecad128cbb35babd1e88",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-covariance-shrinkage",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "7c06eef547c80ae26529f10a64ebfde9502dcb9d3173ca3b2cfa7984645731dc",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-factor-risk-model",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "5c301dc81500593e684fb2d891c8f14ecb10d59a791749482cb817ea8512eb35",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-risk-contribution",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "f2f896c971c43f6420359514887049f1bea837959d53a8f33e9b26e2c00c669b",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-risk-parity",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "ce759ff4ab83c3d83fe1cd6d2bcb21bfccbf5be393eac457ba987dd475aa3384",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-var-value-at-risk",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "9979c5e5a5183690f21bc68dfec3a0eb30f84656b15523b90c85fd3d9980a77f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-es-cvar",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "4f7b784ecaffc42ff57b4da43e4a245e47a2d4558543901c6e33533951d0c6a3",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-robust-optimization",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "535e38649823aee5d90c0032cd0c04c091a08a3a895dc9fcb04d737fb71b66ce",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-no-trade-region",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "8a20c2a9f01a2ab5c7beb577d9c145745fcc7991777806ae2950c7f9dba7eff4",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:quant-multi-period-optimization",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "710897fd6c6cf219f3183aa9c0a9c1726b95e1a530320b085b1332dce67b469f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-derivative",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "3dfcdce9990e6e4967af891072d6fa625ac70d98eea7e8fbe8899932c0c04ab3",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-taylor-expansion",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "4766c1dcf493c9a66da3ab8d937eb6c912f00d65156489b7129932fb98778dd3",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-definite-integral",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "171d91bcd1b05355168108ff2c0de508b95490c9863b16a215eae2733fc01d20",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-eigendecomposition",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "3c0f668a4ea62670508ee1fc6b57270dc2048a1e1b99383d6d06158da1e897c2",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-cholesky",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "8fd8909bf5dc7f1335da57864b4a211e6d90904f2e6321e04001dddee026f04c",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-convexity",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "342214dde7d1ec27c7d2532e4aeb93c0398028e48499818941bc0689de54c389",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-ode",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "3fb88955d3365504b84799eab78809f5799dab806cfac0c0b6f98750fdbb4a21",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-pde",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "a3d21bb81ae73c04a7c3a465518c406ed41f20d82a93e56a844c8c755b569282",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-root-finding",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "e0906aff33057d769b8c850ee200643f8fdfd6965d1c3dd932bf139fed0428dd",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-quadrature",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "7824fca78a420465af0b72519b393f19e178339ede34a0be60a419b0b76af26d",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-floating-point",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "b5560ef1a6d3f893f6e0246961ad93646ed6fcb059b74198d1272574a7e8a751",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-compounding",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "be7e1ebc6eff910be75078f28ade8cf01057ef64db0b323b84d4d6f12e44ce3d",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-monte-carlo",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "14e4d6f0b8b4cd70d7641a928f0c064699488bd40a2d1547f86bd692e126ef8d",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:math-control-variates",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "a0427d053cca9be2f63e049b2b9b8198bd6f8579a606c0ed7edc741667f08111",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-conditional-probability",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "85465e7fcacd41036f10dc29cc7e76f52e5176605846d0a831a5ff4bc1990c0c",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-random-variable",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "6ea2f2694b28a7ce76463c1e3fd5a61a009506120e1811a5613b364bc4382298",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-independence",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "6328d855b3c908d6f8ba5701f48afba744432fa34f9139948be2f6ba0fc60c6a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-normal-lognormal",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "9b7ed3af3549de5519aae54e469f947cd18cf90ae9afe6ed1ff91e9dacaf6695",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-mgf",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "89205ecf6d350f8edf6aac7c44fc4f9f9265fc643b2a61d4a58352d8c7de580e",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-copula",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "d11518512490c33ae22f50f5a5d30634554c04fd8f5358222471afd671724818",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-limit-theorems",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "0a76e0af32e467fea21d06ba524e43f74e8b254f2b08a7931b34636c21f5c46d",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-jensen",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "d09e89953a14754ede531c47c80b15601f5ffe3195f1e365df827cd58fc3ca6c",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:prob-sigma-algebra",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "f2a5fb18c340d10647ac8983252fde7f04ba5d1adba573d54e3a40728694f281",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stat-mle",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "41f3fa52cbcb375847fa6ff30c1fc23492255b9e7ce38e6d883d10f9027ac17b",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stat-hypothesis-testing",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "471ac874d4bad39bae3a67957c4a5afbfd1108a9dd3a1603ed976a5e1928fc6a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stat-metropolis-hastings",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "73d3aa3ed59ab034ac89317a798cce447687bacb47b4c8bcd8260312d8f98c9a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stat-cusum",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "7deabca52e8b06ef4aa3e4fa32558f2b8c526071f903a9926d0717e4c7dd65d0",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stochastic-ito-integral",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "5f11bb5b663196ae2719f6d1a5cfda36ac193c1c4342caadb01b502ab24acd3a",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stochastic-sde",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "93184fc66a3f946525ad19a25226622618acb113e740e0e9f0e19313dd2c9dcf",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stochastic-girsanov",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "97aaaa45029c800087a351bbaea2b0a8e59a6e5a94361724643898c5b9cafedd",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stochastic-feynman-kac",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "5a39a8c40deb3aafcb5940dedb0d00949b0931ad99debadc9160f3299523e679",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:stochastic-levy",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "d006be9aa584867bce3aa7cfe84f1320908bf8615b8e3873f7ffa9c4321b6e5f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:market-instruments",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "98fb8a77c312b472b0705613f4bf10ce30ea502a006d1f1f55570d32ce513615",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:market-margin-leverage",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "715c48dc9112bd6f1cbf0902545d08823717dae22441c533fb9367139de9876f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:market-forward-pricing",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "b1de49fb0f9adfed99f0289673a13dda952db35488cad6e3fea38051601d2f99",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:market-no-arbitrage",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "85a910b22f72197d7df7bea55a64c0551a3c6a58923f9d315cbdc3f957d06db9",
+      "findings": "将定义改为零初始投入并解释初始净流入可投资现金的等价情形，补齐严格获利条件。"
+    },
+    {
+      "id": "concept:pricing-local-volatility",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "ed397377c6ddc4d90aa7f2b8f25936e5595cbbbbfa0a061a41fb23ffaebaa5eb",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:pricing-stochastic-volatility",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "37d3304ab9437665d374f2531274d348a63c5c691c96360014187482ceed67b9",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:pricing-variance-swap",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "3af20a1e806f4b91673035147d3a501f811dee8a804751ba62d33866416d6bf9",
+      "findings": "去掉通常去均值的误导，区分常用收益平方和与合同采样约定。"
+    },
+    {
+      "id": "concept:pricing-fourier",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "af4d06c850e54b62f8ca849f20923aa4adb100e447ba994ce2087ef69d3d0766",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:pricing-longstaff-schwartz",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "890a191f81de8575fbf7e41f84e2989633a913492c0d306c03bc91a421071c75",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:pricing-model-calibration",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "fde327a3823b8c09ad55380eaf760738c044ad538569aa914589156b1ee833cc",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:rates-bond-yield",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "2e5f160341666510aa227aa1eae291f15a21fb491d9f8931f7bc9cc7e5b83a48",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:rates-curve-bootstrap",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "d18253169fad5cea73cafcf57c44bf00e92fa3607bc1dd825fb95d758a3a70d2",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:rates-interest-rate-swap",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "386fe9b86f8bee7df22bd697d2028756db13011fcafdda318479559168707d7f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:rates-short-rate-model",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "1f40249fbf3fc0a3f3fc3fc2b77f3f65d644321f3fdfc14bc2cc377a282ace20",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:rates-hjm-lmm",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "4d2a42eda86f31f4d6d37bbee6fdbc3ab7cf009c33be83bb881f86e65e2ccd51",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:rates-credit-hazard",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "028eb1c85a23f61b3e3e084c3086363f78faac16c79af8f82902699cb7706d8b",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:portfolio-capm-apt",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "9aab840115e8f33e2b27a2e0902528c4da8cc505dc57c9e90e37623125bf2250",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:portfolio-black-litterman",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "b26f3d956b3a2fa637ae22312abea3285b9f469fd72d292047f74e2fac0bc0db",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:portfolio-extreme-values",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "91b98575dd3acb01c1592cc991cfc65a27cfb5348fd49cdfafe0874a312f0ce9",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:portfolio-deflated-sharpe",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "82e4026cbf3a8391d24bede9e73bdd4cad877a426330e112719d75aebe47591c",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:portfolio-hrp",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "8a9dda655ffffb2f48b5f6323c89bcd1b951817dcce5a20a78211bfeaddcd241",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:strategy-momentum",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "0030b5f130c89e4fc4e4433ed07bae491a3771e601792716e3358af2ce03ecf1",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:research-event-study",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "dd871b69d0ac0628c9766f598d0e7d7c4be336d2902227320eee439a2d13faa9",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:strategy-volatility-premium",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "e422baf24ca7e51aabce7ad4beba53485e18988d2c8ea63943d2420311aa5703",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:strategy-cash-carry",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "78880485649caec55cbdf172d198210895da2a67727ef1f7064cd90442936c5e",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:microstructure-price-formation",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "b8ebf75b43d42e138a63bb368c335818283c7a43221df1360a31dbf630631209",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:microstructure-square-root-impact",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "9b652e17ea2b158929bece819af69a72c08a635479c99d93e8bba025928fde86",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:marketmaking-avellaneda-stoikov",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "311f8233d5c65f5034a8cc00a238ca0e29675012c04a5296e54a09ec66052085",
+      "findings": "使用与示例原簿相容的库存偏移报价，明确最终合法与可挂校验。"
+    },
+    {
+      "id": "concept:marketmaking-glft",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "5c3a6153eb826b0c95e1500b4ca6f9657e52cc824d7ca3edd24f1ed5693d3840",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:ml-triple-barrier",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "b66a582d1804e7c0f5dd8b67a4d9f92c9f58b9df65e009268c772fd91e6bc151",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:timeseries-fractional-differencing",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "6b1449de3829e17a29a05c3c1360f52c978de4ba92b0b0a5ad7acb08edb31d0e",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:ml-shapley",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "df9a1a955e9017b1fd408c6fc5adcbab2e31897232d7f2c66c7b368eaa97442d",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:ml-deep-hedging",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "8411c140a01867cbef050a63bb1a7a101794bc921355e2581371cc22c4c0317f",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:ml-rl-trading",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "0caa2a94c62cdb88eac5f1b3311f89d6adcb6e0c965cea0bbbb1a3f46eed1b91",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:ml-financial-nlp",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "dbfcbe0cef8b8f8c929213c28d3284e19b581e2535e21c42ce59b9cb5f15893b",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    },
+    {
+      "id": "concept:execution-almgren-chriss",
+      "reviewer": "primary-agent",
+      "checked": [
+        "定义及所限定的模型对象",
+        "具体例子与计算",
+        "全部三道理解练习及解答"
+      ],
+      "introSha256": "e7e429389982d7e8fb29224eca1e22a301968a800f0d973c788d96d250c9da6d",
+      "findings": "本轮所检查的定义、算例和已解练习未发现需进一步修正的问题。"
+    }
+  ]
+}

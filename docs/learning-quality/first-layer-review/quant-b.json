@@ -1,0 +1,1263 @@
+{
+  "concept:quant-implementation-shortfall": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义只说“差多少”，未确定未成交计价终点；例子漏掉机会成本且答案只有基准名称。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "全部100股以101元成交、费用2元，短缺多少？",
+      "未完成部分终点价格变成99元，会怎样？",
+      "成交贴近当日VWAP就没有短缺吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.21314/JOR.2001.041"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-transactional-outbox": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未解释事务的边界，容易把本地持久意图误当成外部成交。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "发件箱里有O1，能记8股持仓吗？",
+      "风险预留成功、消息记录失败，是否符合此模式？",
+      "场所已接受、确认丢了，可以换O2重发吗？"
+    ],
+    "sourceUrls": [
+      "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-write-ahead-log": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "收据类比替代了WAL顺序条件，未区分数据页、提交与持久化。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "日志只在内存缓冲区，能承诺断电恢复吗？",
+      "为什么不要求每次提交都先写完所有数据页？",
+      "恢复到5股后再次处理101应得到7股吗？"
+    ],
+    "sourceUrls": [
+      "https://www.postgresql.org/docs/current/wal-intro.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-event-replay": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "原答案未交代初态、处理规则与外部副作用，缺少可复核的账本例子。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "相同日志得到相同持仓，能证明没有漏成交吗？",
+      "回放成交时要重新向交易所下单吗？",
+      "更新了费用规则，旧事件重放结果一定不变吗？"
+    ],
+    "sourceUrls": [
+      "https://kafka.apache.org/42/design/design/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-at-least-once-delivery": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例用收据比喻，未说明确认丢失如何正常地产生重复，以及去重原子性。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "第二次收到E1就是两笔交易吗？",
+      "先写去重标记，再单独更新持仓，有什么漏洞？",
+      "不用重试、超时就丢弃能实现至少一次吗？"
+    ],
+    "sourceUrls": [
+      "https://kafka.apache.org/42/design/design/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-backpressure": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "水池类比没有解释反馈机制，也未区分可合并快照与不可丢失事实。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "容量翻倍后，持续超载是否解决？",
+      "把每第二条成交丢弃，能安全减载吗？",
+      "合并同一证券的完整最新报价是否总是错误？"
+    ],
+    "sourceUrls": [
+      "https://www.rabbitmq.com/docs/flow-control"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-tail-latency": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文没有明确分位算法，100样本例容易误把p99当100毫秒。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "p99为1毫秒，能断言所有请求都不超过1毫秒吗？",
+      "平均1.99毫秒是否代表典型请求约2毫秒？",
+      "两服务分别从入队和出队开始计时，p99可直接比较吗？"
+    ],
+    "sourceUrls": [
+      "https://sre.google/sre-book/monitoring-distributed-systems/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-observability": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "原文是监控工具清单，缺少证据如何连接并支持业务验证的过程。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "CPU利用率正常能说明交易系统正确吗？",
+      "一条报错日志为什么可能仍无法定位问题？",
+      "错误率恢复为零，就能结束检查吗？"
+    ],
+    "sourceUrls": [
+      "https://opentelemetry.io/docs/concepts/observability-primer/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-metric-cardinality": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例没有说明组合上界与实际基数区别，也未解释标签为何产生独立序列。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "只实际出现80组标签，会有200条序列吗？",
+      "把订单号从标签移到日志，会丢失按订单排查能力吗？",
+      "所有标签各只有少数取值就一定便宜吗？"
+    ],
+    "sourceUrls": [
+      "https://prometheus.io/docs/practices/instrumentation/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-reconciliation": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只有数量差异，未展示现金联动、截止对齐与保留修复证据。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "持仓相同就说明现金正确吗？",
+      "本地截至15:59，外部截至16:00，可直接判为漏记吗？",
+      "发现E2遗漏后，应只改汇总还是补有身份的事实？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-idempotent-processing": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "收据类比未区分事件身份与内容相同，也未说明去重状态的恢复边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "同订单两笔成交可按订单号去重吗？",
+      "重复事件到达时完全不回确认是否合理？",
+      "去重记录丢失但持仓还在，有何风险？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-client-order-id": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义把订单标识称为“名字”，省略协议范围及与订单号、执行号的关系。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "没收到确认就是拒单吗？",
+      "客户订单号能给每笔分批成交去重吗？",
+      "换新ID重试为什么危险？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-execution-id": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "原文未解释更正引用关系，容易把每条执行报告当成新增成交。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "E1和E2属于同一订单，可删E2吗？",
+      "收到新执行号就必然加持仓吗？",
+      "两个场所的执行号都为123，能判重复吗？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-market-data-gap": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未说明序号为何影响增量状态以及缺口后的使用边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "接着收到13能自动补11吗？",
+      "收到10的重复消息算新缺口吗？",
+      "盘口看起来合理就能继续交易吗？"
+    ],
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-snapshot-recovery": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "原账本页码类比未展示覆盖边界、重复应用与连续接续的数值结果。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为什么快照20后只接21？",
+      "缓存只有22，没有21，能宣布恢复完成吗？",
+      "另一会话序号也为20，可直接混用吗？"
+    ],
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/glimpse_v4.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-monotonic-clock": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "跑表类比未解释时钟域、日历用途和休眠语义，易误用于跨机延迟。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "两机读数分别1000和1025毫秒，能推出网络延迟25毫秒吗？",
+      "单调读数能直接转换成交日期吗？",
+      "接口不计休眠，能测用户经历的全部等待吗？"
+    ],
+    "sourceUrls": [
+      "https://cdn.kernel.org/doc/html/latest/core-api/timekeeping.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-pending-risk-reservation": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例未展示成交后预留转换，容易同时高估或漏算在途风险。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为什么不能只看当前持仓0？",
+      "买8和卖8可以无条件净为零吗？",
+      "发出撤单后何时释放预留？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/tools-information/webhelp/globex-credit-controls/Content/Kill-Switch.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-kill-switch": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文没有区分触发、外部终止与实际减仓完成的不同状态。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "停机后到达的成交可忽略吗？",
+      "发出撤单就算停机完成吗？",
+      "解除开关就应自动恢复所有策略吗？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/tools-information/webhelp/globex-credit-controls/Content/Kill-Switch.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-twap-schedule": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文混淆计划与价格基准，未展示未完成量如何影响剩余任务。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "每桶100股说明成交价格相同吗？",
+      "第二桶少成交40股，第三桶一定必须补40吗？",
+      "市场量集中在尾盘，TWAP还按时间均分吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.21314/JOR.2001.041"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-vwap-schedule": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文缺少事前预测与事后VWAP的区别，未明确未来信息风险。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "预计总量翻倍而各段占比不变，目标数量需翻倍吗？",
+      "事后量分布可用于当天开盘时的回测计划吗？",
+      "成交接近市场VWAP就比决策价好吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.21314/JOR.2001.041"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-temporal-convolution": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例只有可看日期，未解释权重共享与卷积输出含义。",
+      "单位复核将加权和左边各输入明确写成3%、2%、1%，避免将百分数坐标误当无量纲数。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "共享权重意味着每天输出相同吗？",
+      "居中窗口预测当前收盘前收益有什么风险？",
+      "本例输出2.3%可直接作为持仓比例吗？"
+    ],
+    "sourceUrls": [
+      "https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv1d.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-causal-attention-mask": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义没有解释注意力与掩码的分工，也未指出特征内泄漏无法靠掩码修复。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "遮住未来位置就保证整个流程无泄漏吗？",
+      "第10位置读第3位置一定合法吗？",
+      "能证明该特征导致收益上涨吗？"
+    ],
+    "sourceUrls": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-permutation-importance": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧题没有冻结模型、评分方向及时间重排适用条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "打乱后误差0.9，重要性是多少？",
+      "重要性零就能断言信息无用吗？",
+      "置换时重新训练还是同一种指标吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/permutation_importance.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-concept-drift": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义过度口语化，未区分条件关系漂移、输入变化及标签延迟。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "输入直方图不变能排除漂移吗？",
+      "一天预测失败足够证明漂移吗？",
+      "没有新标签能立即验证上涨概率已变吗？"
+    ],
+    "sourceUrls": [
+      "https://arxiv.org/abs/2111.13657"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-shadow-mode": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义未解释实时验证价值及模拟动作与账户状态的隔离边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "实时运行是否就是真实交易？",
+      "影子策略可以检查什么回测易漏掉的问题？",
+      "拟买10股后上涨1元可入账10元吗？"
+    ],
+    "sourceUrls": [
+      "https://docs.aws.amazon.com/sagemaker/latest/dg/shadow-tests.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-order-management-system": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把OMS仅作为数量追踪，未说明生命周期、身份与未知中间状态。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "目标6股能直接写成持仓6股吗？",
+      "同一订单反复收到累计3股，是否每次加3？",
+      "OMS为什么需保存未知状态？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-execution-report": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例仅警告累计不能加，缺少报告类型与三类数量关系。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "累计3的报告两次到达，持仓6吗？",
+      "撤单确认表示已成交部分也消失吗？",
+      "新执行号是否足够决定持仓加多少？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-cumqty": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "原定义未考虑更正，也未解释终止后累计与余量不必等于原量。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "撤掉余5会把累计变10吗？",
+      "累计5的重复回报需要再加5吗？",
+      "累计从5改为3是否永远是错误？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-leavesqty": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文本没有解释活动量与原量减累计在终态中的差别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "余量7说明已经持有7吗？",
+      "终止后原量10减累计5等于5，为什么余量0？",
+      "界面点了撤销能立即释放全部预留吗？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-cancel-pending": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文没有分清原订单和撤单请求，缺少竞态时间线与拒撤解释。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "待撤状态收到成交是协议矛盾吗？",
+      "撤单超时后可把原订单设为已撤吗？",
+      "撤单被拒后应该忽略原订单吗？"
+    ],
+    "sourceUrls": [
+      "https://www.fixtrading.org/wp-content/uploads/download-manager-files/Order-State-Changes.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-nested-time-validation": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "模拟卷类比替代了嵌套结构，未解释重拟合与标签跨界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "用2022年选深度，2022年还能叫外层测试吗？",
+      "内层随机打乱时间是否适合此设定？",
+      "外层测试结果评价的是某个固定参数吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-training-standardization": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义缺少处理步骤的拟合属性，未讨论零尺度、滚动更新和单位解释。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "标准化值3是概率300%吗？",
+      "先用全部年份标准化再分训练测试可以吗？",
+      "转换后两点均值零就能推断正态吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/preprocessing.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-random-forest": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "评估者类比没有定义决策树、随机化来源及平均的适用边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "平均预测10个基点就是保证赚10个基点吗？",
+      "100棵完全相同的树比一棵更稳定吗？",
+      "随机抽样是否替代未来留出集？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/ensemble.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-gradient-boosted-trees": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把所有提升概括为修正误差，缺少损失和梯度的具体分工。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "学习率变1，本例新预测多少？",
+      "任何损失下新树都拟合原始残差吗？",
+      "训练损失持续降低就应一直加树吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/ensemble.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-learning-rate": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义没有区分梯度步长与提升缩放，误把学习率当统一绝对幅度。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "修正为−10、学习率0.1时预测多少？",
+      "学习率减半，迭代数固定，结果一定更好吗？",
+      "学习率0是否代表不持仓？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/ensemble.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-early-stopping": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧题只有一条误差序列，未说明耐心值、恢复规则和测试污染。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "最低训练误差轮一定是最佳停止轮吗？",
+      "上述停止轮和最佳轮分别是多少？",
+      "可以反复用最终测试集决定何时停止吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/ensemble.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-brier-score": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文没有明确平均平方误差定义与事件口径，数值示例不完整。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "预测0.8且事件没发生，单次得分多少？",
+      "0分说明什么？",
+      "所有上涨幅度都极小会影响该评分吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/model_evaluation.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-probability-calibration": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义未区分校准与区分能力，也未解释校准器需要独立拟合数据。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "80%上涨概率就是收益80%吗？",
+      "恒报50%、恰好半数上涨，模型有区分能力吗？",
+      "用最终测试集拟合校准器会怎样？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/calibration.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-roc-auc": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未定义ROC率与成对概率，例子只提示比较而没算结果。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "正负例都同分，AUC多少？",
+      "把所有分数乘10，AUC改变吗？",
+      "AUC高能省去收益及成本检验吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-lstm": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "便条类比未定义门和状态，内部数值单位容易误读。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "遗忘门为0，会怎样？",
+      "门是人工每天决定的吗？",
+      "有记忆就能读取未来吗？"
+    ],
+    "sourceUrls": [
+      "https://docs.pytorch.org/docs/stable/generated/torch.nn.LSTM.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-ewma-volatility": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "原文只有风险直觉，未给方差递推与波动率区别及时间单位。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "最新收益改为+3%，新估计改变吗？",
+      "可直接平均1%和3%得到新波动吗？",
+      "λ从0.94增至0.99，新冲击影响如何？"
+    ],
+    "sourceUrls": [
+      "https://arch.readthedocs.io/en/latest/univariate/univariate_volatility_modeling.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-conditional-heteroskedasticity": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未给“条件”的信息集合含义，波动聚集被混同性质定义。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "风险预测3%说明预期上涨3%吗？",
+      "两状态均值相同能排除异方差吗？",
+      "大冲击之后一次安静观测能证明风险消失吗？"
+    ],
+    "sourceUrls": [
+      "https://arch.readthedocs.io/en/latest/univariate/univariate_volatility_modeling.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-cointegration": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义用“比较稳定”替代单整和平稳组合条件，例子无法区分相关与协整。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "y=x加另一独立随机游走，相关高就协整吗？",
+      "本例系数为何是2？",
+      "组合平稳等于每天回到均值吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-error-correction-model": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文缺少关系、差分和贡献分解，易把调整项误当实际变化。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "偏离5、系数−0.2，实际一定跌1吗？",
+      "把偏离定义反号，系数可保持不变吗？",
+      "差分方程中还需要初始水平吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-seasonality": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例只给平均数，未交代可比窗口和日内基线如何避免误报。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "开盘量高就预测上涨吗？",
+      "每天开盘量不同就否定季节性吗？",
+      "交易时段改变后可照搬旧基线吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-aliasing": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "转轮类比未给可复核同采样信号，未区分采样前滤波与采样后处理。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "多记录几个同样间隔的点能区分这两信号吗？",
+      "观察到慢周期就证明真实过程缓慢吗？",
+      "下采样后再滤波能避免所有混叠吗？"
+    ],
+    "sourceUrls": [
+      "https://numpy.org/doc/stable/reference/routines.fft.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-forecast-horizon": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义未区分远期水平、累计收益和单期收益，例子偏离期限主题。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "两日收益3%就是每天1.5%吗？",
+      "一分钟模型误差更小就比一日模型好吗？",
+      "后天价格实现后可重写今天预测吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-rolling-origin-evaluation": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文强调不偷看但未定义滚动过程、扩窗选择与标签资格。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "固定120窗口意味着必须提供120对吗？",
+      "五日目标在第二日能作为训练标签吗？",
+      "模型每天更新与每月更新评价能混报吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/cross_validation.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-label-availability": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只考虑目标实现，未体现数据到达延迟与历史最终数据库的陷阱。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "第2日训练能使用这条五日标签吗？",
+      "第5日刚收盘就一定可用吗？",
+      "数据库把2%写在第0日行，是否改变可用时点？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/cross_validation.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-learning-pipeline": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义只有操作列表，未说明整体拟合、线上一致性及交叉验证边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "无监督标准化可先看测试数据吗？",
+      "只保存最终回归系数够吗？",
+      "用了管线就不用检查字段发布时间吗？"
+    ],
+    "sourceUrls": [
+      "https://scikit-learn.org/stable/modules/compose.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-arima": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义错误暗示所有ARIMA都必须差分，未解释移动平均项和创新。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "d=0是否仍必须先差分？",
+      "下一期输出1.6表示价格1.6元吗？",
+      "q项是过去价格的滑动均值吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-autocorrelation-function": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文缺少弱平稳与非零方差条件，容易把样本相关当独立性。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "两期相关0.64就证明有独立二期作用吗？",
+      "相关为零就可以任意独立抽样吗？",
+      "常数序列的ACF是多少？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-partial-autocorrelation": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义“扣掉影响”不够准确，未说明双边投影及线性而非因果。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为何ACF为正而PACF为零不矛盾？",
+      "样本二阶PACF很小就是证明AR(1)吗？",
+      "PACF等于因果效应吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-unit-root": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文用路径现象代替动态结构，缺少随机趋势与确定趋势区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "一直上涨的确定线性趋势必有单位根吗？",
+      "该随机游走一阶差分是什么？",
+      "第一步冲击对十步后水平影响会变小吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-adf-test": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧介绍回避了ADF的回归对象与增广作用，只剩假设检验口号。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "统计量−2、给定临界值−3，拒绝吗？",
+      "可把普通t表临界值代入吗？",
+      "增广项作用是再做一次差分吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-kpss-test": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文没有定义残差累计统计量及长期方差，未解释与ADF联合结果的局限。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "KPSS拒绝就一定是单位根吗？",
+      "为什么不能只用残差平方和？",
+      "ADF和KPSS都不拒绝意味着逻辑矛盾吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-differencing": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义缺少阶数与初值关系，例子没有并列差分和真实收益。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "差分3元等于3%吗？",
+      "只给差分能唯一恢复水平吗？",
+      "一阶差分3、−1、4的二阶差分是什么？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-kalman-filter": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文用可信程度直觉代替模型条件，未分清滤波最优性与平滑。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "测量噪声方差变大，增益如何变？",
+      "估计0.8是否就是真实状态？",
+      "能用明天测量修正今天线上信号吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-state-smoothing": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未定义平滑信息集，例子没有给出未来测量如何关联过去状态。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为何平滑比当时滤波用了更多信息？",
+      "回测直接用平滑过去状态下单合法吗？",
+      "观测无噪声是否永远需要平滑？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-innovation-residual": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只讲预测误差，未区分更新后残差及标准化单位。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为何标准化除0.2而不是0.04？",
+      "创新0.20元就赚0.20元吗？",
+      "用更新后估计计算的差还能叫先验创新吗？"
+    ],
+    "sourceUrls": [
+      "https://www.statsmodels.org/stable/tsa.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-kkt-feasibility": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义只有可行与最优的口语区分，未定义KKT各部分及凸性限制。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "x=0可行是否足够？",
+      "x=2目标0为何不能选？",
+      "非凸问题KKT成立可直接宣称全局最优吗？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-covariance-shrinkage": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文误导收缩必减联系，缺少矩阵目标、强度及估计与现实区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "δ=0和δ=1分别是什么？",
+      "协方差被调小可当作风险已真实减少吗？",
+      "目标F含更高相关时收缩一定减相关吗？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-factor-risk-model": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只有共同与特殊口号，省略协方差分解的正交与残差假设。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "两资产各半是否使共同风险减半？",
+      "一个暴露+1、另一个−1会怎样？",
+      "D对角是定义还是建模假设？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-risk-contribution": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义未指定风险度量与归因规则，未解释贡献份额和负贡献。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "资金各半为何不是风险各半？",
+      "能只把个体波动按权重相加吗？",
+      "负贡献必定是计算错吗？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-risk-parity": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未定义风险贡献，也未限制逆波动解所依赖的结构。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "同例最小方差也给1/3、2/3吗？",
+      "两项波动相同时会怎样？",
+      "加入相关性可直接沿用独立公式吗？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-var-value-at-risk": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只说“大部分门槛”，缺少分位严格定义、损失符号及离散概率边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "VaR为4就最多亏4吗？",
+      "该例90%VaR是多少？",
+      "能直接比较一日和十日VaR吗？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-es-cvar": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义易把ES误解为严格超VaR均值，未说明离散边界质量。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "70%ES为什么不是10元？",
+      "ES=8代表没有损失超过8吗？",
+      "最坏损失改100，80%ES如何变？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-robust-optimization": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文用“较能接受”替代最坏目标，未解释集合选择与概率模型区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "若A区间变4%到8%，本模型选谁？",
+      "没有概率为何仍能优化？",
+      "真实参数落集合外会怎样？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-no-trade-region": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例把成本系数与真实费率混淆风险较高，未解释部分调仓和强制约束。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "a=0.60时为何不到0.60？",
+      "成本系数翻倍为0.04会怎样？",
+      "超过硬性风险上限还能以省费为由不动吗？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:quant-multi-period-optimization": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只有任务均分，未说明信息适应、滚动重算与最优依赖条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "今天少买1股会怎样影响明天？",
+      "第二期更贵为何往今天移？",
+      "必须首期完成时还能用5与5吗？"
+    ],
+    "sourceUrls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "secondLayerPreserved": true
+  }
+}

@@ -1,0 +1,1695 @@
+{
+  "scope": 130,
+  "concepts": [
+    {
+      "id": "concept:quant-adverse-selection",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "80/120两状态由接受99元报价筛成80，条件损失−19；现金动机等比例筛选时均值100，定义未把一般损失统称逆向选择，中英文一致。"
+      ],
+      "exerciseCoverage": [
+        "筛选发生在哪里",
+        "分辨交易动机",
+        "边际与保证"
+      ]
+    },
+    {
+      "id": "concept:quant-ap-authorized-participant",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "一级新发1000与二级转让100不重复计发行；20/1000=0.02费用分摊与净值10分开，AP权限与做市职能已区分。"
+      ],
+      "exerciseCoverage": [
+        "追踪份额变化",
+        "区分机构职能",
+        "费用的单位"
+      ]
+    },
+    {
+      "id": "concept:quant-arbitrage-band",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "创建用篮子ask/ETFbid，赎回用ETFask/篮子bid；带9.95–10.05、实际−0.01/−0.13及成本扩大后9.90–10.10均正确，未用中价虚构可执行套利。"
+      ],
+      "exerciseCoverage": [
+        "中价能否触发套利",
+        "改变可执行报价",
+        "解释区间变化"
+      ]
+    },
+    {
+      "id": "concept:quant-ask-offer",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "150份跨档100×10.02+50×10.05=1504.5、均价10.03；限价10.02只能100份，报价方卖出方向与−0.03净额正确。"
+      ],
+      "exerciseCoverage": [
+        "辨认交易方向",
+        "价格限制",
+        "报价与盈利"
+      ]
+    },
+    {
+      "id": "concept:quant-backtest",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "现金账本98+990−2=1086、部分成交398+660−2=1056；信息时点、成交和持仓、重复研究选择均有明确区分。"
+      ],
+      "exerciseCoverage": [
+        "检查信息时点",
+        "部分成交",
+        "检验的对象"
+      ]
+    },
+    {
+      "id": "concept:quant-basis-risk",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "spot−future基差从−2到−3，现货−6加期货空头+5合计−1；上涨替代情形+4−5仍−1，费用0.2单列，无重复或符号错误。"
+      ],
+      "exerciseCoverage": [
+        "核对残余损益",
+        "同一基差变化",
+        "识别独立成本"
+      ]
+    },
+    {
+      "id": "concept:quant-bayes-theorem",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "100故障预期90报警、9900正常预期495报警，90/585=15.38%；10%先验后验2/3和同报警率无信息均正确，英文保持条件方向。"
+      ],
+      "exerciseCoverage": [
+        "倒置条件的错误",
+        "改变基准率",
+        "证据是否有信息"
+      ]
+    },
+    {
+      "id": "concept:quant-beta",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "协方差0.0003/方差0.0002=1.5，−3%基准项+1%残差=−2%；beta2与相关1、零beta不代表无风险均准确。"
+      ],
+      "exerciseCoverage": [
+        "敏感度不是承诺",
+        "比较贝塔与相关",
+        "零贝塔的边界"
+      ]
+    },
+    {
+      "id": "concept:quant-beta-distribution",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Beta先验(1,1)+3成功1失败=(4,2)，后验预测2/3；再两失败=(4,4)。条件固定p独立与未知p分布/二元观测区分完整。"
+      ],
+      "exerciseCoverage": [
+        "对象是否相同",
+        "相同均值不同信息",
+        "继续更新"
+      ]
+    },
+    {
+      "id": "concept:quant-bid",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "卖150份按99/98.5两档得14825，均价98.833；客户卖出对应报价方买入，空40变空10及往返损失2符号正确。"
+      ],
+      "exerciseCoverage": [
+        "辨认双方动作",
+        "最低成交价",
+        "价差与往返成本"
+      ]
+    },
+    {
+      "id": "concept:quant-block-trade",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "10000×0.04+100=500、相对百万为5bp，分批650与整笔500差150；大宗门槛非普遍，屏幕100份不支撑10000份替代基线。"
+      ],
+      "exerciseCoverage": [
+        "最优价的规模限制",
+        "费用与比较",
+        "数量不定义统一门槛"
+      ]
+    },
+    {
+      "id": "concept:quant-data-leakage",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "季度归属/发布/收到/修订四时点清楚，18:00:01不可用、18:00:03条件可用；预处理与重叠标签污染未漏，中英文条件一致。"
+      ],
+      "exerciseCoverage": [
+        "期间与发布时间",
+        "无标签也会泄漏",
+        "合法更新"
+      ]
+    },
+    {
+      "id": "concept:quant-bps-basis-point",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "25bp=0.25个百分点、2%到2.25%相对12.5%，800万×12bp=9600；半年10bp利息500而非1000，基数和时间口径完整。"
+      ],
+      "exerciseCoverage": [
+        "单位转换",
+        "相对增长",
+        "时间口径"
+      ]
+    },
+    {
+      "id": "concept:quant-cash-balancing",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "篮子9980+调整20+费用5=10005；篮子10030时调整−30且基金返还，现金调整非手续费与收入非利润辨析正确。"
+      ],
+      "exerciseCoverage": [
+        "方向与金额",
+        "避免重复成本",
+        "现金收入不是利润"
+      ]
+    },
+    {
+      "id": "concept:quant-conditional-expectation",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "条件概率0.75/0.25给均值90而支付仍80/120；可积条件与一般条件期望积分定义、零概率边界以及均值非完整风险描述准确。"
+      ],
+      "exerciseCoverage": [
+        "平均值与实际值",
+        "无信息的条件",
+        "平均估计不是风险描述"
+      ]
+    },
+    {
+      "id": "concept:quant-correlation",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "标准差5与12在相关0/1/−1时总波动13/17/7，非线性X²零相关依赖例与常数相关未定义准确。"
+      ],
+      "exerciseCoverage": [
+        "零相关与独立",
+        "改变单位",
+        "负相关与完全对冲"
+      ]
+    },
+    {
+      "id": "concept:quant-covariance",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "两情景协方差200、反向−200及总方差900/100正确，平移不变与尺度乘10、相关标准化单位均一致。"
+      ],
+      "exerciseCoverage": [
+        "直接算反向情景",
+        "加常数与改尺度",
+        "与相关区分"
+      ]
+    },
+    {
+      "id": "concept:quant-creation",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "创建前10万/1万、创建后11万/1.1万净值均10；交付10020卖10010净−10，二级转让不重算创建。"
+      ],
+      "exerciseCoverage": [
+        "基金账本",
+        "创建与买入",
+        "预算边际"
+      ]
+    },
+    {
+      "id": "concept:quant-creation-unit",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "申赎块与二级数量分开，3×1000×12=36000，按订单固定20费用摊薄0.02/0.01需单次收费的条件明示。"
+      ],
+      "exerciseCoverage": [
+        "单位转换",
+        "识别市场层次",
+        "规模与每份费用"
+      ]
+    },
+    {
+      "id": "concept:quant-duration",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "麦考利/修正/有效久期定义分开，5×20bp一阶−1%和−10bp一阶+0.5元正确；局部与非平行利率及现金流变化限制完整。"
+      ],
+      "exerciseCoverage": [
+        "辨认久期种类",
+        "核对基点与方向",
+        "曲率与模型边界"
+      ]
+    },
+    {
+      "id": "concept:quant-edge",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "成交条件价值100给edge0.15，概率40%和100份给机会6；条件价值99.70给−0.15及−6，A0.06大于B0.05准确。"
+      ],
+      "exerciseCoverage": [
+        "选对条件价值",
+        "边际与成交率",
+        "平均不是实现值"
+      ]
+    },
+    {
+      "id": "concept:quant-etf-exchange-traded-fund",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "净资产10000/1000=10、价格10.10溢价1%；99期价加2分配对100成本给1%总回报，ETF非必被动、非直接每股权利明示。"
+      ],
+      "exerciseCoverage": [
+        "份额与底层",
+        "净值与市场价",
+        "包含分配的回报"
+      ]
+    },
+    {
+      "id": "concept:quant-execution",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "40×10+60×10.05=1003均价10.03；部分80份支出802均价10.025，不把未成交20当零价，执行比较同目标与时限条件充分。"
+      ],
+      "exerciseCoverage": [
+        "不把目标当成交",
+        "限价的含义",
+        "比较执行方法"
+      ]
+    },
+    {
+      "id": "concept:quant-fair-value",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "NAV/当前模型/可执行报价三对象分开，100份ask不可外推万份，50.60−50.58−0.03=−0.01；用法明确非会计标准定义。"
+      ],
+      "exerciseCoverage": [
+        "识别不同对象",
+        "估计差额与净利润",
+        "市场成交能否证明估值"
+      ]
+    },
+    {
+      "id": "concept:quant-fill-probability",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "全成30%、至少部分50%、平均量38及机会收益3.8正确；部分填充贡献0.8，事件期限与条件边际未混。"
+      ],
+      "exerciseCoverage": [
+        "先定义事件",
+        "部分成交贡献",
+        "更高成交率的代价"
+      ]
+    },
+    {
+      "id": "concept:quant-fixed-fee",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "独立复核曾发现“不同比例变化”不足以定义固定费用，作者已改为明确计费范围内金额不随数量变化，并同步英文；1000份30/2000份40/拆单60及100份净−17复核正确。"
+      ],
+      "exerciseCoverage": [
+        "识别计费范围",
+        "比较拆单",
+        "正毛差能否覆盖费用"
+      ]
+    },
+    {
+      "id": "concept:quant-full-spread",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "99.90/100.10中价100，全20bp半10bp，100份往返−20与单腿相对中价10分开；共同抬价后19.80bp正确。"
+      ],
+      "exerciseCoverage": [
+        "区分半价差与完整价差",
+        "市场变化与利润",
+        "绝对与相对"
+      ]
+    },
+    {
+      "id": "concept:quant-futures-multiplier",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "4000点×50=20万名义，3张升5点+750、4空跌2点+400；保证金与名义及小合约30张换算正确。"
+      ],
+      "exerciseCoverage": [
+        "价格点与现金",
+        "保证金不替代名义金额",
+        "换小合约"
+      ]
+    },
+    {
+      "id": "concept:quant-fx-exposure",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "美元/欧元汇率方向先固定，净美元700×0.05=35欧元；1100/1.10=1000及1.1×1.05−1=15.5%正确。"
+      ],
+      "exerciseCoverage": [
+        "先净额再汇总",
+        "统一汇率方向",
+        "两个回报合成"
+      ]
+    },
+    {
+      "id": "concept:quant-geometric-distribution",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "几何分布计成功次序与失败次数区分，第三首次0.140625/三次内0.578125、两失败后额外4与条件总6正确；变成功率不套固定p。"
+      ],
+      "exerciseCoverage": [
+        "辨认事件",
+        "失败后还等多久",
+        "检查模型假设"
+      ]
+    },
+    {
+      "id": "concept:quant-hedge",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "确定1000美元远期0.90锁900欧元，现货0.85/0.95的±50机会差及只收800缺200正确；信用风险没有假装一起消失。"
+      ],
+      "exerciseCoverage": [
+        "对冲单腿亏损",
+        "数量变化",
+        "限定风险对象"
+      ]
+    },
+    {
+      "id": "concept:quant-hedge-ratio",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "名义收益模型的减h约定明示，0.8×0.15/0.10=1.2，100万卖120万/6张；负相关改多头，整张约束与尾部目标边界充分。"
+      ],
+      "exerciseCoverage": [
+        "方向与单位",
+        "负相关工具",
+        "整数残余"
+      ]
+    },
+    {
+      "id": "concept:quant-hit-the-bid",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "hit bid角色正确，空40买30→空10，现金−2970、挂单余20；买60跨零多20与现金非P&L清楚。"
+      ],
+      "exerciseCoverage": [
+        "辨认动作主体",
+        "跨过零库存",
+        "现金不是损益"
+      ]
+    },
+    {
+      "id": "concept:quant-impact",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "impact与slippage/消息反事实区别清楚；200份跨档均价100.15支出20030、相对初ask差10已含均价，不重复扣。"
+      ],
+      "exerciseCoverage": [
+        "区分滑点来源",
+        "避免重复扣费",
+        "拆单的假设"
+      ]
+    },
+    {
+      "id": "concept:quant-in-kind",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "in-kind不要求零现金、篮子替换需许可；6000+3980+20=10000，参与人再卖30成本不因基金未卖而消失。"
+      ],
+      "exerciseCoverage": [
+        "现金项与实物方式",
+        "任意替换",
+        "成本在哪里"
+      ]
+    },
+    {
+      "id": "concept:quant-inventory",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "−40+60−15=5、总交易75、5×−2=−10正确，净库存/成交量/已实现利润及目标/硬限额均区分。"
+      ],
+      "exerciseCoverage": [
+        "库存记账",
+        "方向决定价格损益",
+        "目标不等于硬限额"
+      ]
+    },
+    {
+      "id": "concept:quant-kelly-criterion",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "p=.6/b=1 Kelly=.2，100→120/80、次注24/16、一赢一输96、两输64正确；无优势log(.96)/2<0、相关机会不独立相加。"
+      ],
+      "exerciseCoverage": [
+        "下注比例随财富变",
+        "没有优势的边界",
+        "多机会共同风险"
+      ]
+    },
+    {
+      "id": "concept:quant-latency",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "5ms数据+1ms计算+3ms到场处理=9ms生效，另2ms确认11；8ms可成交与10ms已撤可同时成立；尾部例均值5正确。"
+      ],
+      "exerciseCoverage": [
+        "核对时间线",
+        "确认不是生效时刻",
+        "平均数的不足"
+      ]
+    },
+    {
+      "id": "concept:quant-lift-the-ask",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "lift ask报价方卖出，150−80=70、现金8008/成本7992毛16、委托余20一致，有限报价量未泛化。"
+      ],
+      "exerciseCoverage": [
+        "辨认库存方向",
+        "收入与利润",
+        "有限数量"
+      ]
+    },
+    {
+      "id": "concept:quant-liquidity",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "ADV200万/20=10万，100@100.10+900@100.20均100.19正确；价差/深度/恢复、历史量与当前库存分清。"
+      ],
+      "exerciseCoverage": [
+        "价差窄是否足够",
+        "历史量不等于库存",
+        "规模和截止的影响"
+      ]
+    },
+    {
+      "id": "concept:quant-look-ahead-bias",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "前视定义不假定每次提高收益，已完成历史未来标签合法；当日收盘排名用于开盘不合法，按真实发布时间而非统一shift修复。"
+      ],
+      "exerciseCoverage": [
+        "标签不总是泄漏",
+        "先计算后成交",
+        "检查修复是否充分"
+      ]
+    },
+    {
+      "id": "concept:quant-market-maker",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "做市报价非已赚差，买9990卖10010毛20、改卖9950亏40正确；AP身份与报价职能及库存控制方向一致。"
+      ],
+      "exerciseCoverage": [
+        "两腿与一腿",
+        "报价与申赎权限",
+        "库存控制"
+      ]
+    },
+    {
+      "id": "concept:quant-mark-to-market",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "中价98十份估980损20，对bid97.90平仓损21；空10按ask101.10回补损11，盯市不重复动现金。"
+      ],
+      "exerciseCoverage": [
+        "估值不等于成交",
+        "空头估值方向",
+        "未实现也影响财富"
+      ]
+    },
+    {
+      "id": "concept:quant-markout",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "买后99.80→99.60 markout−.2、卖100.20→100为+.2，卖后100.50为−.3；成本与单笔非因果证据边界准确。"
+      ],
+      "exerciseCoverage": [
+        "卖侧符号",
+        "指标不是净利润",
+        "单笔与系统性"
+      ]
+    },
+    {
+      "id": "concept:quant-midpoint",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "中价100不使用深度，买50需5005相对中价差5；ask量降1不改mid但改变可执行性，基准解释正确。"
+      ],
+      "exerciseCoverage": [
+        "计算与承诺",
+        "数量变化",
+        "比较基准"
+      ]
+    },
+    {
+      "id": "concept:quant-minimum-variance-hedge",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "方差4+h²−2h最小h1值3，h0/2均4；工具共同协方差、多工具估计不稳定与成本/整数约束未遗漏。"
+      ],
+      "exerciseCoverage": [
+        "最优不等于全消除",
+        "过度对冲",
+        "更换目标"
+      ]
+    },
+    {
+      "id": "concept:quant-nav-net-asset-value",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "9800+200+50−50=10000/1000=10，额外债务100使9.90；遗漏负债每份高估.05，等值创建净值不变。"
+      ],
+      "exerciseCoverage": [
+        "正确分子",
+        "等值新增",
+        "净值不是可交易承诺"
+      ]
+    },
+    {
+      "id": "concept:quant-notional",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "1200×50=60000名义，1%变12点赚600，保证金6000上的10%非名义回报；2张升10点1000与初名义120000正确。"
+      ],
+      "exerciseCoverage": [
+        "名义与本金",
+        "杠杆损益",
+        "名义相抵的边界"
+      ]
+    },
+    {
+      "id": "concept:quant-order-flow",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "主动买卖净量与双边总量区分，1200−800=400/总2000，500−100=400/总600；未把方向标签推成信息动机。"
+      ],
+      "exerciseCoverage": [
+        "每笔都有两侧",
+        "净额的信息损失",
+        "行为不等于动机"
+      ]
+    },
+    {
+      "id": "concept:quant-p-and-l-pnl",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "买支出1002换资产1000即时只费2，期末权益1978损22；外入500后2478仍损22，组合−3000+4000−200=800正确。"
+      ],
+      "exerciseCoverage": [
+        "现金流与权益",
+        "外部入金",
+        "合并对冲损益"
+      ]
+    },
+    {
+      "id": "concept:quant-poisson-process",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "齐次泊松过程定义包含独立/平稳增量及计数路径，2每分钟×半分钟均1，P0=P1=e^-1、至少一.632、10秒均1/3正确。"
+      ],
+      "exerciseCoverage": [
+        "计数与概率",
+        "独立增量",
+        "单位检查"
+      ]
+    },
+    {
+      "id": "concept:quant-premium-discount",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "premium除NAV不除市价，50.56/50−1=1.12%与对50.60为−.0791%可同时成立；NAV上涨可收敛premium无需市价跌。"
+      ],
+      "exerciseCoverage": [
+        "正确分母",
+        "参考变化",
+        "偏离与成本"
+      ]
+    },
+    {
+      "id": "concept:quant-proxy",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "proxy估值和实际交付不同，50×.98×1.18=57.82，beta.5得49.5×1.18=58.41；独有消息残余与可交易性边界正确。"
+      ],
+      "exerciseCoverage": [
+        "代理不等于目标",
+        "改变映射",
+        "剩余风险"
+      ]
+    },
+    {
+      "id": "concept:quant-quote-size",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "多500上限600只剩100，已有80后新单20；未成交ask不预腾空间，100卖单成交40余60，无现金/库存方向错。"
+      ],
+      "exerciseCoverage": [
+        "最大可承接量",
+        "计划卖出不是已卖",
+        "报价与实际数量"
+      ]
+    },
+    {
+      "id": "concept:quant-redemption",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "赎回1000同时净资−10000/份额−1000，90000/9000仍10；额外转让100不重复退份，10.05−10.02−.04=−.01。"
+      ],
+      "exerciseCoverage": [
+        "份额变化",
+        "净值的分子分母",
+        "方向与成本"
+      ]
+    },
+    {
+      "id": "concept:quant-reprice",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "估值+1两边+1保持宽.2；只ask101.10/bid99.90则中100.5宽1.2，重估/不确定/库存不同成因与撤改单状态明确。"
+      ],
+      "exerciseCoverage": [
+        "中心与宽度",
+        "不确定与价值变化",
+        "旧单窗口"
+      ]
+    },
+    {
+      "id": "concept:quant-reservation-price",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "保留中心定义范围限定非统一最优控制定义，5000×.03/1000=.15下调；目标3000只偏2000，center99.94，宽不变。"
+      ],
+      "exerciseCoverage": [
+        "中枢与价值",
+        "目标库存",
+        "宽度是否改变"
+      ]
+    },
+    {
+      "id": "concept:quant-rfq-request-for-quote",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "RFQ先请求后接受成交、客户卖对应dealerbid；100−99.90−.06=.04、1000份40，回收降99.95后−.01正确，同规模比较充分。"
+      ],
+      "exerciseCoverage": [
+        "对手方向",
+        "询价不是成交",
+        "同条件比较"
+      ]
+    },
+    {
+      "id": "concept:quant-risk-limit",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "风险限额包含监测/预检/处置，500+80+50=630、允许新20；空590再卖20绝对610越限，指标覆盖不泛化。"
+      ],
+      "exerciseCoverage": [
+        "待成交承诺",
+        "方向和绝对值",
+        "合规不等于无风险"
+      ]
+    },
+    {
+      "id": "concept:quant-skew",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "库存skew与vol skew区分，多5000中心99.85报价99.75/99.95宽.2，激励正确且未成交不改实际库存。"
+      ],
+      "exerciseCoverage": [
+        "价格激励方向",
+        "偏斜与扩大价差",
+        "执行结果"
+      ]
+    },
+    {
+      "id": "concept:quant-slippage",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "买100.08对100偏.08=8bp，1000份80已包含实际毛420、扣额外10净410；卖侧99.92滑.08、有利100.03滑−.03正确。"
+      ],
+      "exerciseCoverage": [
+        "卖侧符号",
+        "有利执行",
+        "避免重复"
+      ]
+    },
+    {
+      "id": "concept:quant-stale-quote",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "stale按信息变而非挂单年龄；ask100.10对更新值101卖100估值差−90，value99而bid99.90买侧edge−.90，撤单意图非生效。"
+      ],
+      "exerciseCoverage": [
+        "方向辨析",
+        "报价年龄",
+        "撤单意图"
+      ]
+    },
+    {
+      "id": "concept:quant-total-return",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "100→98加3总1%价格−2%；纯派2除息到98经济总100，分红两层与调整数据再投资重复计数均规避。"
+      ],
+      "exerciseCoverage": [
+        "价格与总回报",
+        "避免重复分红",
+        "两个层级"
+      ]
+    },
+    {
+      "id": "concept:quant-variance",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "±2总体方差4/std2、加10不改、×3方差36/std6；样本n−1与已知两态平均区分，方差非下行风险明确。"
+      ],
+      "exerciseCoverage": [
+        "均值和分散",
+        "单位与缩放",
+        "平方不只惩罚亏损"
+      ]
+    },
+    {
+      "id": "concept:quant-volatility",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "日±2%总体波动2%，平方根252为31.75%条件明确为近似；正1/3%波动1但不亏，implied非未来realized保证。"
+      ],
+      "exerciseCoverage": [
+        "波动与亏损概率",
+        "年化假设",
+        "隐含与实现"
+      ]
+    },
+    {
+      "id": "concept:quant-vwap-volume-weighted-average-price",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "90@10+10@12=1020/100=10.2，记录拆分不改VWAP，零volume未定义、市场历史VWAP非现时成交保证，中英完整一致。"
+      ],
+      "exerciseCoverage": [
+        "数量权重",
+        "市场基准可执行吗",
+        "没有成交"
+      ]
+    },
+    {
+      "id": "concept:quant-widen",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "half .1→.2使full .2→.4、中价100；整体+1非widen、成交概率和条件值变化阻止把宽度翻倍等于利润翻倍。"
+      ],
+      "exerciseCoverage": [
+        "半价差与全价差",
+        "宽度与重估",
+        "缓冲不等于保证"
+      ]
+    },
+    {
+      "id": "concept:quant-adapted-process",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "adapted明确相对信息与可积/可预测交易条件另检查；当天收益决定次日仓位可用，已知未来滤过扩大改变假设而非现实能力。"
+      ],
+      "exerciseCoverage": [
+        "事后可算与当时可知",
+        "改变信息结构",
+        "适应不保证收益"
+      ]
+    },
+    {
+      "id": "concept:quant-filtration",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "滤过递增与σ代数可数闭性解释正确，两币总正面数1不能恢复首掷，摘要非全历史；发布时点非所属日期。"
+      ],
+      "exerciseCoverage": [
+        "递增的含义",
+        "日期不是信息",
+        "信息不等于预测"
+      ]
+    },
+    {
+      "id": "concept:quant-markov-chain",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "countable discrete-time Markov定义与齐次另条件，持续天数影响离开需扩状态；两步pressure .9×.1+.1×.7=.16。"
+      ],
+      "exerciseCoverage": [
+        "状态充分性",
+        "一步条件概率",
+        "随机不等于马尔可夫"
+      ]
+    },
+    {
+      "id": "concept:quant-transition-matrix",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "row约定π右乘P，(.5,.5)→(.6,.4)，非法行sum1.2，pressure起点选第二行；P²路径公式准确。"
+      ],
+      "exerciseCoverage": [
+        "概率表检查",
+        "状态顺序",
+        "多步更新"
+      ]
+    },
+    {
+      "id": "concept:quant-stationary-distribution",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "stationary(.75,.25)平衡.1×.75=.3×.25，唯一性与逐步收敛分开，确定互换周期链反例及当前pressure次日.7正确。"
+      ],
+      "exerciseCoverage": [
+        "平稳不是静止",
+        "周期反例",
+        "条件起点"
+      ]
+    },
+    {
+      "id": "concept:quant-martingale",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "鞅适应/可积/相对滤过条件期望三条件齐全，三连升1/8不矛盾、无条件均0不够、减.1t去漂移准确。"
+      ],
+      "exerciseCoverage": [
+        "路径波动",
+        "无条件不够",
+        "移除漂移"
+      ]
+    },
+    {
+      "id": "concept:quant-stopping-time",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "τ≤t可判定与可无穷条件完整，首次低98在第二观测、最低点事后非在线，确定10时刻可停与期望停止需附加条件清楚。"
+      ],
+      "exerciseCoverage": [
+        "确定时间",
+        "最后一次",
+        "停止与期望"
+      ]
+    },
+    {
+      "id": "concept:quant-optional-stopping",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "有界停时和可积鞅条件正确，5次翻倍赢1概率31/32、五败亏31概率1/32期望0，未以a.s.有限替代无界尾部条件。"
+      ],
+      "exerciseCoverage": [
+        "核对高胜率",
+        "无限等待",
+        "有界不代表逐次不亏"
+      ]
+    },
+    {
+      "id": "concept:quant-brownian-motion",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Brownian连续/独立增量/正态方差时长/相对滤过条件完整，季度sd.5方差.25、错乘Δ全年方差.25、Cov(W1,W2)=1正确。"
+      ],
+      "exerciseCoverage": [
+        "连续与平滑",
+        "增量而非水平独立",
+        "噪声缩放"
+      ]
+    },
+    {
+      "id": "concept:quant-quadratic-variation",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "独立复核确认粗2、细2/n→0、Brownian [W]1=1、3W二次变差9正确；作者已将“光滑折线路径”修为“分段线性、有限变差路径”，英文同步finite-variation，重读通过。"
+      ],
+      "exerciseCoverage": [
+        "粗网格反例",
+        "终点与路径",
+        "缩放的平方"
+      ]
+    },
+    {
+      "id": "concept:quant-ito-lemma",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Ito C1,2及局部积分条件明确，f=x²修正dt、X=2W修正4dt准确，非光滑|x|需推广且局部积分不自动零期望。"
+      ],
+      "exerciseCoverage": [
+        "线性函数",
+        "平方项的大小",
+        "光滑性边界"
+      ]
+    },
+    {
+      "id": "concept:quant-gbm-geometric-brownian-motion",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "GBM正初值解与σ²/2校正正确，100e^.08=108.33/median100e^.06=106.18，Euler可能负不误认精确解，障碍监控边界充分。"
+      ],
+      "exerciseCoverage": [
+        "保持正值",
+        "两种漂移",
+        "模型不是现实保证"
+      ]
+    },
+    {
+      "id": "concept:quant-ou-ornstein-uhlenbeck",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "OU条件均值指数回复，κ=ln2每年使110→105→102.5；半年偏离10/√2，噪声与非负约束辨析准确。"
+      ],
+      "exerciseCoverage": [
+        "回复的对象",
+        "速度的单位",
+        "正值约束"
+      ]
+    },
+    {
+      "id": "concept:quant-half-life",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "独立复核发现“偏离条件均值”词序歧义，作者已明确“偏离长期中心的条件均值减半”，英文conditional expected deviation from long-run center同步；H及8→4/2/5.657数值正确。"
+      ],
+      "exerciseCoverage": [
+        "减半对象",
+        "离散时间单位",
+        "平均与路径"
+      ]
+    },
+    {
+      "id": "concept:quant-strong-weak-convergence",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "强收敛共享噪声与弱期望函数明确，half-step .04/√2=.0283/.02/2=.01，4倍路径只减采样误差；均值相同非所有期权同价。"
+      ],
+      "exerciseCoverage": [
+        "共同随机驱动",
+        "均值准确的边界",
+        "次数与网格"
+      ]
+    },
+    {
+      "id": "concept:quant-antithetic-variates",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "antithetic保持输入分布与输出ρ<0等成本比较准确，var pair=v(1+ρ)/2；g线性常5、平方完全相同及独立对数1万均正确。"
+      ],
+      "exerciseCoverage": [
+        "输出相关",
+        "独立样本数",
+        "保持期望"
+      ]
+    },
+    {
+      "id": "concept:quant-jump-diffusion",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "跳跃频率/幅度/加乘法/依赖范围明示，1−exp(−2/252)=.7905%不是亏损概率；连续穿越与跳跃越障、正价限制和定价风险溢价边界准确。"
+      ],
+      "exerciseCoverage": [
+        "跳跃与亏损",
+        "连续替代",
+        "幅度与正价"
+      ]
+    },
+    {
+      "id": "concept:quant-garch",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "GARCH新h=.000002+.1×.0004+.8×.0001=.000122，sqrt=1.1045%正确；创新非原收益、对称响应、α+β=1无有限长期方差解释充分。"
+      ],
+      "exerciseCoverage": [
+        "方差与波动",
+        "冲击符号",
+        "长期方差条件"
+      ]
+    },
+    {
+      "id": "concept:quant-call-option",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "call权利/卖方义务、支付/利润区分，K100 premium8时105支付5亏3、120盈12、95亏8、break-even108均正确。"
+      ],
+      "exerciseCoverage": [
+        "正支付未必盈利",
+        "买方与卖方",
+        "盈亏平衡条件"
+      ]
+    },
+    {
+      "id": "concept:quant-put-option",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "put权利方向与交易方向分开，K100 premium6时90支付10盈4、97支付3亏3，保护组合初106末floor100仍亏6；非负标的限制未泛化。"
+      ],
+      "exerciseCoverage": [
+        "名称与头寸",
+        "支付与利润再检查",
+        "保护不是免费"
+      ]
+    },
+    {
+      "id": "concept:quant-european-american-exercise",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "European限制exercise非sale，American额外选择值不低；put exercise20 vs continuation19/22分支正确，并说明模型与可执行市场价区别。"
+      ],
+      "exerciseCoverage": [
+        "退出不等于行权",
+        "继续价值更高",
+        "额外权利的价值"
+      ]
+    },
+    {
+      "id": "concept:quant-put-call-parity",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "put-call parity同标的K/T且无分红摩擦借贷约束明确；stock100/bond95/call10推put5，终端120/80两组合支付120/100正确。"
+      ],
+      "exerciseCoverage": [
+        "逐状态比较",
+        "期限条件",
+        "加入分红"
+      ]
+    },
+    {
+      "id": "concept:quant-replication",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "binomial复制half stock+借40/1.05，初成本11.905、到期60/40减40=20/0正确；融资与逐状态匹配不混概率。"
+      ],
+      "exerciseCoverage": [
+        "复制的是支付",
+        "匹配平均不够",
+        "可行性边界"
+      ]
+    },
+    {
+      "id": "concept:quant-risk-neutral-probability",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "q=(R−d)/(u−d)=.625，qu+(1−q)d=1.05、call11.905正确；R1.3导致q1.25不截值，P频率与定价任务清楚。"
+      ],
+      "exerciseCoverage": [
+        "任务区别",
+        "权重检验",
+        "非法输入"
+      ]
+    },
+    {
+      "id": "concept:quant-self-financing",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "自融资含内部费用借款但不外部权益，现金1000买5股费2→cash498/equity998，卖1→598+400不变；负债不漏记。"
+      ],
+      "exerciseCoverage": [
+        "再平衡记账",
+        "借贷记账",
+        "费用条件"
+      ]
+    },
+    {
+      "id": "concept:quant-physical-measure-p",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "P=.8终价mean112与Q=.625 mean105贴现100同存合理；“真实”不是参数已知，不把P均值无风险贴现当复制价。"
+      ],
+      "exerciseCoverage": [
+        "预测均值",
+        "定价和预测",
+        "不确定的估计"
+      ]
+    },
+    {
+      "id": "concept:quant-risk-neutral-measure-q",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Q等价同零概率事件、累计收益含分红、完备唯一/不完备多测度区分；local martingale及可积性边界单列，数值同复制链。"
+      ],
+      "exerciseCoverage": [
+        "测度与偏好",
+        "分红处理",
+        "不完备边界"
+      ]
+    },
+    {
+      "id": "concept:quant-black-scholes-pde",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "BS PDE日历时间符号准确，固定pay100价值100exp(−rτ)，Vt=rV抵消−rV，半年4%98.02；终端/边界及μ消去不误作现实漂移r。"
+      ],
+      "exerciseCoverage": [
+        "终端条件",
+        "实际漂移",
+        "时间符号"
+      ]
+    },
+    {
+      "id": "concept:quant-black-scholes-formula",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "BS d1=.35/d2=.15、CDF .636831/.559618、call10.4506/put5.5735/parity4.8771核对正确，单位、CDF非density及τ0分支明确。"
+      ],
+      "exerciseCoverage": [
+        "输入单位",
+        "累计概率与密度",
+        "退化极限"
+      ]
+    },
+    {
+      "id": "concept:quant-delta",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "100contracts×100mult×.6=6000股，delta后.7残1000，short方向−6000需buy；local derivative非P上涨概率与delta-neutral剩余风险清楚。"
+      ],
+      "exerciseCoverage": [
+        "持仓方向",
+        "导数不是概率",
+        "中性之后"
+      ]
+    },
+    {
+      "id": "concept:quant-gamma",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Gamma delta变化.02×2=.04，价值曲率.5×.02×4=.04；涨2价+1.04/delta.54，跌2−.96/.46正确，股票调delta不除gamma。"
+      ],
+      "exerciseCoverage": [
+        "二阶系数",
+        "股票的作用",
+        "局部贡献与总收益"
+      ]
+    },
+    {
+      "id": "concept:quant-vega",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Vega小数40对σ+.01价+.40，每百分点.40；+.02价+.80、20%相对+10%=22%，组合卖方向反转正确。"
+      ],
+      "exerciseCoverage": [
+        "单位核对",
+        "相对变化",
+        "持仓符号"
+      ]
+    },
+    {
+      "id": "concept:quant-theta",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Theta日历/剩余期限反号、自然日/交易日明确，−.02×3+spot.10=.04，−7.3/365=−.02，非固定每日现金扣款。"
+      ],
+      "exerciseCoverage": [
+        "时间坐标",
+        "日数约定",
+        "局部与实际"
+      ]
+    },
+    {
+      "id": "concept:quant-implied-volatility-iv",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "IV匹配模型反解非未来波动预测，BS .20→10.4506/.22→11.2028正确，smallvega误差.01 vs .0001百倍；price>S先查无解。"
+      ],
+      "exerciseCoverage": [
+        "反解对象",
+        "小Vega",
+        "先查边界"
+      ]
+    },
+    {
+      "id": "concept:quant-volatility-smile-surface",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "IV(K,τ)非local vol，半年σ.2总方差.02、一年σ.18=.0324，IV下降不直接认套利；价格单调凸性与共同坐标检查边界完整。"
+      ],
+      "exerciseCoverage": [
+        "截面与期限",
+        "平方与期限",
+        "平滑不等于可行"
+      ]
+    },
+    {
+      "id": "concept:quant-crr-binomial-tree",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "CRR u=e^(σ√dt),d=1/u、q及重组解释正确，示例.95×(.6×12+.4×4)=8.36，美式exercise9取9；奇偶收敛非单调。"
+      ],
+      "exerciseCoverage": [
+        "终值先算",
+        "美式选择",
+        "收敛检查"
+      ]
+    },
+    {
+      "id": "concept:quant-continuation-value",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "continuation按当前信息对未来已最优节点折现，立即30/继续28取30、继续32取32；路径事后最大值不是合法条件决策。"
+      ],
+      "exerciseCoverage": [
+        "比较对象",
+        "未来最优的错误",
+        "市场报价"
+      ]
+    },
+    {
+      "id": "concept:quant-asian-barrier-options",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Asian100/110/90均100pay0与100/130/90均106.667pay6.667，upout110含等号两者敲出；连续/日监控与路径数非网格误差正确。"
+      ],
+      "exerciseCoverage": [
+        "相同终价",
+        "触及等号",
+        "监控误差"
+      ]
+    },
+    {
+      "id": "concept:quant-finite-difference",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "独立复核指出网格结果相近不能单独证明稳定，作者已改为不能证明稳定、收敛或模型正确，英文完整一致；二阶差分2、h²与终边值条件复核通过。"
+      ],
+      "exerciseCoverage": [
+        "分母单位",
+        "边界条件",
+        "验证误差"
+      ]
+    },
+    {
+      "id": "concept:quant-alpha",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "独立复核发现单期市场调整差额实际为Alpha+随机残差，作者已改题名“单期未解释差额”及答案；英文题干最后窄修为unexplained difference并读回确认。beta项2.4%、差.6%、扣费差.4%和多期截距解释正确。"
+      ],
+      "exerciseCoverage": [
+        "单期未解释差额",
+        "遗漏因子",
+        "费用与能力"
+      ]
+    },
+    {
+      "id": "concept:quant-factor-exposure",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "asset exposure1/2在权重.6/.4给1.4，改第二腿−.4给−.2；score非return系数、neutral范围及币种频率口径准确。"
+      ],
+      "exerciseCoverage": [
+        "带符号权重",
+        "分数与暴露",
+        "中性范围"
+      ]
+    },
+    {
+      "id": "concept:quant-point-in-time-pit",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "PIT按发布/收到/版本重建，4月21日08入库09可用、此前不可，June100→90不覆April100，missing非0正确。"
+      ],
+      "exerciseCoverage": [
+        "归属日",
+        "修订版本",
+        "缺失含义"
+      ]
+    },
+    {
+      "id": "concept:quant-survivorship-bias",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "年初A/B各50，末60/0使全组−40%、只A+20%，样本和资金基数改变；退市非一律损100%，时点成分需重建。"
+      ],
+      "exerciseCoverage": [
+        "完整总体",
+        "退出方向",
+        "今天成分"
+      ]
+    },
+    {
+      "id": "concept:quant-winsorization",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "winsor min(u,max(l,x))正确，1/2/3/100在0–5变1/2/3/5均2.75，原26.5/删除均2，未来阈值和真实极端边界明确。"
+      ],
+      "exerciseCoverage": [
+        "保留还是删除",
+        "训练边界",
+        "极端值真假"
+      ]
+    },
+    {
+      "id": "concept:quant-neutralization",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "neutralization OLS残差与控制列正交并无满秩强求，industry means给±.5、选stock2不保证portfolio neutrality，WLS内积另定义准确。"
+      ],
+      "exerciseCoverage": [
+        "控制选择",
+        "最终权重",
+        "矩阵秩"
+      ]
+    },
+    {
+      "id": "concept:quant-ic-information-coefficient",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "IC每日截面Pearson需非零方差，信号1/2/3对收益同比缩小100倍IC仍1，收益幅度/成本/重叠标签依赖均已说明。"
+      ],
+      "exerciseCoverage": [
+        "评价轴",
+        "常量信号",
+        "IC与收益"
+      ]
+    },
+    {
+      "id": "concept:quant-rank-ic",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Spearman先平均秩再Pearson与ties规则清楚，ranks1/2/3/4对2/1/3/4 Σd²2给.8，rank1/rawPearson<1示例准确。"
+      ],
+      "exerciseCoverage": [
+        "幅度变化",
+        "并列名次",
+        "两类IC"
+      ]
+    },
+    {
+      "id": "concept:quant-icir",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "独立复核要求固定s再比较SE，作者已补均值.04/s.10且月独立，12/120月SE.02887/.009129、t1.386/4.382正确；英文明确同一条件且等ICIR不能定绝对精度。"
+      ],
+      "exerciseCoverage": [
+        "t与ICIR",
+        "指标与收益",
+        "重叠标签"
+      ]
+    },
+    {
+      "id": "concept:quant-gross-net-exposure",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "gross/nav与net符号定义正确，±.5净0总1贡献2%，±1总2贡献4%，beta1.5/.5对应±.5暴露.5，cash与衍生口径边界明确。"
+      ],
+      "exerciseCoverage": [
+        "总额与净额",
+        "净零的边界",
+        "分母和杠杆"
+      ]
+    },
+    {
+      "id": "concept:quant-turnover",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "turnover按调前实际权重到目标绝对差双边和，.6/.4→.5/.5 sum.2、10bp成本2bp正确；target不变仍可漂移，借券持有费不混成交费。"
+      ],
+      "exerciseCoverage": [
+        "权重漂移",
+        "口径差一倍",
+        "持有成本"
+      ]
+    },
+    {
+      "id": "concept:quant-fama-macbeth",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "FM逐期截面再时间平均，36月s.006→SE.001/t2，HAC .0015→t1.333；股票轴非36000独立期、特征乘100 slope÷100正确。"
+      ],
+      "exerciseCoverage": [
+        "两个轴",
+        "单位影响",
+        "t不是技能证明"
+      ]
+    },
+    {
+      "id": "concept:quant-hac-newey-west",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "HAC稳健协方差非改原系数，.02/.01=t2→.02/.02=t1，非总会变大；弱依赖与lag选择、不能修内生/泄漏边界准确。"
+      ],
+      "exerciseCoverage": [
+        "推断与估计",
+        "不能修复泄漏",
+        "未必更大"
+      ]
+    },
+    {
+      "id": "concept:quant-ridge-lasso",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "ridge objective2(2−β)²+2β²导数最优β1，对比OLS2，lasso|β|/ridgeβ²、sum/meanλ缩放与训练内标准化完整。"
+      ],
+      "exerciseCoverage": [
+        "惩罚区别",
+        "λ口径",
+        "选参泄漏"
+      ]
+    },
+    {
+      "id": "concept:quant-walk-forward",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "walkforward W3用1/2/3预测4，实4后rolling2/3/4 vs expanding1..4准确；未完成五日标签不可用且反复test失独立。"
+      ],
+      "exerciseCoverage": [
+        "窗口区别",
+        "未完成标签",
+        "重复测试"
+      ]
+    },
+    {
+      "id": "concept:quant-purging",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "purging按闭区间10..15，A8..12需删、B5..7不删、C终10也删；时点先后非完整事件信息、清洗后非全独立清楚。"
+      ],
+      "exerciseCoverage": [
+        "信号先后不足",
+        "端点规则",
+        "清洗后独立吗"
+      ]
+    },
+    {
+      "id": "concept:quant-embargo",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "embargo test10..12后两日13/14排除，15仍需时间可用与purging检查；明确CV未来训练段不等授权真实过去决策用未来。"
+      ],
+      "exerciseCoverage": [
+        "隔离集合",
+        "不授予未来",
+        "行数与时间"
+      ]
+    },
+    {
+      "id": "concept:quant-cagr",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "CAGR100→121两年10%，路径90→121后34.444%仍同CAGR；+10%−10% wealth.99 CAGR−.5013%，外部21存款不算投资增长。"
+      ],
+      "exerciseCoverage": [
+        "复利与平均",
+        "同终值路径",
+        "外部存款"
+      ]
+    },
+    {
+      "id": "concept:quant-sharpe-ratio",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "Sharpe daily .05%/1%=.05、sqrt252=.794，净mean.02%=.317正确；reference区分information ratio、正自相关年化限制清楚。"
+      ],
+      "exerciseCoverage": [
+        "分子分母一致",
+        "相同Sharpe的风险",
+        "相关年化"
+      ]
+    },
+    {
+      "id": "concept:quant-maximum-drawdown",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "MDD100/110/99/105运行峰110给10%/4.545%，后120→90是25%，未来峰不回填过去99；正净值、抽样与现金流约定齐全。"
+      ],
+      "exerciseCoverage": [
+        "分母是历史峰值",
+        "未来峰值不能回填",
+        "采样限制"
+      ]
+    },
+    {
+      "id": "concept:quant-pbo",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "PBO6/10=.6、5/20=.25是IS赢家OOS较差半区频率非未来交易亏损概率；候选/评分/ties/切分依赖及先IS选优次序准确。"
+      ],
+      "exerciseCoverage": [
+        "频率算例",
+        "未来亏损",
+        "赢家选择顺序"
+      ]
+    },
+    {
+      "id": "concept:quant-multiple-testing",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "20独立全nullα.05至少一误报1−.95^20=.6415，Bonferroni.0025非后验false概率；重复同一test非独立和搜索记录边界正确。"
+      ],
+      "exerciseCoverage": [
+        "独立教学计算",
+        "依赖边界",
+        "再用测试集"
+      ]
+    },
+    {
+      "id": "concept:quant-gmv-global-minimum-variance",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "GMV方差.04x²+.01(1−x)²最小x.2、var.008/std8.944%正确；PD仅预算唯一性、singular/constraints及cash可行集不忽略。"
+      ],
+      "exerciseCoverage": [
+        "为何不全投低波动",
+        "不需要哪项输入",
+        "输入不确定性"
+      ]
+    },
+    {
+      "id": "concept:quant-efficient-frontier",
+      "status": "accepted",
+      "reviewMethod": "逐项阅读中文定义、术语、边界、具体例子与全部已解练习，并对照对应英文；独立检查条件、方向、单位和数值。",
+      "notes": [
+        "MV前沿弱不等+至少一严格支配定义正确，A5/10支配B4/20、C7/15取舍、D5/8支配A，少数候选非全体前沿明示。"
+      ],
+      "exerciseCoverage": [
+        "弱不等式与严格改善",
+        "取舍不是支配",
+        "约束与边界"
+      ]
+    }
+  ]
+}

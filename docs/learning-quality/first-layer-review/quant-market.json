@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "concept:quant-limit-order-book",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧定义用集市类比代替集合、价格约束、状态与事件的关系"
+    ],
+    "changes": [
+      "从交易意图到成交",
+      "最优报价、深度与队列",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "状态与变化",
+      "数量的含义",
+      "成交与挂单"
+    ],
+    "example": "假设没有隐藏量、费用或其他事件。买方99元有40股、98元有60股；卖方101元有30股、102元有70股。最优买卖价是99和101。允许买到102元的50股买单到达后，先买101元的30股，再买102元的20股，总支出5070元，均价101.4元。卖侧剩下102元的50股。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-market-order",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧例只有数量不足提醒，缺少订单定义、方向与均价逻辑"
+    ],
+    "changes": [
+      "先区分成交意愿与价格约束",
+      "成交均价不是当前最优价",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "卖出的方向",
+      "报价与承诺",
+      "选择约束"
+    ],
+    "example": "卖盘为100元10股、101元20股。假设这两档在订单到达时仍在且可以执行，买入30股需支付10×100+20×101=3020元，均价约100.667元，未计费用。报价100元并不意味着30股都能以100元买入。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+    ]
+  },
+  {
+    "id": "concept:quant-limit-order",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧类比未交代限价单可主动成交和剩余数量状态"
+    ],
+    "changes": [
+      "订单中价格到底约束什么",
+      "限价与被动挂单不是同义词",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "卖出限价",
+      "数量与持仓",
+      "有效期改变结果"
+    ],
+    "example": "卖盘99元6股、101元10股。提交买入10股、限价100元的普通可挂单订单。假设无其他事件，先以99元买6股；剩4股不能以101元成交，可以按100元挂在买侧等待。实际已成交支出594元，尚未成交的4股不能计入持仓。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+    ]
+  },
+  {
+    "id": "concept:quant-marketable-limit-order",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文将跨价条件说成全量可成交，需明确参考状态与数量"
+    ],
+    "changes": [
+      "同样有价格上限，也可以主动成交",
+      "价格保护和可成交数量",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "是否全成",
+      "到达时重新判断",
+      "费用属性"
+    ],
+    "example": "卖盘100元5股、101元8股、102元20股。买入15股、限价101的订单在这张簿上可立即成交13股：5股按100、8股按101，共1308元。余2股不能访问102元；若允许挂单则等待，否则按有效期处理。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+    ]
+  },
+  {
+    "id": "concept:quant-time-in-force",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧类比未解释时间与数量语义，也容易将日单误作24小时"
+    ],
+    "changes": [
+      "一笔订单可能跨越多个时刻",
+      "时间、数量与价格共同起作用",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "两类约束",
+      "部分结果",
+      "日单的时钟"
+    ],
+    "example": "限价100、数量10股的买单到达时，只有6股卖单满足价格条件。若是IOC，成交6股并取消4股；若是FOK，在其全量检查范围内只有这6股，则全部不成交；若允许当日挂单，可成交6股并让余4股继续等待到规定截止。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+    ]
+  },
+  {
+    "id": "concept:quant-immediate-or-cancel",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原文以购物比喻代替价格、余量与实际持仓关系"
+    ],
+    "changes": [
+      "不能等待不等于不能部分成交",
+      "取消余量不撤回已成交部分",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "没有合格对手",
+      "一次还是一笔",
+      "数量语义"
+    ],
+    "example": "买入10股，限价100，使用IOC。到达时卖盘99元4股、100元2股、101元20股。可成交6股，支出4×99+2×100=596元；余4股取消，因为101超过限价。最终增加6股，而不是10股，也不是0股。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+    ]
+  },
+  {
+    "id": "concept:quant-fill-or-kill",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧说明未区分全量、多成交记录与跨腿原子性"
+    ],
+    "changes": [
+      "要求整体数量结果",
+      "全量不要求单一对手",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "价格不能放宽",
+      "多条成交",
+      "多腿边界"
+    ],
+    "example": "限价100的FOK买单要10股。若合格卖盘为99元4股、100元6股，且场所规则允许合并匹配，则可全成，支出996元。若100元只有5股，总合格量9股，则不先买9股，而是整单不成交。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+    ]
+  },
+  {
+    "id": "concept:quant-fifo-priority",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧排队类比遗漏价格层次和规则范围"
+    ],
+    "changes": [
+      "同一个价格也有先后",
+      "优先顺序与剩余数量",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "优先层次",
+      "后续成交",
+      "规则迁移"
+    ],
+    "example": "在明确采用纯价格—时间优先的示例簿中，100元买单A先到30股，B后到20股，另有99元买单C更早到100股。限价允许成交到99元的40股卖单到达，先成交A30股，再成交B10股；C虽更早，但价格较差，尚未轮到。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/articles-and-reports/overview-what-makes-ags-markets-work"
+    ]
+  },
+  {
+    "id": "concept:quant-market-by-order",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文遗漏消息连续性、标识范围以及参与者归属字段边界"
+    ],
+    "changes": [
+      "总量相同，内部队列可以不同",
+      "订单标识用于重建，不等于客户身份",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "汇总丢失的信息",
+      "消息完整性",
+      "标识范围"
+    ],
+    "example": "示例协议中，同价订单A有30股，B有20股。收到“A撤销10股”后，A剩20，B仍20，该档总量40。再收到“A执行15股”后，A剩5，该档总量25。若只看到总量从50变40，并不知道撤掉的是前面的A还是后面的B。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-quoted-spread",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文缺少比较范围、单位、半价差与成交成本区别"
+    ],
+    "changes": [
+      "买卖报价之间的距离",
+      "全价差与单边距离",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "单位与尺度",
+      "报价与实际成本",
+      "半价差"
+    ],
+    "example": "最优买价99.8、卖价100.2，中价100。报价价差为0.4；以中价归一化是0.4/100=0.4%，即40个基点（1基点为0.01个百分点）。若买单在100.1获得价格改善，实际相对中价的单边偏离为0.1，而不是0.4。",
+    "sourceUrls": [
+      "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+    ]
+  },
+  {
+    "id": "concept:quant-effective-spread",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧定义省略方向统一、基准约定与现金尺度"
+    ],
+    "changes": [
+      "用成交价格衡量执行",
+      "为什么有两倍",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "负值的含义",
+      "现金尺度",
+      "基准不能偷换"
+    ],
+    "example": "初始中价100，主动买50股，成交价100.1。单边偏离0.1，有效价差0.2，相对基准多付0.1×50=5元。若主动卖50股于99.9，单边偏离也是0.1，有效价差仍为0.2。两侧用统一方向后才能比较。",
+    "sourceUrls": [
+      "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+    ]
+  },
+  {
+    "id": "concept:quant-realized-spread",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧解释未给主动方向与被动经济含义的对应关系"
+    ],
+    "changes": [
+      "成交后，报价优势保留了多少",
+      "实现不等于实际平仓",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "卖出方向",
+      "期限改变问题",
+      "标记与现金"
+    ],
+    "example": "主动方以100.1买入，100毫秒后中价100.05，则实现价差为2×0.05=0.1，对被动卖方保留正优势。若1秒后中价100.2，用1秒期限计算则为2×(100.1−100.2)=−0.2。两种结果可以同时成立，因为期限不同。",
+    "sourceUrls": [
+      "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+    ]
+  },
+  {
+    "id": "concept:quant-spread-decomposition",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文缺少恒等式与因果冲击的区分"
+    ],
+    "changes": [
+      "把两个基准接起来",
+      "恒等关系与经济解释不同",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "变化超过初始价差",
+      "因果边界",
+      "统一尺度"
+    ],
+    "example": "主动买价100.1，初始中价100，未来中价100.06。有效价差为0.2，实现价差为2×0.04=0.08，变化项为2×0.06=0.12，确有0.2=0.08+0.12。若要转成基点，应让三项都除以同一个初始中价，再乘10000。",
+    "sourceUrls": [
+      "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+    ]
+  },
+  {
+    "id": "concept:quant-queue-imbalance",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原类比未解释标准化、尺度丢失与未定义情况"
+    ],
+    "changes": [
+      "一张盘口快照中的相对数量",
+      "比值表达相对状态，不表达总容量",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "方向对称",
+      "概率不能直接读取",
+      "缺失与中性"
+    ],
+    "example": "最优买量90股、卖量10股，不平衡为(90−10)/(90+10)=0.8。若改成900与100，仍为0.8，但可见总量从100变成1000股。0.8不是80%的上涨概率；要预测上涨，必须用历史样本估计该特征与后续结果的关系，并在未参与估计的数据上验证。",
+    "sourceUrls": [
+      "https://arxiv.org/abs/1011.6402"
+    ]
+  },
+  {
+    "id": "concept:quant-weighted-midprice",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文未限定公式版本，容易将代理价格当可成交价或严格microprice"
+    ],
+    "changes": [
+      "把盘口数量加入价格摘要",
+      "为什么用对侧数量",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "等量情形",
+      "价格与执行",
+      "规模变化"
+    ],
+    "example": "买价99、卖价101，买量90、卖量10。普通中价100；加权值为(101×90+99×10)/100=100.8。若两侧数量交换，加权值为99.2。两者都位于99与101之间，但100.8并不是簿上已有的可成交报价。",
+    "sourceUrls": [
+      "https://arxiv.org/abs/1011.6402"
+    ]
+  },
+  {
+    "id": "concept:quant-order-flow-imbalance",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文未完整区分状态特征、事件流与价格档位变化"
+    ],
+    "changes": [
+      "从一张快照转向一段事件",
+      "先处理价格是否变化",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "无需发生交易",
+      "方向核对",
+      "不同价格档"
+    ],
+    "example": "起始买量100、卖量80，报价不变。先有买侧新增30，贡献+30；再有卖侧撤销20，贡献+20；随后主动买走卖侧10，贡献+10。区间OFI为+60，最终买量130、卖量50。没有把+60解释为60股主动买入，因为其中包括新增和撤单。",
+    "sourceUrls": [
+      "https://arxiv.org/abs/1011.6402"
+    ]
+  },
+  {
+    "id": "concept:quant-queue-ahead",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原说明未交代可见性假设与不同撤单位置的反事实"
+    ],
+    "changes": [
+      "成交机会还取决于轮到谁",
+      "前方撤单与后方撤单不同",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "扣除自身与后方",
+      "只有成交还不够",
+      "未知不是已让路"
+    ],
+    "example": "同价前方50股，自己20股，后方30股。先确认前方撤20，前方剩30；随后主动卖出40股匹配该买价，先消耗前30，自己成交10、余10，后方仍30。若撤20来自后方，则前方仍50，40股成交尚未轮到自己。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-censored-fill-time",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧公交类比遗漏成交终点和撤单反事实识别"
+    ],
+    "changes": [
+      "没有观察到成交，也是一条信息",
+      "完成样本不是原始总体",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "截止不是成交",
+      "终点必须固定",
+      "终止机制"
+    ],
+    "example": "三张同类订单中，A在2秒全成，B在4秒全成，C观察到5秒仍未全成，随后研究窗口结束。A、B完整时长的平均是3秒，但这不是三单真实平均。C的时长超过5秒，所以三单平均大于(2+4+5)/3≈3.667秒；具体值仍未知。",
+    "sourceUrls": [
+      "https://www.itl.nist.gov/div898/handbook/apr/section1/apr131.htm"
+    ]
+  },
+  {
+    "id": "concept:quant-hawkes-process",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧故事未定义点过程、条件强度和线性模型范围"
+    ],
+    "changes": [
+      "为什么事件会成簇出现",
+      "自激是条件模型的性质",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "无事件期间",
+      "速率与次数",
+      "共同驱动"
+    ],
+    "example": "考虑一个明确的单变量示例：基准2次/秒，每次事件令速率增加3次/秒，这一增加每过0.2秒乘以exp(−1)。一次事件刚发生后，速率从2跳至5；0.2秒内没有新事件时，变成2+3exp(−1)≈3.104次/秒。若此时又有事件，再增加3。",
+    "sourceUrls": [
+      "https://arxiv.org/abs/1502.04592"
+    ]
+  },
+  {
+    "id": "concept:quant-point-process-intensity",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧速率比喻未区分一般强度定义与恒定泊松假设"
+    ],
+    "changes": [
+      "对不规则事件描述局部速率",
+      "次数期望与至少一次概率",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "单位换算",
+      "期望不必小于1",
+      "当前与整段未来"
+    ],
+    "example": "额外假设事件是恒定速率2次/秒的泊松过程。0.1秒内期望次数为0.2，至少一次概率为1−exp(−0.2)≈0.1813。2秒内期望次数为4，但至少一次概率是1−exp(−4)≈0.9817，不是4或400%。精确概率依赖这里的泊松假设。",
+    "sourceUrls": [
+      "https://arxiv.org/abs/1502.04592"
+    ]
+  },
+  {
+    "id": "concept:quant-event-time",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文缺少事件打点语义和解析后可见性"
+    ],
+    "changes": [
+      "发生与获知是两回事",
+      "源端顺序与可用信息",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "防止提前获知",
+      "相同时间戳",
+      "字段语义"
+    ],
+    "example": "在已同步并统一单位的示例时钟上，成交源端时间100毫秒，本地收到104毫秒，解析完成105毫秒。102毫秒做出的决策不能使用它；104毫秒若策略尚不能读解析结果，也不能使用；105毫秒之后才满足这里声明的应用可见条件。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-receive-time",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧信箱类比省略硬件、应用边界及准确度区别"
+    ],
+    "changes": [
+      "消息进入本地的哪一道边界",
+      "打点边界决定测量对象",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "读取边界",
+      "负时间差",
+      "优化落点"
+    ],
+    "example": "同一本地时钟上，网卡接收100微秒，解析完成130，策略决策150。接收到解析是30微秒，解析到决策是20，接收到决策共50。120微秒时虽然消息已经进入机器，但依赖解析字段的策略尚不能合法使用它。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-venue-arrival-time",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧寄信类比未区分到达与有效排序边界"
+    ],
+    "changes": [
+      "发送不是入队",
+      "重建到达时的状态",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "顺序反转",
+      "延迟优化",
+      "不能冻结旧簿"
+    ],
+    "example": "在统一时钟的简化链路中，A于100微秒发送、链路耗时30，到达130；B于110发送、耗时10，到达120。同价FIFO下B先排队。若到达前已有40股，并有B的30股先进入，A前方是70股，而非发送时看到的40。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-cancel-latency",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文未拆分撤单生效延迟与确认回报延迟"
+    ],
+    "changes": [
+      "撤单是请求，不是追溯抹除",
+      "撤单与成交存在竞争",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "剩余量",
+      "风险预算",
+      "回报到达顺序"
+    ],
+    "example": "订单余20股，100微秒发送撤单，125微秒先成交8股，140微秒撤单生效，确认到本地是170。撤单延迟40微秒；实际成交8、取消12。100到140期间不能假定订单已消失，140到170期间则要处理本地尚未获知结果的不确定性。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-report-latency",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文未强调本地记账边界与重复补单风险机制"
+    ],
+    "changes": [
+      "交易已发生，但本地尚不知情",
+      "未知订单状态要被保留",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "经济时间",
+      "超时的含义",
+      "成交更正"
+    ],
+    "example": "目标买12股，原单100微秒已成交12，本地150才处理回报，延迟50微秒。若120因未见回报就再发一张12股订单，且它也全成，最终持仓变24。问题是获知滞后导致重复执行，不是原成交在150才发生。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-end-to-end-latency",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧旅行比喻缺少边界和事件关联，需具体反例"
+    ],
+    "changes": [
+      "先问从哪里到哪里",
+      "先关联单次事件，再统计分布",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "边界影响数字",
+      "局部改善",
+      "分位数不能机械相加"
+    ],
+    "example": "定义接收行情到订单到达场所为端到端。一次事件解析5、风控3、发送2、网络20微秒，串行合计30。若网络优化减少5、风控新增8，总耗时变33。另有两次事件的两段耗时分别(1,9)和(9,1)，总耗时均10，两个分段最大值相加却是18。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-alpha-decay",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧热食类比未定义衰减对象与评价协议"
+    ],
+    "changes": [
+      "预测在等待中可能失效",
+      "等待损失与成本分开",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "剩余优势",
+      "期望与保证",
+      "模型边界"
+    ],
+    "example": "假设某信号刚产生时优势8基点，模型规定每10毫秒减半，且所有延迟用同一评价口径。20毫秒后剩2基点。如果执行及其他已计成本为3基点，模型净空间为−1；未延迟时则为5。这里比较的是期望，不能把2基点直接记为现金收入。",
+    "sourceUrls": [
+      "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-signal-half-life",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文未区分任意曲线的半值时间与固定指数半衰"
+    ],
+    "changes": [
+      "给衰减速度一个可比较尺度",
+      "指数假设带来可重复减半",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "一半不是归零",
+      "等待与信号",
+      "缺少模型不能外推"
+    ],
+    "example": "假设固定指数衰减，优势12基点在4秒后变3基点。从12到6再到3，共经历两次减半，所以半衰期为2秒。再等2秒将剩1.5基点。若总成本2基点，4秒时模型净空间1基点，6秒时为−0.5。",
+    "sourceUrls": [
+      "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-liquidity-provision",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧摊主类比未交代被动角色与成交选择风险"
+    ],
+    "changes": [
+      "先报出可供别人交易的条件",
+      "赚到价差仍可能亏损",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "返佣不等于净收益",
+      "选择效应",
+      "比较执行政策"
+    ],
+    "example": "挂买99.9成交100股，初始中价100，随后指定期限中价99.8。按未来中价标记，价格损益为(99.8−99.9)×100=−10元；假设返佣每股0.01，共1元，合计−9元。这个结果尚未包括真实退出和其他费用。",
+    "sourceUrls": [
+      "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-taker-markout",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧定义文字称中价变化但例子用成交价，需消除基准歧义"
+    ],
+    "changes": [
+      "成交后用统一价格回看",
+      "每单位标记与实际退出",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "上涨对卖方",
+      "买方方向",
+      "起点不同"
+    ],
+    "example": "主动卖50股于99.9，1秒后中价99.7。卖方每股标记为99.9−99.7=0.2，共10元。若实际需要以99.75买回，毛利只有(99.9−99.75)×50=7.5元；再付总费用2元，净利5.5元。",
+    "sourceUrls": [
+      "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-rule-605-regulation-nms"
+    ]
+  },
+  {
+    "id": "concept:quant-conditional-fill-value",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原接诊类比未说明订单政策、尺度与每尝试价值"
+    ],
+    "changes": [
+      "实际成交不是随机抽取的信号",
+      "成交率与成交后的价值共同作用",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "条件均值",
+      "固定尝试成本",
+      "信号均值不能代替"
+    ],
+    "example": "100次同等数量尝试，20次成交，按统一期限并计规定费用后的总收益−4元。成交率20%，每次成交平均−0.2元，每次尝试平均−0.04元。过滤后仍100次机会，但只成交10次、合计赚3元，则条件价值0.3元，每机会贡献0.03元；成交率更低却更有价值。",
+    "sourceUrls": [
+      "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-arrival-intensity",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧餐馆类比未定义目标事件过程，混淆机会与全量成交"
+    ],
+    "changes": [
+      "究竟是哪种事件到达",
+      "距离模型是需要估计的假设",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "事件集合",
+      "期望与概率",
+      "机会与本单成交"
+    ],
+    "example": "假设某报价处的相关机会服从恒定强度为2次/秒的泊松过程，且暂时忽略队列。等待0.5秒，期望机会数为1，至少一次机会概率为1−exp(−1)≈63.2%。它既不是必有一次，也不是100%全量成交。若队列前方仍有量，机会甚至可能完全分给别人。",
+    "sourceUrls": [
+      "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-inventory-penalty",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原仓库故事缺少惩罚对象、时间口径和有限增量"
+    ],
+    "changes": [
+      "把持仓风险放进决策目标",
+      "二次惩罚的一种明确选择",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "对称性",
+      "有限增量",
+      "模型与现金"
+    ],
+    "example": "设单一决策时点的惩罚为0.02×库存平方，以与收益可比较的目标单位计量。库存10时惩罚2，买1股后库存11，惩罚2.42，增加0.42。如果该买入预期赚0.3，目标净变化0.3−0.42=−0.12。卖1股降到9则节省0.38。",
+    "sourceUrls": [
+      "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-tick-size",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原类比未区分网格假设、约束取整和离散优化"
+    ],
+    "changes": [
+      "连续估计与合法报价之间",
+      "取整方向表达经济约束",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "更粗网格",
+      "合法不等于被动",
+      "价格与数量"
+    ],
+    "example": "假设固定tick为0.01、网格从0开始。模型最高愿买100.037、最低愿卖100.063。保持边界时买价取100.03、卖价取100.07，价差0.04，而非原来的0.026。若当前最优卖价100.02，这个合法买价仍会具备主动成交性。",
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/courses/futures-trading-mechanics-and-regulation/futures-order-types"
+    ]
+  },
+  {
+    "id": "concept:quant-legging-risk",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原例未覆盖部分成交与过度补救的同一风险机制"
+    ],
+    "changes": [
+      "目标组合与实际组合不同",
+      "按已成交数量计算",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "发出不是成交",
+      "过度补救",
+      "数量不匹配"
+    ],
+    "example": "已买A金额10000、beta1.2；计划卖B金额12000、beta1。但B只成交6000，市场净暴露约为12000−6000=6000。若市场随后下跌0.5%，该因子的一阶损失约30，另有个股、价差和费用影响。目标本来中性，不能把实际暴露也记成0。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-non-atomic-execution",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧比喻遗漏补偿交易与回滚的经济差别"
+    ],
+    "changes": [
+      "交易组合可能只完成一部分",
+      "补偿不是回滚",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "同时不是保证",
+      "独立假设",
+      "反向成交"
+    ],
+    "example": "纯教学假设两腿各以90%概率全成且相互独立。两腿全成为81%，恰好一腿为2×0.9×0.1=18%，两腿都不成为1%。如果两腿结果完全共同变化，仍各90%成功，却可以只有90%全成和10%全不成，单腿概率为0。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-touch-fill-model",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧类比未定义触价基准与区间内下单先后"
+    ],
+    "changes": [
+      "价格碰到，不说明成交分给你",
+      "它省略了哪些条件",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "先后顺序",
+      "同价量不足",
+      "模型敏感性"
+    ],
+    "example": "买10股限价100，同价FIFO前方50股。订单到达后只有20股按100成交，且无撤单等其他事件。简单触价全成模型会记买入10股；按队列顺序，20股尚未耗尽前50股，本单实际分配0股。若前方只有5股，同样20股则足以让本单全成10。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-counterfactual-replay",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧棋谱类比未解释反事实协议与流动性重复分配"
+    ],
+    "changes": [
+      "把没有下过的订单放回历史",
+      "固定外部历史是一项假设",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "容量约束",
+      "小规模的含义",
+      "信息协议"
+    ],
+    "example": "简化FIFO回放中，假设买10股排在15股之后。后来历史主动卖出20股，分配时先给前15，再给本单5，不能记全成10。也不能再把同一20股完整分给另一张假设订单，否则重复使用了同一历史流动性。",
+    "sourceUrls": [
+      "https://arxiv.org/abs/1011.6402"
+    ]
+  },
+  {
+    "id": "concept:quant-hot-path",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧急诊类比缺少依赖范围与异步队列约束"
+    ],
+    "changes": [
+      "哪些工作必须先做完才能下单",
+      "移出工作，也要定义失败行为",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "整体收益",
+      "异步不是消失",
+      "必要风控"
+    ],
+    "example": "串行路径解析4、信号8、风控3、发送5微秒，共20。信号计算减半为4后，总共16，改善20%而非50%。若此前还同步写日志30，总耗时50；改成入队1微秒可把当前链路降到21，但后台消费、容量和故障处理仍须满足要求。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-latency-budget",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧赶车比喻没有明确目标类型与超时政策"
+    ],
+    "changes": [
+      "把总截止要求变成可检查约束",
+      "截止后的动作也属于设计",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "剩余空间",
+      "有效期缩短",
+      "平均数不能遮住超时"
+    ],
+    "example": "总预算100微秒，串行分配解析10、计算20、风控10、网络40，合计80，留20余量。一次忙时网络65、其余刚好达到分配，实际总105，已超时5。平均网络可能仍很快，但这次不能据平均值算作达标。",
+    "sourceUrls": [
+      "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification_5.0.pdf"
+    ]
+  },
+  {
+    "id": "concept:quant-statistical-arbitrage",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧商店故事没有定义策略对象和无风险套利的区别"
+    ],
+    "changes": [
+      "相对价值预测需要可执行组合",
+      "信号、持仓与收益三步分开",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "名称与风险",
+      "成本门槛",
+      "价格比较"
+    ],
+    "example": "假设研究模型A≈2B，A=105、B=50时偏离为5。卖1股A、买2股B，假设均按所示价格成交。后来A=102、B=50并平仓，毛利3元；若总交易费1、借券费0.4，净利1.6。若A反涨110、B不变，毛亏5，另有成本。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-pairs-trading",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧例没有完整连接信号、成交价格与组合损益"
+    ],
+    "changes": [
+      "用两项资产表达相对观点",
+      "截距不是额外一股资产",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "相关与回归",
+      "真实数量",
+      "执行损失"
+    ],
+    "example": "A=60、B=25，模型关系值5+2×25=55，偏离5。计划卖A买2B，但实际卖价59.9、买价25.1，按成交价算偏离59.9−5−50.2=4.7，比信号时少0.3。若随后按A=58、B=26退出，组合毛利1.9+2×0.9=3.7，而非用信号价格计算的4。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-formation-period",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧考试类比遗漏数据版本与模型选择边界"
+    ],
+    "changes": [
+      "历史数据如何变成可复现的规则",
+      "可见版本比记录日期更重要",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "未来资产池",
+      "数据修订",
+      "滚动形成"
+    ],
+    "example": "用1月至6月数据估出某残差的均值0、标准差1，预先设正向开仓线2。7月第一天残差2.5，冻结参数下标准分数为2.5，触发规则。若把7月数据加入后重新计算，再声称这是6月底已经确定的信号，就改变了原信息集。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-trading-period",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧考试比喻缺少交易会计与滚动更新协议"
+    ],
+    "changes": [
+      "让规则接受后续数据检验",
+      "评价也有执行与会计规则",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "完整收益",
+      "反复调参",
+      "更新版本"
+    ],
+    "example": "冻结协议在三笔交易中产生净损益2、−1、3元。假设初始资本100、期间无外部资金进出，期末资本104，期间收益4%。如果看到第二笔亏损后删掉这类日期，剩5元是新筛选结果，不能替代原协议的4元。新规则需要新的检验。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-price-residual",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧定义未明确原始/变换价格单位与参数变化伪利润"
+    ],
+    "changes": [
+      "实际价格与模型关系的差",
+      "固定参数时才有直接持仓联系",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "单位",
+      "重新拟合",
+      "反向组合"
+    ],
+    "example": "A=60、B=25时，拟合价5+2×25=55，残差5。卖1A买2B，随后A=58、B=26，残差58−5−52=1。毛利(60−58)+2×(26−25)=4，等于旧残差减新残差。若价格不动，只把截距从5改9，残差也会变1，但持仓毛利为0。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-return-residual",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文没有区分残差、截距与实际对冲收益"
+    ],
+    "changes": [
+      "解释的是一段收益，不是价格水平",
+      "未解释不等于纯粹特有信息",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "百分点",
+      "截距贡献",
+      "模型依赖"
+    ],
+    "example": "某日股票简单收益2%，模型截距0.1%、市场收益1%、beta1.2，拟合收益1.3%，残差0.7个百分点。若期初持有股票10000并做空市场12000，忽略成本，则股票赚200、市场腿亏120，组合毛利80：其中截距对应10，残差对应70，并不是残差独自解释全部80。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-dollar-neutrality",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧天平类比遗漏估值时点、毛额与现货范围"
+    ],
+    "changes": [
+      "金额相等是一种具体约束",
+      "净额0不等于总风险0",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "净额与毛额",
+      "价格漂移",
+      "风险中性"
+    ],
+    "example": "A价50买200股，多头10000；B价80卖125股，空头10000，净市值0，毛市值20000。若A的beta1.5、B为0.8，市场因子金额暴露估计15000−8000=7000。市场涨1%，因子部分一阶约赚70，表明金额中性不是beta中性。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-beta-neutrality",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧震动比喻未明确因子、估计模型和局部含义"
+    ],
+    "changes": [
+      "对某个因子抵消敏感度",
+      "中性依赖估计且可能漂移",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "beta漂移",
+      "对冲比例",
+      "约束的对象"
+    ],
+    "example": "A多头10000、beta1.2，B的beta0.8，需要B空头15000，因为12000−15000×0.8=0。若市场跌2%且忽略残差，A因子损失240、B空头因子收益240抵消。净金额为−5000，所以beta中性不必金额中性。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-z-score",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧“几个尺度”未说明标准差口径、零尺度与参数变化"
+    ],
+    "changes": [
+      "把偏离转换为同一尺度",
+      "尺度解释不等于分布假设",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "单位不变性",
+      "概率边界",
+      "零尺度"
+    ],
+    "example": "形成期固定均值3元、标准差2元。当前残差7元，z=(7−3)/2=2。若改用“分”记账，残差700、均值300、标准差200，仍为2。若另一天仅把估计标准差更新为4、残差仍7，则z变1，变化来自参照尺度而非价格收敛。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-hysteresis-rule",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧空调类比未给完整状态转移及未定义反手边界"
+    ],
+    "changes": [
+      "同一数值下，历史状态也重要",
+      "先规定状态转移",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "状态记忆",
+      "跳过退出线",
+      "减少切换的代价"
+    ],
+    "example": "从空仓出发，z依次1.9、2.1、1.8、0.4。第一步不动，第二步开空残差，第三步继续持有，第四步退出。若在1.8时原本就是空仓，则仍不入场；同一个1.8因历史状态不同导致不同持仓。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-entry-frozen-hedge",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧合同类比未明确冻结范围、真实数量与例外"
+    ],
+    "changes": [
+      "模型更新与持仓更新分开",
+      "冻结不是停止风险管理",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "账本不能自动加股",
+      "风险例外",
+      "下轮使用新模型"
+    ],
+    "example": "入场卖1股A于60、买2股B于25；后来A=58、B=26，毛利2+2×1=4。即使新系数变2.2，原2股B仍只赚2，而不是2.2。若明确改用在线调仓，需要额外买0.2股或合法取整数量，且从真实成交之后才计其收益。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-time-stop",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原借书类比遗漏起算点与实际退出状态"
+    ],
+    "changes": [
+      "时间到达如何改变交易状态",
+      "触发、退出中与已平仓",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "起算点",
+      "停牌时到期",
+      "损失边界"
+    ],
+    "example": "按首次成交100秒起算，最长持有30秒。130秒触发退出，订单延迟与执行耗时2秒，132秒才全平，真实持有32秒。假设建仓总成本100元、退出收入98、其他费用0.5，净损益−2.5。没有回归也要按实际结果记账。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-pca-residual",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧合唱比喻未定义投影、预处理及几何/动态区别"
+    ],
+    "changes": [
+      "去掉哪些共同变化方向",
+      "横截面正交不是时间独立",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "投影结果",
+      "保留全部方向",
+      "几何与预测"
+    ],
+    "example": "假设已去均值的两资产收益为(2,0)，单位是百分点，保留共同方向(1,1)。在这条直线上的最近投影是(1,1)，剩余(1,−1)。另一个观测(3,1)的投影为(2,2)，残差同样(1,−1)。共同水平变了，残差未变；尚不能由此断言下一期反转。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-factor-subspace",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧箭头故事没有明确子空间定义和策略等价边界"
+    ],
+    "changes": [
+      "共同方向可以有不同坐标表示",
+      "空间不变与策略不变不同",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "符号翻转",
+      "实质变化",
+      "策略等价边界"
+    ],
+    "example": "两资产中，载荷(1,1)与(−1,−1)都张成共同涨跌直线。收益(2,0)在两者上的投影都为(1,1)。若新方向改为(1,−1)，则张成另一条垂直直线，投影变为(1,−1)；这才是实际空间变化，而非符号变化。",
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ]
+  },
+  {
+    "id": "concept:quant-hedge-rounding",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧取整例符号模糊，未区分空头有符号风险与增量订单"
+    ],
+    "changes": [
+      "理论数量不一定可下单",
+      "先区分目标持仓与增量订单",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "更粗数量单位",
+      "已有持仓",
+      "符号风险"
+    ],
+    "example": "目标空头23.6股，当前无仓，价格50、beta1，只允许整股。卖24比目标多空0.4股，带符号残余暴露−20；卖23比目标少空0.6股，残余暴露+30。若仅最小化绝对beta暴露，选24；若不允许超对冲，则24不可行，选23并承认剩余风险。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  },
+  {
+    "id": "concept:quant-short-borrow-cost",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "原租金故事未定义合同基数、年化及与其他现金流的区别"
+    ],
+    "changes": [
+      "卖空还包含借入证券的安排",
+      "年化费率需要基数与天数",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "一天与一年",
+      "毛利与净利",
+      "费用版本"
+    ],
+    "example": "纯教学假设计费金额10000元、年率6%、按360天基数、持有30天且各项恒定。借券费10000×0.06×30/360=50。若空头价格毛利80、交易费20，净利10；持有改90天时借券费150，相同毛利下净亏90。",
+    "sourceUrls": [
+      "https://www.sec.gov/investor/pubs/regsho.htm"
+    ]
+  },
+  {
+    "id": "concept:quant-borrow-recall",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧租车比喻未涵盖部分召回和替代借券的经济约束"
+    ],
+    "changes": [
+      "持仓逻辑不能替代归还义务",
+      "可借性是独立约束",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "统计对冲",
+      "部分数量",
+      "补借成本"
+    ],
+    "example": "原先卖空100股于50元。召回40股，且示例中选择按53买回这40股归还，则该部分价格损失(50−53)×40=−120元，另有费用。其余60股若仍可借且规则允许，继续存在，并未因为“召回已处理”就自动全部平仓。",
+    "sourceUrls": [
+      "https://www.sec.gov/divisions/marketreg/loanedsecuritiesfaq.htm"
+    ]
+  },
+  {
+    "id": "concept:quant-funding-risk",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧房贷类比未区分融资与市场流动性及现金时点"
+    ],
+    "changes": [
+      "有价值的资产不等于现在有现金",
+      "保证金需求与可用资金比较",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "金额中性",
+      "缺口计算",
+      "风险反馈"
+    ],
+    "example": "可用现金100，保证金80、待付费用10，总需求90，尚余10。压力下保证金升120，总需求130，缺口30。若名义额度50但当时只能提用20，仍缺10，可能需要减仓或其他资金来源；不能按“额度大于缺口”直接判断安全。",
+    "sourceUrls": [
+      "https://www.bis.org/publ/bcbs238.htm"
+    ]
+  },
+  {
+    "id": "concept:quant-crowding-risk",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧出口类比未落到共同仓位、融资与容量的完整例子"
+    ],
+    "changes": [
+      "不同策略名字可能持有同一风险",
+      "共同退出不等于普通静态相关",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "名称分散",
+      "低相关的限制",
+      "容量与需求"
+    ],
+    "example": "三个策略分别“多A空B”“多A空C”“多A空D”，每个都买100万元A，合计多A300万元。若共同融资收紧，需要同日卖出A，而可接受价格范围内只有100万元买量，平仓需求已为该显示容量3倍。各自看是小配对，合起来却竞争同一出口。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w14465"
+    ]
+  },
+  {
+    "id": "concept:quant-next-observation-execution",
+    "status": "rewritten-and-editorially-reviewed",
+    "issues": [
+      "旧文未明确可用时刻、合格观测与执行模型范围"
+    ],
+    "changes": [
+      "看见价格之后，才产生行动",
+      "下一条数据仍不是成交保证",
+      "重写完整例子与适用边界"
+    ],
+    "exerciseCoverage": [
+      "不能回填旧价",
+      "缺失记录",
+      "价格存在与可买数量"
+    ],
+    "example": "观测10:00价格100、10:01价格101、10:02价格99。10:00观测后决定买10股，协议假设下一观测价加0.1可全成，所以10:01买101.1，支出1011。10:01观测后决定退出，按下一价减0.1，10:02卖98.9，收入989，执行毛亏22，另计其他费用。",
+    "sourceUrls": [
+      "https://www.nber.org/papers/w7032"
+    ]
+  }
+]

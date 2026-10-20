@@ -1,0 +1,1236 @@
+{
+  "concept:math-derivative": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义仅称变化快慢，缺少极限对象、近似误差与单位。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "f(x)=x³在0导数为0，是极小值吗？",
+      "绝对值函数在0为何不可微？",
+      "本例把增量改1，线性误差多少？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-taylor-expansion": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文将展开说成“近似公式”，未区分有限余项与解析级数。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "只保留一阶，本例误差更大吗？",
+      "无限可微就一定等于泰勒级数吗？",
+      "为何必须说明基点？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-definite-integral": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧介绍把积分泛化为面积，未区分带符号累积、单位及存在条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "积分0是否意味着函数处处0？",
+      "积分速度的单位是什么？",
+      "有原函数是否可不看端点奇异性？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/",
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-eigendecomposition": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文缺少可对角化条件，易把正交特征基无条件推广。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "零向量算特征向量吗？",
+      "特征值和是多少，有何核对？",
+      "所有矩阵都能取正交特征基吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-cholesky": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例未交代正定和三角约定，容易将任意协方差与普通分解混同。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "A必须对称吗？",
+      "L本身是协方差吗？",
+      "完全相关两变量能保证正对角分解吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-convexity": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文将凸性简化为碗形，未区分集合、全局性、唯一性和存在性。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "常数函数凸但最优唯一吗？",
+      "e^x在实线上有最小值吗？",
+      "两个不相交区间构成凸可行集吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-ode": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未区分方程与初值解，也未解释数值误差和稳定性。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "只给y′=−y能唯一确定y吗？",
+      "步长3的欧拉法为何可能失真？",
+      "ODE只能描述时间吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-pde": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧介绍缺少初边值问题，例子没有可代入验证的完整域与条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为何必须给边界？",
+      "本例t=0是否符合初值？",
+      "网格更密是否自动正确？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/",
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-root-finding": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文混用残差与求解精度，未解释二分和牛顿的不同保证。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "f(x)=x²在[−1,1]无异号说明无根吗？",
+      "二分10次区间宽度是多少？",
+      "残差很小能不检查尺度吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-quadrature": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例没有比较规则与精确基准，忽略光滑性及误差估计边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "梯形结果偏高为何合理？",
+      "辛普森对本例精确是否对所有函数精确？",
+      "不连续处应如何处理？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-floating-point": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只说小数误差，未区分范围、舍入、抵销和问题病态。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "0.1+0.2不精确等于0.3说明加法器坏了吗？",
+      "比较浮点结果应总用精确相等吗？",
+      "溢出与有效数字丢失一样吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-compounding": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧介绍没有报价口径，容易把复利率与有效收益或随机期望混同。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "跌50%后涨50%能回本吗？",
+      "连续利率0对应什么？",
+      "连续10%和有效年10%相同吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-monte-carlo": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把随机平均当完整方法，未区分误差来源与平方根条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "标准误减半通常要多少倍样本？",
+      "更多路径能修复漏掉交易费用吗？",
+      "固定随机种子证明结果正确吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:math-control-variates": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未给零均值调整和配对机制，未说明错误已知期望会引入偏差。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "把E[Y]误写成1.1会怎样？",
+      "负相关还能用吗？",
+      "独立Y总能帮助吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/pages/lecture-notes/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-conditional-probability": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未交代分母、零概率边界与基准率，练习无法辨析逆条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "80%检测率等于报警后80%真故障吗？",
+      "P(B)=0时可直接套分式吗？",
+      "报警与故障相关说明报警造成故障吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-random-variable": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把随机变量说成“随机的数”，省略函数、实现值与分布的区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "X和另一个同分布变量必相等吗？",
+      "E[X]=3.5是预测下次必出3.5吗？",
+      "Y与X独立吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-independence": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文用互不影响替代概率定义，缺少零相关反例和联合独立条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "零协方差能否消除所有依赖？",
+      "独立事件能否互斥且概率都正？",
+      "不同名称资产是否可当独立？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-normal-lognormal": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义未说明对数尺度参数与原尺度均值区别和支持范围限制。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "X可取负数吗？",
+      "均值为何不等于中位数？",
+      "正常数加正态变量必为对数正态吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/",
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-mgf": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把MGF当总能编码分布，未给邻域有限性和换序条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "M(0)为何恒为1？",
+      "不独立时还能把MGF相乘吗？",
+      "没有有限MGF等于没有分布吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-copula": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只称拼接分布，未定义均匀边际、唯一性及可复核联合尾例。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "知道两边际能确定联合风险吗？",
+      "独立Copula是什么？",
+      "同相关系数必有同尾部依赖吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/",
+      "https://www.bis.org/publ/joint25.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-limit-theorems": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文将大样本趋稳和正态混在一起，缺少条件、缩放及偏差边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "样本翻4倍标准误变多少？",
+      "观察来自同一持续冲击能直接用N作独立样本数吗？",
+      "CLT是否修复有偏传感器？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-jensen": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只有平均不能交换，未说明凸凹方向、定义域和等号条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "E[e^X]能直接写e^(E[X])吗？",
+      "X恒为2时怎样？",
+      "负数X能直接套log版本吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:prob-sigma-algebra": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把σ代数称可知道事情，没有给封闭定义和具体有限信息例子。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "奇偶信息能判断点数是否小于3吗？",
+      "同σ代数是否要求骰子公平？",
+      "可数并封闭为何比有限并更强？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stat-mle": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只称找最可能参数，易误把似然当参数概率，未给边界。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "十次全成功，MLE是多少？",
+      "似然能直接当参数后验吗？",
+      "相关观测可照用独立乘积吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stat-hypothesis-testing": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文仅有基准世界比喻，未定义拒绝规则、第一类错误及多重选择。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "p=0.03是原假设真概率3%吗？",
+      "不拒绝就证明两组一样吗？",
+      "一百次筛选只报最低p值合理吗？"
+    ],
+    "sourceUrls": [
+      "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stat-metropolis-hastings": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "散步类比未定义提议比、拒绝保留及不变性与收敛的区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "拒绝后下一状态是什么？",
+      "非对称提议能省q比吗？",
+      "样本数大就一定混合充分吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.1093/biomet/57.1.97"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stat-cusum": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只有小变化累积，未定义基线、参考量、截断和阈值的不同作用。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "每次观测都等于k加基线会累积吗？",
+      "向上CUSUM能充分检测下降吗？",
+      "报警就是证明真实机制已变吗？"
+    ],
+    "sourceUrls": [
+      "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc323.htm"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stochastic-ito-integral": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把金融持仓例当定义，缺少可预测与平方可积条件及非光滑原因。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "看到增量为正再取系数2，符合定义吗？",
+      "方差为何用系数平方？",
+      "积分均值0表示每条路径结果0吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stochastic-sde": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "船浪类比代替积分含义，未说明布朗缩放与数值近似条件。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "步长减半，随机标准差减多少？",
+      "μ为正是否路径一直上涨？",
+      "一般状态相关模型一步公式必精确吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stochastic-girsanov": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "天气权重比喻未解释布朗漂移变换、有效密度和真实/定价测度差异。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "换测度会修改已发生的股价吗？",
+      "新测度漂移3%等于真实预期收益3%吗？",
+      "写出指数密度就足够吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stochastic-feynman-kac": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例未给PDE系数，容易混淆热方程u_t=u_xx与标准布朗半系数。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为何PDE二阶系数为0.5？",
+      "本例剩余时间归零时怎样？",
+      "有正利率支付还能原样取平均吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:stochastic-levy": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义遗漏起点和随机连续性，未辨析跳跃与随机连续以及矩存在。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "有跳跃就不是随机连续吗？",
+      "平均到达率随日内时段变可直接叫Lévy吗？",
+      "总损失标准差是72元吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:market-instruments": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把股票与期权用途并列，没有合同义务、初始成本及净利润对比。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "期权支付10就是利润10吗？",
+      "远期买方也能像期权买方选择放弃吗？",
+      "债券称固定收益是否没有风险？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/files/a-traders-guide-to-futures.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:market-margin-leverage": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文缺少资产负债机制与保证金资金路径，易把杠杆当抽象倍率。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "资产涨5%，权益回报多少？",
+      "保证金10表示买到10元资产吗？",
+      "到期最终盈利可排除中途资金风险吗？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/files/a-traders-guide-to-futures.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:market-forward-pricing": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文混淆远期报价与预测，未完整展示复制交易和已有合约价值。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "远期105表示预期现货必到105吗？",
+      "合约交割价100、现远期105，合约价值等于105吗？",
+      "增加持有期间现金收入会怎样？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/files/a-traders-guide-to-futures.pdf",
+      "https://www.cmegroup.com/trading/equity-index/fairvalue.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:market-no-arbitrage": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义未说明自融资与可容许交易，例子没区分指示价与可执行锁定。",
+      "交叉复核修正原先只要求终值正概率正的表述，明确零投入约定及初始净流入可投资现金。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "90%赚1、10%亏2是否套利？",
+      "两个价格差1、总费用1.2还套利吗？",
+      "无套利等于价格一定合理吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:pricing-local-volatility": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "路面类比未定义确定函数与动态，遗漏局部和隐含坐标区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "局部波动率是常数吗？",
+      "同执行价隐含波动20%可直接当局部20%吗？",
+      "校准普通期权完全符合就无需模型检验吗？"
+    ],
+    "sourceUrls": [
+      "https://www.columbia.edu/~mh2078/ContinuousFE/LocalStochasticJumps.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:pricing-stochastic-volatility": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文比喻波动本身变化，未清楚区分方差状态、平方根与模拟非负性。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "v=0.04的波动率多少？",
+      "相同价格是否确定全部状态？",
+      "欧拉更新出现负方差可直接当合法路径吗？"
+    ],
+    "sourceUrls": [
+      "https://www.math.nyu.edu/faculty/avellane/Lecture12Quant.pdf",
+      "https://doi.org/10.1093/rfs/6.2.327"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:pricing-variance-swap": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未定义互换支付、名义系数和采样年化，例子只说明方向。",
+      "交叉复核修正默认去均值暗示，明确常用对数收益平方和及合同自定义口径。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "20%波动执行价的方差是多少？",
+      "正负同幅收益能使平方项抵销吗？",
+      "两种采样频率的实现方差可直接混用吗？"
+    ],
+    "sourceUrls": [
+      "https://cdn.cboe.com/resources/indices/Cboe_Volatility_Index_Mathematics_Methodology.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:pricing-fourier": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "声音类比不说明定价对象，未交代特征函数、阻尼和数值检验关系。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "特征函数在u=0是多少？",
+      "FFT算得很快就说明价格准确吗？",
+      "变换法是否换了经济模型？"
+    ],
+    "sourceUrls": [
+      "https://engineering.nyu.edu/sites/default/files/2018-08/CarrMadan2_0.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:pricing-longstaff-schwartz": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "卖票类比未解释条件继续价值与事后路径最大值的本质区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "回归目标是立即支付吗？",
+      "继续价值8、立即10，该规则做什么？",
+      "用同一批路径选择并评分足够吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.1093/rfs/14.1.113"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:pricing-model-calibration": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "相机类比替代估计定义，未说明拟合目标、权重和参数识别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "一处报价精确匹配是否校准完成？",
+      "换价格误差为波动误差，参数可变化吗？",
+      "两个参数组拟合一样说明什么？"
+    ],
+    "sourceUrls": [
+      "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:rates-bond-yield": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文没区分票息、到期收益和持有回报，缺少报价计息口径。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "同现金流价格升高，收益率如何？",
+      "票息5%是否意味着今天买入回报5%？",
+      "一个收益率可代替所有期限折现率吗？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/files/a-traders-guide-to-futures.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:rates-curve-bootstrap": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文积木比喻未定义折现因子及逐个解未知的现金流过程。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为何先求一年再求两年？",
+      "D2=0.907143是两年收益率吗？",
+      "没有18个月报价，18个月值是否唯一？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/files/a-traders-guide-to-futures.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:rates-interest-rate-swap": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧定义未给支付日程和计息，例子无具体净额也忽略基差与市值。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "名义100万元必须交给对方吗？",
+      "收浮动付固定，利率上升当期净收如何？",
+      "初始零价值等于没有后续风险吗？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/education/files/a-traders-guide-to-futures.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:rates-short-rate-model": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未给短率如何生成债价，缺少期望与指数不交换的具体例子。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "当前短利率能单独确定十年债价吗？",
+      "为何平均折现因子不等于折现平均利率？",
+      "CIR离散步出现负数就是合法负利率模型吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:rates-hjm-lmm": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "山脉类比未定义瞬时与区间远期，未说明同测度漂移限制和报价背景。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "两种远期为何不能直接等同？",
+      "同一远期在不同测度漂移一定相同吗？",
+      "只给当前曲线足以模拟未来吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/",
+      "https://doi.org/10.2307/2937174"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:rates-credit-hazard": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧故障类比未区分速率、生存概率、回收损失及测度。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "λ=2%就是一年概率2%吗？",
+      "没有违约就没有信用市值风险吗？",
+      "强度相同两债损失一定相同吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/~goodman/teaching/StochCalc/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:portfolio-capm-apt": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只说共同风险，未定义超额收益、beta或CAPM与APT不同依据。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "beta为0等于没有风险吗？",
+      "把市场预期改6%，本例预期多少？",
+      "APT只是把市场因子名字换掉吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:portfolio-black-litterman": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "天气类比未解释先验、观点误差和权重优化的区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "观点更确信时更新靠近哪方？",
+      "所有观点都必须是单资产收益吗？",
+      "更新收益7%就是最终仓位7%吗？"
+    ],
+    "sourceUrls": [
+      "https://people.duke.edu/~charvey/Teaching/BA453_2005/Idzorek_onBL.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:portfolio-extreme-values": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "防洪类比未区分块极值与超阈值，缺少条件尾概率还原。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为什么还乘5%？",
+      "阈值越高一定越好？",
+      "历史最大损失20就能设风险上限20吗？"
+    ],
+    "sourceUrls": [
+      "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366g.htm"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:portfolio-deflated-sharpe": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只讲冠军偏差，未区分PSR与DSR及搜索基准；此点也提示第二层零基准算例只是PSR子步骤。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "只报最佳夏普足够吗？",
+      "1000个完全重复规则等于1000独立尝试吗？",
+      "零基准概率夏普很高就是DSR高吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.2139/ssrn.2460551"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:portfolio-hrp": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只称分组分风险，未解释算法流程及与真正逐资产风险平价的区别。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "HRP保证资产风险贡献相等吗？",
+      "不用矩阵逆就不怕估计误差吗？",
+      "两组方差调换，权重怎样？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.3905/jpm.2016.42.4.059"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:strategy-momentum": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "赛跑类比替代策略定义，未交代两类动量、复合收益及信号时点。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "过去收益可简单加为5%吗？",
+      "排名第一就应同样用于时间序列做多吗？",
+      "使用今天收盘信号能假定今天收盘前成交吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.1016/j.jfineco.2011.11.003"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:research-event-study": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧例没给正常模型、事件对齐及累计口径，易直接声称因果。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "实际涨3%可以全部叫事件效应吗？",
+      "为什么模型应在事件前估计？",
+      "公告盘后发布，能解释当日下午反应吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.1257/jel.35.1.13"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:strategy-volatility-premium": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧保险类比未区分定价期望、历史估计和未来实现，也没展示反向损失。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "25%减20%可直接乘方差名义吗？",
+      "隐含高于历史就无风险吗？",
+      "正风险溢价意味着每次卖保险都赚吗？"
+    ],
+    "sourceUrls": [
+      "https://cdn.cboe.com/resources/indices/Cboe_Volatility_Index_Mathematics_Methodology.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:strategy-cash-carry": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文缺少合约匹配与资金路径，未把费用后的结果完整算出。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "远期比现货高10就是利润10吗？",
+      "现货不能交割到该合约会怎样？",
+      "到期净差正能忽略中途保证金吗？"
+    ],
+    "sourceUrls": [
+      "https://www.cmegroup.com/trading/equity-index/fairvalue.html"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:microstructure-price-formation": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文把净买入直接等同价值更新，缺少报价、成交和有效价值的辨析。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "成交价下降必代表信息变坏吗？",
+      "连续主动买入可能怎样影响盘口？",
+      "中间价是真实价值的直接观测吗？"
+    ],
+    "sourceUrls": [
+      "https://doi.org/10.2307/1913210"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:microstructure-square-root-impact": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未定义母单、基准量和冲击终点，易把终端影响当总成本。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "Q增4倍，冲击增几倍？",
+      "20基点能直接当所有交易总费用吗？",
+      "换市场可直接沿用Y=1吗？"
+    ],
+    "sourceUrls": [
+      "https://arxiv.org/abs/1811.05230"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:marketmaking-avellaneda-stoikov": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "水果摊比喻替代模型对象，未区分保留价、市场中价与库存成交方向。",
+      "交叉复核将明显穿越常见对手价的库存示意改为轻微偏移，并明确使双边可被动挂单的簿状态。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "多头库存增加，通常如何移动报价？",
+      "买卖价差都是无风险收入吗？",
+      "保留价98说明市场价值必须98吗？"
+    ],
+    "sourceUrls": [
+      "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:marketmaking-glft": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "仓库类比未定义有限状态控制，也未连接理论边界与在途风险。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "满多头库存时卖价也必须撤掉吗？",
+      "硬边界可只检查已成交持仓吗？",
+      "库存价值差变得更不利于加仓会怎样？"
+    ],
+    "sourceUrls": [
+      "https://arxiv.org/abs/1105.3115"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:ml-triple-barrier": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文未说明标签可用时点和元标签条件化方向，容易混淆路径标签与成交。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "最后涨到103可把标签改成功吗？",
+      "日高103、日低98能判先碰哪边吗？",
+      "元标签输入已有做空信号时预测的是上涨吗？"
+    ],
+    "sourceUrls": [
+      "https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:timeseries-fractional-differencing": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文没定义滞后权重机制，误导分数差分总能兼顾平稳与完整记忆。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "d=1后续高阶权重怎样？",
+      "三项权重和多少，说明什么？",
+      "分数差分必使任意序列平稳吗？"
+    ],
+    "sourceUrls": [
+      "https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:ml-shapley": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文合作类比未定义价值函数基线和缺失特征背景，未算顺序贡献。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "为何不能只用AB减B当A全部贡献？",
+      "贡献总和应是多少？",
+      "SHAP为正就证明提高该特征会涨价吗？"
+    ],
+    "sourceUrls": [
+      "https://arxiv.org/abs/1705.07874"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:ml-deep-hedging": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "驾驶类比未说明负债、策略信息集及终端风险目标，缺少完整残差。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "去掉成本可能学到相同策略吗？",
+      "训练策略可读取未来终价决定今天持仓吗？",
+      "一条路径残差0能证明对冲成功吗？"
+    ],
+    "sourceUrls": [
+      "https://arxiv.org/abs/1802.03042"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:ml-rl-trading": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "开店类比未区分奖励和真实损益，未定义账户状态及环境反馈。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "奖励1.6就是账户净收益1.6吗？",
+      "只奖励毛收益可能怎样？",
+      "强化学习一定要真实账户探索吗？"
+    ],
+    "sourceUrls": [
+      "https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:ml-financial-nlp": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "旧文只称文本变字段，未定义不同任务的输出及完整数值语境。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "情绪分数0.8等于上涨概率80%吗？",
+      "收入增长能替代利润增长字段吗？",
+      "只存提取值、不存原句有何问题？"
+    ],
+    "sourceUrls": [
+      "https://www.sec.gov/edgar/search/"
+    ],
+    "secondLayerPreserved": true
+  },
+  "concept:execution-almgren-chriss": {
+    "status": "rewritten-and-reviewed",
+    "issues": [
+      "易损搬运类比未定义冲击和库存风险，缺少路径、单位与剩余量关系。"
+    ],
+    "changes": [
+      "按本概念所需的背景重组定义与工作过程；补充可核对的具体例子和结论边界。"
+    ],
+    "exerciseCoverage": [
+      "更快成交是否总成本更低？",
+      "风险厌恶增加通常如何改路径？",
+      "完成期限改变能照搬原路径吗？"
+    ],
+    "sourceUrls": [
+      "https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf"
+    ],
+    "secondLayerPreserved": true
+  }
+}
