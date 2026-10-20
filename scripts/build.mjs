@@ -182,6 +182,7 @@ ${publicEdition?'公开分发日期：'+book.metadata.publication_date+'。原�
 
 | 想做什么 | 入口 |
 | --- | --- |
+| 分两层学习概念：先知其然，再知其所以然 | [328 个分层知识点与新增补充](docs/learning-layers/00-learning-index.md) |
 | 阅读或听完整内容 | [离线播放器](quant_v1_audiobook.html) |
 | 顺序阅读 | [完整讲稿](quant_v1_full.md) |
 | 按知识点定位 | [章节与小节索引](quant_v1_index.md) |
